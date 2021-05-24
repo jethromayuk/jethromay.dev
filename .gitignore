@@ -1,4 +1,12 @@
-/build_*/
+/build_local/
+/cache/
 /node_modules/
 /vendor/
-.DS_Store
+/.idea/
+/.vscode/
+npm-debug.log
+
+# Optional ignores
+# /build_staging/
+# /build_production/
+# /source/assets/build/
