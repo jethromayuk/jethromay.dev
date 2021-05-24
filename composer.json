@@ -1,0 +1,12 @@
+{
+    "name": "jethromay/jethromay.com-2021",
+    "authors": [
+        {
+            "name": "Jethro May",
+            "email": "jethro.may@minttwist.com"
+        }
+    ],
+    "require": {
+        "tightenco/jigsaw": "^1.3"
+    }
+}
