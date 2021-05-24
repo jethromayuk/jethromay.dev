@@ -1,3 +1,3 @@
-# jethromay.com 2021
+# jethromay.com
 
-Repository for my website refresh.
+Repository for my 2021 website refresh.
