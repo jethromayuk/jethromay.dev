@@ -590,21 +590,22 @@ video {
 		max-width: 1536px;
 	}
 }
-.fixed {
-	position: fixed;
-}
-.top-0 {
-	top: 0px;
-}
-.z-50 {
-	z-index: 50;
+.my-4 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
 }
-.mt-0 {
-	margin-top: 0px;
+.mb-0 {
+	margin-bottom: 0px;
+}
+.mb-4 {
+	margin-bottom: 1rem;
+}
+.mr-3 {
+	margin-right: 0.75rem;
 }
 .mb-1 {
 	margin-bottom: 0.25rem;
@@ -618,11 +619,20 @@ video {
 .flex {
 	display: flex;
 }
-.w-full {
-	width: 100%;
+.grid {
+	display: grid;
 }
-.flex-1 {
-	flex: 1 1 0%;
+.h-6 {
+	height: 1.5rem;
+}
+.w-6 {
+	width: 1.5rem;
+}
+.max-w-xs {
+	max-width: 20rem;
+}
+.max-w-screen-lg {
+	max-width: 1024px;
 }
 .flex-shrink-0 {
 	flex-shrink: 0;
@@ -630,17 +640,26 @@ video {
 .flex-grow {
 	flex-grow: 1;
 }
+.grid-cols-2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-col {
 	flex-direction: column;
 }
-.flex-wrap {
-	flex-wrap: wrap;
+.place-content-between {
+	place-content: space-between;
+}
+.place-items-center {
+	place-items: center;
 }
 .items-center {
 	align-items: center;
 }
 .justify-between {
 	justify-content: space-between;
+}
+.justify-start {
+	justify-content: flex-start;
 }
 .justify-end {
 	justify-content: flex-end;
@@ -653,27 +672,21 @@ video {
 	margin-right: calc(1.5rem * var(--tw-space-x-reverse));
 	margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.border-b-2 {
-	border-bottom-width: 2px;
+.place-self-end {
+	place-self: end;
 }
-.bg-white {
-	--tw-bg-opacity: 1;
-	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+.rounded-lg {
+	border-radius: 0.5rem;
+}
+.fill-current {
+	fill: currentColor;
 }
 .p-8 {
 	padding: 2rem;
 }
-.px-4 {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-.py-3 {
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
-}
-.py-1 {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+.py-12 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 .pt-0 {
 	padding-top: 0px;
@@ -687,6 +700,9 @@ video {
 .pl-5 {
 	padding-left: 1.25rem;
 }
+.text-center {
+	text-align: center;
+}
 .font-sans {
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -694,13 +710,17 @@ video {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
 }
+.text-6xl {
+	font-size: 3.75rem;
+	line-height: 1;
+}
 .text-xl {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
-.text-base {
-	font-size: 1rem;
-	line-height: 1.5rem;
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 }
 .text-sm {
 	font-size: 0.875rem;
@@ -708,6 +728,10 @@ video {
 }
 .font-bold {
 	font-weight: 700;
+}
+.text-gray-500 {
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 .text-gray-900 {
 	--tw-text-opacity: 1;
@@ -717,64 +741,16 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
-.text-gray-500 {
-	--tw-text-opacity: 1;
-	color: rgba(107, 114, 128, var(--tw-text-opacity));
-}
-.no-underline {
-	text-decoration: none;
-}
 .antialiased {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.shadow-none {
-	--tw-shadow: 0 0 #0000;
+.shadow-lg {
+	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .hover\:text-blue-700:hover {
 	--tw-text-opacity: 1;
 	color: rgba(29, 78, 216, var(--tw-text-opacity));
-}
-.hover\:no-underline:hover {
-	text-decoration: none;
-}
-@media (min-width: 640px) {
-
-	.sm\:text-center {
-		text-align: center;
-	}
-}
-@media (min-width: 768px) {
-
-	.md\:text-lg {
-		font-size: 1.125rem;
-		line-height: 1.75rem;
-	}
-}
-@media (min-width: 1024px) {
-
-	.lg\:border-0 {
-		border-width: 0px;
-	}
-
-	.lg\:p-2 {
-		padding: 0.5rem;
-	}
-
-	.lg\:px-0 {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	.lg\:py-2 {
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-	}
-
-	.lg\:text-lg {
-		font-size: 1.125rem;
-		line-height: 1.75rem;
-	}
 }
 
