@@ -5,31 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
-        <title>{{ $page->title }}</title>
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+
+        <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
+        <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
+        <meta property="og:url" content="{{ $page->getUrl() }}"/>
+        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+
+        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+
+        <link rel="home" href="{{ $page->baseUrl }}">
+        <link rel="icon" href="/favicon.ico">
+        {{-- <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed"> --}}
+
+        @if ($page->production)
+            <!-- Insert analytics code here -->
+        @endif
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
     <body class="text-gray-900 font-sans antialiased container mx-auto max-w-screen-lg">
         <header class="py-12 px-6">
             <div class="grid grid-cols-2">
                 <h1>
-                    <a href="/" class="text-xl font-bold hover:text-green-500" title="Jethro May">
-                        Jethro May
+                    <a href="/" class="text-xl font-bold hover:text-green-500" title="{{ $page->siteName }}">
+                        {{ $page->siteName }}
                     </a>
                 </h1>
                 <x-menu />
             </div>
         </header>
-        <main id="main" class="px-6" role="main">
+        <main role="main" class="px-6">
             @yield('body')
         </main>
         <footer class="flex-shrink-0 pt-0 pb-10 pr-5 pl-5 text-center" role="contentinfo">
             <div class="flex flex-col items-center justify-center">
                     <p class="text-sm mb-1 text-gray-500">
-                        <time class="text-gray-500">© {{ $page->date }}</time> • Copyright Jethro May. All rights reserved.
+                        <time class="text-gray-500">© {{ $page->date }}</time> • Copyright {{ $page->siteName }}. All rights reserved.
                     </p>
             </div>
             <div class="flex items-center justify-center">
@@ -40,5 +53,7 @@
                 <a href="https://jethromay.com/posts/index.xml" class="text-sm text-gray-500 mr-2 ml-2 hover:text-blue-700">RSS</a>
             </div>
         </footer>
+        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        @stack('scripts')
     </body>
 </html>
