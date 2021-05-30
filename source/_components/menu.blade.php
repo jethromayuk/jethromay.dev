@@ -1,13 +1,13 @@
 <nav class="hidden lg:inline-block" aria-label="Main">
     <ul class="flex items-center justify-end space-x-6 text-lg text-gray-700" role="menubar">
         <li role="menuitem">
-            <a href="/blog" class="hover:text-green-500 {{ $page->isActive('/blog') ? 'active text-green-600' : '' }}">Blog</a>
+            <a href="/blog" class="hover:text-green-500">Blog</a>
         </li>
         <li role="menuitem">
-            <a href="/uses" class="hover:text-green-500 {{ $page->isActive('/uses') ? 'active text-green-600' : '' }}">Uses</a>
+            <a href="/uses" class="hover:text-green-500">Uses</a>
         </li>
         <li role="menuitem">
-            <a href="/contact" class="hover:text-green-500 {{ $page->isActive('/contact') ? 'active text-green-600' : '' }}">Contact</a>
+            <a href="/contact" class="hover:text-green-500">Contact</a>
         </li>
         <li>
             <a href="#" class="hover:text-green-500">

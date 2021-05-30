@@ -11,6 +11,12 @@
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
 
+        <meta name=twitter:url content="{{ $page->getUrl() }}">
+        <meta name=twitter:title content="{{ $page->title }}">
+        <meta name=twitter:image content="https://jethromay.com/img/me.jpg">
+        <meta name=twitter:card content="summary_large_image">
+        <meta name=twitter:site content="@may_jethro">
+
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
