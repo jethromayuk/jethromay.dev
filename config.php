@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'production' => false,
     'baseUrl' => '',
@@ -21,4 +23,7 @@ return [
             },
         ],
     ],
+    'isActive' => function ($page, $path) {
+        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
+    },
 ];
