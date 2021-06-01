@@ -8,6 +8,7 @@ return [
     'title' => 'Jethro May - Full Stack PHP Developer',
     'description' => 'Jethro May is a Full-Stack PHP developer currently living and working in South Africa.',
     'date' => date('Y'),
+    'siteName' => 'Jethro May',
     'collections' => [
         'posts' => [
             'author' => 'Jethro May', // Default author, if not provided in a post
