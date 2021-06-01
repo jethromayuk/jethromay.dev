@@ -19,7 +19,7 @@ description: The list of blog posts for the site
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">MacBook Pro (2019), i7, 16GB RAM, 500GB SSD</a>
+                <a href="#" class="text-green-500 underline" target="_blank">MacBook Pro (2019), i7, 16GB RAM, 500GB SSD</a>
             </p>
             <p class="leading-normal">This is my every day development machine, its extremely powerful and handles everything with ease.</p>
         </li>
@@ -30,7 +30,7 @@ description: The list of blog posts for the site
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                 Visual Studio Code
                 </a>
             </p>
@@ -38,7 +38,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     TablePlus
                 </a>
             </p>
@@ -46,7 +46,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     iTerm 2
                 </a>
             </p>
@@ -54,7 +54,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Tinkerwell
                 </a>
             </p>
@@ -62,7 +62,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     HELO
                 </a>
             </p>
@@ -70,7 +70,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Expose
                 </a>
             </p>
@@ -83,7 +83,7 @@ description: The list of blog posts for the site
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Alfred 4
                 </a>
             </p>
@@ -98,7 +98,7 @@ description: The list of blog posts for the site
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li  class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Figma
                 </a>
             </p>
@@ -106,7 +106,7 @@ description: The list of blog posts for the site
         </li>
         <li  class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Sip
                 </a>
             </p>
@@ -119,7 +119,7 @@ description: The list of blog posts for the site
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li  class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     GitHub
                 </a>
             </p>
@@ -127,7 +127,7 @@ description: The list of blog posts for the site
         </li>
         <li  class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Netlify
                 </a>
             </p>
@@ -135,7 +135,7 @@ description: The list of blog posts for the site
         </li>
         <li  class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" class="text-green-500" target="_blank">
+                <a href="#" class="text-green-500 underline" target="_blank">
                     Namecheap
                 </a>
             </p>
