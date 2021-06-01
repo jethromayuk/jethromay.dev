@@ -6,7 +6,7 @@
             </a>
         </h1>
         <nav class="hidden lg:inline-block" aria-label="Main">
-            <ul class="flex items-center justify-end space-x-6 text-lg text-gray-700" role="menubar">
+            <ul class="flex items-center justify-end space-x-6 text-lg text-gray-700 font-semibold" role="menubar">
                 <li role="menuitem">
                     <a href="/blog" class="hover:text-green-500">Blog</a>
                 </li>

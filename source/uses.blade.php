@@ -5,29 +5,29 @@ description: The list of blog posts for the site
 @extends('_layouts.main')
 
 @section('body')
-<article itemscope="" itemtype="http://schema.org/Article">
+<article class="mt-6" itemtype="http://schema.org/Article">
     <header class="mb-3">
-        <h1 class="text-4xl font-extrabold">Uses</h1>
+        <h1 class="text-5xl font-extrabold">Uses</h1>
     </header>
 
-    <p>
-        Inspired by Wes Bos, Freek Murze and many others I've put together this list of hardware, software and services that I use. I will keep this list updated as my workflow changes.
+    <p class="text-lg leading-relaxed">
+        Inspired by Wes Bos, Freek Murze and many others I've put together this list of hardware, software and services that I use on a day-to-day basis. I will keep this list updated as my workflow changes.
     </p>
 
-    <h2 class="font-bold text-3xl my-3">Hardware</h2>
+    <h2 class="font-bold text-3xl my-6">Hardware</h2>
 
-    <ul class="list-disc space-y-6 pl-4">
+    <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="#" target="_blank">MacBook Pro (2019), i7, 16GB RAM, 500GB SSD</a>
+                <a href="#" class="text-green-500" target="_blank">MacBook Pro (2019), i7, 16GB RAM, 500GB SSD</a>
             </p>
             <p class="leading-normal">This is my every day development machine, its extremely powerful and handles everything with ease.</p>
         </li>
     </ul>
 
-    <h2 class="font-bold text-3xl my-3">Software</h2>
+    <h2 class="font-bold text-3xl my-6">Software</h2>
 
-    <ul class="list-disc space-y-6 pl-4">
+    <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
             <p class="font-bold leading-normal">Visual Studio Code</p>
             <p>I used PHPStorm for many years but after purchasing Caleb Porzio's course, Make VS Code Awesome I made the switch and haven't looked back.</p>
@@ -54,9 +54,9 @@ description: The list of blog posts for the site
         </li>
     </ul>
 
-    <h2 class="font-bold text-3xl my-3">Productivity</h2>
+    <h2 class="font-bold text-3xl my-6">Productivity</h2>
 
-    <ul class="list-disc space-y-6 pl-4">
+    <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
             <p class="font-bold leading-normal">Alfred 4</p>
             <p>
@@ -65,9 +65,9 @@ description: The list of blog posts for the site
         </li>
     </ul>
 
-    <h2 class="font-bold text-3xl my-3">Design</h2>
+    <h2 class="font-bold text-3xl my-6">Design</h2>
 
-    <ul class="list-disc space-y-6 pl-4">
+    <ul class="list-disc space-y-6 pl-4 text-lg">
         <li  class="space-y-2">
             <p class="font-bold leading-normal">Figma</p>
             <p></p>
@@ -78,9 +78,9 @@ description: The list of blog posts for the site
         </li>
     </ul>
 
-    <h2 class="font-bold text-3xl my-3">Hosting</h2>
+    <h2 class="font-bold text-3xl my-6">Hosting</h2>
 
-    <ul class="list-disc space-y-6 pl-4">
+    <ul class="list-disc space-y-6 pl-4 text-lg">
         <li  class="space-y-2">
             <p class="font-bold leading-normal">GitHub</p>
             <p></p>
