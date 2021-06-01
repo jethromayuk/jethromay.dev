@@ -8,7 +8,7 @@
                 <p class="font-medium text-2xl my-4">I'm a South African Laravel developer, living and working in London. I love tech, learning and sharing what I know.</p>
             </div>
             <div class="relative col-span-auto place-self-end">
-                <img class="rounded-lg shadow-lg max-w-xs" src="/assets/images/me.jpg" alt="Jethro May">
+                <img class="relative rounded-lg shadow-lg max-w-xs z-10" src="/assets/images/me.jpg" alt="Jethro May">
             </div>
         </section>
         <section class="py-12">
@@ -21,7 +21,7 @@
                             </a>
                         </h3>
                         <p class="text-sm text-gray-600 mb-6 mt-1">
-                            <time>January 2, 2021</time> • 3 min read
+                            <time>{{ date('F j, Y', $post->date) }}</time> •
                         </p>
                     </header>
                     <p class="text-xl">
@@ -36,4 +36,4 @@
             @endforeach
         </section>
     </article>
-@endsection
+@stop
