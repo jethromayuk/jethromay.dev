@@ -9,21 +9,23 @@ description: The list of blog posts for the site
     <header class="mb-3">
         <h1 class="text-4xl font-bold">Uses</h1>
     </header>
+
     <p>
         Inspired by Wes Bos, Freek Murze and many others I've put together this list of hardware, software and services that I use. I will keep this list updated as my workflow changes.
     </p>
 
-    <h2 class="text-3xl">Hardware</h2>
+    <h2 class="text-3xl my-3">Hardware</h2>
 
-    <ul class="list-inside">
-        <li>
-            MacBook Pro (2019)
-
-This is my main development machine which I use for the majority of my work.
+    <ul class="list-inside list-disc">
+        <li class="leading-normal">
+            <span>MacBook Pro (2019)</span>
+            <p>
+                This is my main development machine which I use for the majority of my work.
+            </p>
         </li>
     </ul>
 
-    <h2 class="text-3xl mb-3">Software</h2>
+    <h2 class="text-3xl my-3">Software</h2>
 
     <ul class="list-inside list-disc mb-3">
         <li>Visual Studio Code
@@ -51,7 +53,7 @@ This is my main development machine which I use for the majority of my work.
         </li>
     </ul>
 
-    <h2 class="text-3xl mb-3">Productivity</h2>
+    <h2 class="text-3xl my-3">Productivity</h2>
 
     <ul class="list-inside list-disc mb-3">
         <li>
@@ -62,7 +64,7 @@ This is my main development machine which I use for the majority of my work.
         </li>
     </ul>
 
-    <h2 class="text-3xl mb-3">Design</h2>
+    <h2 class="text-3xl my-3">Design</h2>
 
     <ul class="list-inside list-disc mb-3">
         <li>
@@ -75,7 +77,7 @@ This is my main development machine which I use for the majority of my work.
         </li>
     </ul>
 
-    <h2 class="text-3xl mb-3">Hosting</h2>
+    <h2 class="text-3xl my-3">Hosting</h2>
 
     <ul class="list-inside list-disc mb-3">
         <li>

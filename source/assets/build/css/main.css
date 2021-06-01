@@ -618,6 +618,10 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
+.my-3 {
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+}
 .mr-3 {
 	margin-right: 0.75rem;
 }
@@ -861,6 +865,9 @@ video {
 .leading-loose {
 	line-height: 2;
 }
+.leading-normal {
+	line-height: 1.5;
+}
 .tracking-tight {
 	letter-spacing: -0.025em;
 }
@@ -898,6 +905,10 @@ video {
 .text-gray-800 {
 	--tw-text-opacity: 1;
 	color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+.text-green-700 {
+	--tw-text-opacity: 1;
+	color: rgba(4, 120, 87, var(--tw-text-opacity));
 }
 .underline {
 	text-decoration: underline;
