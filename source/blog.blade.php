@@ -8,8 +8,10 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-<div class="p-8">
-    <h1 class="text-3xl font-bold">Blog</h1>
+<article class="mt-6" itemtype="http://schema.org/Article">
+    <header class="mb-3">
+        <h1 class="text-5xl font-extrabold">Blog</h1>
+    </header>
     @foreach ($pagination->items as $post)
         {{-- @include('_components.post-preview-inline') --}}
 
@@ -40,8 +42,8 @@ pagination:
                 title="Next Page"
                 class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
             >&RightArrow;</a>
-        @endif
-    </nav>
-@endif
-</div>
+            @endif
+        </nav>
+    @endif
+</article>
 @stop

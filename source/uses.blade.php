@@ -29,27 +29,51 @@ description: The list of blog posts for the site
 
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
-            <p class="font-bold leading-normal">Visual Studio Code</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                Visual Studio Code
+                </a>
+            </p>
             <p>I used PHPStorm for many years but after purchasing Caleb Porzio's course, Make VS Code Awesome I made the switch and haven't looked back.</p>
         </li>
         <li class="space-y-2">
-            <p class="font-bold leading-normal">TablePlus</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    TablePlus
+                </a>
+            </p>
             <p>Sequel Pro was my go-to database management tool for some time but when I tried out TablePlus I fell in love. It is extremely easy to use, visually appealing and the features are fantastic.</p>
         </li>
         <li class="space-y-2">
-            <p class="font-bold leading-normal">iTerm 2</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    iTerm 2
+                </a>
+            </p>
             <p>Nothing comes close to iTerm2, it is a personal favourite and one of the first things that get installed when setting up a new machine.</p>
         </li>
         <li class="space-y-2">
-            <p class="font-bold leading-normal">Tinkerwell</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Tinkerwell
+                </a>
+            </p>
             <p>I predominantly use this app when I need to interact with my databases, this tends to service most of my needs but I still find some use in TablePlus.</p>
         </li>
         <li class="space-y-2">
-            <p class="font-bold leading-normal">HELO</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    HELO
+                </a>
+            </p>
             <p>I recently started using HELO for email testing and debugging, it makes this usually painful process across a variety of environments extremely easy.</p>
         </li>
         <li class="space-y-2">
-            <p class="font-bold leading-normal">Expose</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Expose
+                </a>
+            </p>
             <p></p>
         </li>
     </ul>
@@ -58,7 +82,11 @@ description: The list of blog posts for the site
 
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li class="space-y-2">
-            <p class="font-bold leading-normal">Alfred 4</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Alfred 4
+                </a>
+            </p>
             <p>
                 I only recently started using Alfred and it has been a game-changer, I cannot imagine working without it.
             </p>
@@ -69,11 +97,19 @@ description: The list of blog posts for the site
 
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li  class="space-y-2">
-            <p class="font-bold leading-normal">Figma</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Figma
+                </a>
+            </p>
             <p></p>
         </li>
         <li  class="space-y-2">
-            <p class="font-bold leading-normal">Sip</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Sip
+                </a>
+            </p>
             <p></p>
         </li>
     </ul>
@@ -82,15 +118,27 @@ description: The list of blog posts for the site
 
     <ul class="list-disc space-y-6 pl-4 text-lg">
         <li  class="space-y-2">
-            <p class="font-bold leading-normal">GitHub</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    GitHub
+                </a>
+            </p>
             <p></p>
         </li>
         <li  class="space-y-2">
-            <p class="font-bold leading-normal">Netlify</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Netlify
+                </a>
+            </p>
             <p></p>
         </li>
         <li  class="space-y-2">
-            <p class="font-bold leading-normal">Namecheap</p>
+            <p class="font-bold leading-normal">
+                <a href="#" class="text-green-500" target="_blank">
+                    Namecheap
+                </a>
+            </p>
             <p></p>
         </li>
     </ul>

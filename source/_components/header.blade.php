@@ -5,16 +5,13 @@
                 {{ $page->siteName }}
             </a>
         </h1>
-        <nav class="hidden lg:inline-block" aria-label="Main">
+        <nav class="inline-block" aria-label="Main">
             <ul class="flex items-center justify-end space-x-6 text-lg text-gray-700 font-semibold" role="menubar">
                 <li role="menuitem">
                     <a href="/blog" class="hover:text-green-500">Blog</a>
                 </li>
                 <li role="menuitem">
                     <a href="/uses" class="hover:text-green-500">Uses</a>
-                </li>
-                <li role="menuitem">
-                    <a href="/contact" class="hover:text-green-500">Contact</a>
                 </li>
                 <li>
                     <a href="#" class="hover:text-green-500">
@@ -32,10 +29,5 @@
                 </li>
             </ul>
         </nav>
-        <button class="ml-auto lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-            </svg>
-        </button>
     </div>
 </header>
