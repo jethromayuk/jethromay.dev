@@ -31,9 +31,9 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
-    <body class="flex flex-col text-gray-900 min-h-screen font-sans antialiased container mx-auto max-w-screen-lg">
+    <body class="text-gray-900 min-h-screen font-sans antialiased container mx-auto max-w-screen-lg">
         <x-header :page="$page" />
-        <main role="main" class="flex flex-grow px-6 lg:items-center">
+        <main role="main" class="px-6">
             @yield('body')
         </main>
         <x-footer :page="$page" />
