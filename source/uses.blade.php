@@ -34,7 +34,7 @@ description: The list of blog posts for the site
                 Visual Studio Code
                 </a>
             </p>
-            <p>I used PHPStorm for many years but after purchasing Caleb Porzio's course, Make VS Code Awesome I made the switch and haven't looked back.</p>
+            <p></p>
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
@@ -66,7 +66,7 @@ description: The list of blog posts for the site
                     HELO
                 </a>
             </p>
-            <p>I recently started using HELO for email testing and debugging, it makes this usually painful process across a variety of environments extremely easy.</p>
+            <p></p>
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
@@ -87,9 +87,7 @@ description: The list of blog posts for the site
                     Alfred 4
                 </a>
             </p>
-            <p>
-                I only recently started using Alfred and it has been a game-changer, I cannot imagine working without it.
-            </p>
+            <p></p>
         </li>
     </ul>
 
