@@ -12,11 +12,11 @@
                 <img class="relative rounded-lg shadow-lg z-10 lg:max-w-xs" src="/assets/images/me.jpg" alt="Jethro May">
             </div>
         </section>
-        <section class="py-12">
+        <section class="py-12 space-y-12">
             @foreach ($posts as $post)
                 <article>
                     <header class="flex flex-col">
-                        <h3 class="text-4xl leading-snug mr-3">
+                        <h3 class="text-3xl leading-snug mr-3">
                             <a href="{{ $post->getUrl() }}">
                                 {{ $post->title }}
                             </a>

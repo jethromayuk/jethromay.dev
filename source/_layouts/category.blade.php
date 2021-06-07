@@ -7,9 +7,9 @@
         @yield('content')
     </div>
 
-    @foreach ($page->posts($posts) as $post)
+    {{-- @foreach ($page->posts($posts) as $post)
         @if (! $loop->last)
             <hr class="w-full border-b mt-2 mb-6">
         @endif
-    @endforeach
+    @endforeach --}}
 @stop
