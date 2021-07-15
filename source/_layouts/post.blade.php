@@ -5,9 +5,9 @@
 @endphp
 
 @section('body')
-    <article class="">
+    <article class="py-12">
         <header>
-            <h1 class="font-bold leading-tight xs:text-3xl text-5xl mb-0">{{ $page->title }}</h1>
+            <h1 class="font-extrabold leading-tight text-madison xs:text-3xl text-5xl mb-0">{{ $page->title }}</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
                 <time>{{ date('F j, Y', $page->date) }}</time> • 3 min read •
                 <a href="http://twitter.com/share?text=2020%20In%20Review via @jethromay91&amp;url=https%3a%2f%2fjethromay.com%2fposts%2f2020-in-review%2f" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">

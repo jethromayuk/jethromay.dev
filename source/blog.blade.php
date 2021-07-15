@@ -8,7 +8,7 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-<article class="mt-6 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
+<article class="py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold">Blog</h1>
     </header>
@@ -46,4 +46,11 @@ pagination:
         </nav>
     @endif
 </article>
+<section class="bg-niagara py-12">
+    <div class="max-w-6xl mx-auto w-full">
+        <h2 class="text-4xl text-white text-center">
+            Join My Mailing List
+        </h2>
+    </div>
+</section>
 @stop

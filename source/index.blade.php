@@ -2,7 +2,7 @@
 
 @section('body')
     <section class="bg-madison min-h-screen" itemprop="articleSection">
-        <div class="max-w-6xl mx-auto w-full grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-none">
+        <div class="flex items-center justify-center max-w-6xl mx-auto w-full">
             <div class="relative row-start-2 place-self-center lg:col-start-1 lg:col-end-2 lg:row-start-auto">
                 <h1 class="font-extrabold text-green-500 text-5xl tracking-tight -ml-1 lg:text-6xl">Hey, I'm Jethro.</h1>
                 <p class="font-medium text-white text-xl my-4 lg:text-2xl">I'm a South African Laravel developer, living and working in South Africa. I love tech, learning and <a href="#" class="font-semibold text-green-500 underline">sharing what I know</a>.</p>
@@ -39,7 +39,7 @@
     </section>
     <section class="bg-niagara py-12">
         <div class="max-w-6xl mx-auto w-full">
-            <h2 class="text-5xl text-white text-center">
+            <h2 class="text-4xl text-white text-center">
                 Join My Mailing List
             </h2>
         </div>
