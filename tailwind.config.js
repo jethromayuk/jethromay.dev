@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit',
+//   mode: 'jit',
   purge: [
     'source/**/*.blade.php',
     'source/**/*.md',
@@ -10,8 +10,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+        colors: {
+            madison: '#2d3e50',
+            niagara: '#17a085'
+        },
         fontFamily: {
-            sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+            sans: ['Karla', ...defaultTheme.fontFamily.sans],
         }
     },
     theme: {

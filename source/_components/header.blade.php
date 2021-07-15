@@ -1,17 +1,17 @@
-<header class="py-12 px-6">
+<header class="bg-madison py-12 px-6">
     <div class="grid grid-cols-2">
         <h1>
-            <a href="/" class="text-xl font-bold hover:text-green-500" title="{{ $page->siteName }}">
+            <a href="/" class="text-white text-xl font-bold hover:text-green-500" title="{{ $page->siteName }}">
                 {{ $page->siteName }}
             </a>
         </h1>
         <nav class="inline-block" aria-label="Main">
-            <ul class="flex items-center justify-end space-x-6 text-lg text-gray-700 font-semibold" role="menubar">
+            <ul class="flex items-center justify-end space-x-6 text-white font-semibold" role="menubar">
                 <li role="menuitem">
-                    <a href="/blog" class="hover:text-green-500">Blog</a>
+                    <a href="/blog" class="text-xl">Blog</a>
                 </li>
                 <li role="menuitem">
-                    <a href="/uses" class="hover:text-green-500">Uses</a>
+                    <a href="/uses" class="text-xl">Uses</a>
                 </li>
                 <li>
                     <a href="#" class="hover:text-green-500">

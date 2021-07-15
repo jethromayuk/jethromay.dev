@@ -6,11 +6,12 @@ mix.setPublicPath('source/assets/build');
 
 mix.jigsaw()
     .js('source/_assets/js/main.js', 'js')
-    .css('source/_assets/css/main.css', 'css', [
+    .postCss('source/_assets/css/main.css', 'css', [
         require('postcss-import'),
         require('tailwindcss'),
+        require('autoprefixer'),
     ])
     .options({
-        processCssUrls: false,
+        processCssUrls: false
     })
     .version();

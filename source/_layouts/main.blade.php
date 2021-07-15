@@ -27,13 +27,16 @@
             <!-- Insert analytics code here -->
         @endif
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     </head>
-    <body class="text-gray-900 min-h-screen font-sans antialiased container mx-auto max-w-screen-lg">
+    <body class="">
+        {{-- min-h-screen font-sans antialiased container mx-auto max-w-screen-lg --}}
         <x-header :page="$page" />
-        <main role="main" class="px-6">
+        <main role="main">
             @yield('body')
         </main>
         <x-footer :page="$page" />
