@@ -7,10 +7,13 @@
         "prod": "mix --production"
     },
     "devDependencies": {
-        "laravel-mix": "^6.0.10",
+        "laravel-mix": "^6.0.25",
         "laravel-mix-jigsaw": "^1.5.0",
-        "postcss": "^8.2.4",
-        "postcss-import": "^14.0.0",
-        "tailwindcss": "^2.1.2"
+        "postcss": "^8.3.5",
+        "postcss-import": "^14.0.2"
+    },
+    "dependencies": {
+        "shiki": "^0.9.5",
+        "tailwindcss": "^2.2.4"
     }
 }
