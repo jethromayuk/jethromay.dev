@@ -5,7 +5,7 @@ description: The list of blog posts for the site
 @extends('_layouts.main')
 
 @section('body')
-<article class="mt-6" itemtype="http://schema.org/Article">
+<article class="mt-6 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold">Uses</h1>
     </header>

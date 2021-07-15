@@ -5,7 +5,7 @@
 @endphp
 
 @section('body')
-    <article>
+    <article class="">
         <header>
             <h1 class="font-bold leading-tight xs:text-3xl text-5xl mb-0">{{ $page->title }}</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">

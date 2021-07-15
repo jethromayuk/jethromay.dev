@@ -1,4 +1,4 @@
-<header class="bg-madison py-12 px-6">
+<header class="bg-madison py-12 px-6" role="banner">
     <div class="grid grid-cols-2">
         <h1>
             <a href="/" class="text-white text-xl font-bold hover:text-green-500" title="{{ $page->siteName }}">

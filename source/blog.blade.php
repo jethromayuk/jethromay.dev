@@ -8,7 +8,7 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-<article class="mt-6" itemtype="http://schema.org/Article">
+<article class="mt-6 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold">Blog</h1>
     </header>
