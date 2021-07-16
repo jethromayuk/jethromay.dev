@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-    <section class="py-24 max-w-4xl mx-auto w-full">
+    <section class="px-6 py-24 max-w-4xl mx-auto w-full">
         <header class="mb-3">
             <h1 class="text-5xl font-extrabold text-madison">{{ ucfirst($page->title) }}</h1>
         </header>
