@@ -10,7 +10,7 @@
                         Receive my latest content by email. No spam, ever.
                     </p>
                 </div>
-                <form action="#" class="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
+                <form action="#" class="mt-6 sm:mx-auto sm:max-w-lg sm:flex">
                     <div class="min-w-0 flex-1">
                         <label for="cta-email" class="sr-only">Email address</label>
                         <input id="cta-email" type="email" class="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-offset-2 " placeholder="Enter your email">

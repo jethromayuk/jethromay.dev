@@ -1,5 +1,5 @@
 <header class="bg-madison py-12 px-6" role="banner">
-    <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+    <nav class="relative max-w-7xl mx-auto flex items-center justify-between" aria-label="Global">
         <h1>
             <a href="/" class="text-white font-bold text-2xl hover:text-green-500 lg:text-3xl" title="{{ $page->siteName }}">
                 Jethro May.

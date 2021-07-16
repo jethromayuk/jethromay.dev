@@ -2,7 +2,7 @@
 
 @section('body')
     <section class="bg-madison flex sm:h-full sm:px-6 lg:py-32" style="min-height: calc(100vh - 124px)">
-        <div class="flex flex-col-reverse mx-auto max-w-7xl sm:px-6 lg:flex-row lg:flex-grow lg:justify-between">
+        <div class="flex flex-col-reverse mx-auto max-w-7xl sm:px-6 lg:px-0 lg:flex-row lg:flex-grow lg:justify-between">
             <div class="px-6 lg:pr-36">
                 <h1 class="font-extrabold text-green-500 text-5xl tracking-tight -ml-1 lg:text-6xl">Hey, I'm Jethro.</h1>
                 <p class="font-medium text-white text-xl my-4 lg:text-2xl">I'm a Web Developer at <a href="https://www.minttwist.com/" target="_blank" class="font-semibold text-green-500 underline">Minttwist</a>, where I primarily work with Laravel and WordPress building bespoke systems and websites.</p>
