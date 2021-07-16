@@ -6,7 +6,7 @@
 
 @section('body')
     <article class="py-24 max-w-4xl mx-auto w-full">
-        <header>
+        <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison xs:text-3xl text-5xl mb-0">{{ $page->title }}</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
                 <time>{{ date('F j, Y', $page->date) }}</time> • 3 min read •
@@ -15,16 +15,20 @@
                 </a>
             </p>
             @if ($page->categories)
-            @foreach ($page->categories as $i => $category)
-                <a
-                    href="{{ '/blog/categories/' . $category }}"
-                    title="View posts in {{ $category }}"
-                    class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-                >{{ $category }}</a>
-            @endforeach
-        @endif
+                <ul class="flex items-center">
+                    @foreach ($page->categories as $i => $category)
+                    <li>
+                        <a
+                            href="{{ '/blog/categories/' . $category }}"
+                            title="View posts in {{ $category }}"
+                            class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                        >{{ $category }}</a>
+                    </li>
+                    @endforeach
+                </ul>
+            @endif
         </header>
-        <div class="prose">
+        <div class="prose max-w-full sm:prose-xl">
             @yield('content')
         </div>
         <footer class="mt-6">
