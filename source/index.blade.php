@@ -8,19 +8,21 @@
                 <p class="font-medium text-white text-xl my-4 lg:text-2xl">I'm a Web Developer at <a href="https://www.minttwist.com/" target="_blank" class="font-semibold text-green-500 underline">Minttwist</a>, where I primarily work with Laravel and WordPress building bespoke systems and websites.</p>
                 <p class="font-medium text-white text-xl my-4 lg:text-2xl">I have 8 years of experience across a wide variety of languages and technologies with my current tech stack being Laravel, Livewire, AlpineJS and Tailwind.</p>
                 <p class="font-medium text-white text-xl mt-4 mb-10 lg:text-2xl">When I'm not writing code, you'll find me spending time with my wife, friends and family.</p>
-                <a href="#" class="bg-niagara inline-flex items-center rounded-md px-3 py-3 text-white text-xl hover:bg-niagara-light">
-                    Read my blog
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </a>
+                <div class="flex items-center w-full space-x-4">
+                    <a href="#articles" class="bg-transparent border border-white flex items-center rounded-md px-3 py-3 text-white text-xl hover:bg-white hover:text-madison">
+                        Latest posts
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="">
                 <img class="relative rounded-lg shadow-lg z-10 lg:max-w-md" src="/assets/images/me.jpg" alt="Jethro May">
             </div>
         </div>
     </section>
-    <section class="bg-white pt-12 pb-24 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
+    <section id="articles" class="bg-white pt-12 pb-24 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
         @foreach ($posts as $post)
             <article class="pt-12">
                 <header class="flex flex-col">

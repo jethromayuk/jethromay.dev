@@ -2,7 +2,7 @@
     <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
         <h1>
             <a href="/" class="text-white text-3xl font-bold hover:text-green-500" title="{{ $page->siteName }}">
-                Jethro.
+                Jethro May.
             </a>
         </h1>
         <nav class="inline-block" aria-label="Main">
