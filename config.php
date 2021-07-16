@@ -11,7 +11,7 @@ return [
     'siteName' => 'Jethro May',
     'collections' => [
         'posts' => [
-            'author' => 'Jethro May', // Default author, if not provided in a post
+            'author' => 'Jethro May',
             'sort' => '-date',
             'path' => 'blog/{filename}',
         ],

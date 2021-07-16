@@ -12,8 +12,29 @@ pagination:
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold">Blog</h1>
     </header>
+
     @foreach ($pagination->items as $post)
-        {{-- @include('_components.post-preview-inline') --}}
+        <div class="flex flex-col mb-4">
+            <p class="text-gray-700 font-medium my-2">
+                {{ $post->getDate()->format('F j, Y') }}
+            </p>
+
+            <h2 class="text-3xl mt-0">
+                <a
+                    href="{{ $post->getUrl() }}"
+                    title="Read more - {{ $post->title }}"
+                    class="text-gray-900 font-extrabold"
+                >{{ $post->title }}</a>
+            </h2>
+
+            <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
+
+            <a
+                href="{{ $post->getUrl() }}"
+                title="Read more - {{ $post->title }}"
+                class="uppercase font-semibold tracking-wide mb-2"
+            >Read</a>
+        </div>
 
         @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
@@ -46,11 +67,5 @@ pagination:
         </nav>
     @endif
 </article>
-<section class="bg-niagara py-12">
-    <div class="max-w-6xl mx-auto w-full">
-        <h2 class="text-4xl text-white text-center">
-            Join My Mailing List
-        </h2>
-    </div>
-</section>
+<x-newsletter />
 @stop
