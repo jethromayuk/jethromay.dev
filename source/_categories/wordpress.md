@@ -1,7 +1,7 @@
 ---
 extends: _layouts.category
-title: Laravel
-description: Posts related to configuring the Jigsaw blog starter template
+title: Wordpress
+description: These posts have all been categorised as WordPress.
 ---
 
-These posts are all related to configuring your Jigsaw blog starter template.
+These posts have all been categorised as WordPress.

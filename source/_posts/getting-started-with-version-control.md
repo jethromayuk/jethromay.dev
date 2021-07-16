@@ -4,7 +4,7 @@ section: content
 title: "Getting Started With Version Control"
 description: "One of the fundamental topics that every developer needs to learn is version control and how to work with a codebase which could be updating and changing over time."
 date: 2020-10-18T10:44:56+02:00
-categories: [GIT]
+categories: [git]
 ---
 
 One of the fundamental topics that every developer needs to learn is version control and how to work with a codebase which could be updating and changing over time.

@@ -8,34 +8,32 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-<article class="py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
+<section class="py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold text-madison">Blog</h1>
     </header>
 
     @foreach ($pagination->items as $post)
-        <div class="flex flex-col mb-4">
-            <p class="text-gray-700 font-medium my-2">
-                {{ $post->getDate()->format('F j, Y') }}
+        <article class="pt-12">
+            <header class="flex flex-col">
+                <h3 class="text-madison text-3xl leading-snug mr-3 hover:underline">
+                    <a href="{{ $post->getUrl() }}">
+                        {{ $post->title }}
+                    </a>
+                </h3>
+                <p class="text-sm text-gray-500 mb-6 mt-1">
+                    <time>{{ date('F j, Y', $post->date) }}</time> • {{ $post->estimate_reading_time }}
+                </p>
+            </header>
+            <p class="text-xl">
+                {{ $post->description }}
             </p>
-
-            <h2 class="text-3xl mt-0">
-                <a
-                    href="{{ $post->getUrl() }}"
-                    title="Read more - {{ $post->title }}"
-                    class="text-madison font-extrabold"
-                >{{ $post->title }}</a>
-            </h2>
-
-            <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
-
-            <a
-                href="{{ $post->getUrl() }}"
-                title="Read more - {{ $post->title }}"
-                class="uppercase font-semibold tracking-wide text-madison mb-2"
-            >Read</a>
-        </div>
-
+            <footer class="mt-4">
+                <a class="flex items-center text-xl text-madison hover:underline" href="{{ $post->getUrl() }}">
+                    Read More
+                </a>
+            </footer>
+        </article>
         @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
         @endif
@@ -66,6 +64,6 @@ pagination:
             @endif
         </nav>
     @endif
-</article>
+    </section>
 <x-newsletter />
 @stop
