@@ -1,9 +1,9 @@
 @extends('_layouts.main')
 
 @section('body')
-    <section class="bg-madison flex py-32" style="min-height: calc(100vh - 124px)">
-        <div class="flex flex-grow justify-between mx-auto max-w-7xl px-4 sm:px-6">
-            <div class="pr-36">
+    <section class="bg-madison flex sm:h-full sm:px-6 lg:py-32" style="min-height: calc(100vh - 124px)">
+        <div class="flex flex-col-reverse mx-auto max-w-7xl sm:px-6 lg:flex-row lg:flex-grow lg:justify-between">
+            <div class="px-6 lg:pr-36">
                 <h1 class="font-extrabold text-green-500 text-5xl tracking-tight -ml-1 lg:text-6xl">Hey, I'm Jethro.</h1>
                 <p class="font-medium text-white text-xl my-4 lg:text-2xl">I'm a Web Developer at <a href="https://www.minttwist.com/" target="_blank" class="font-semibold text-green-500 underline">Minttwist</a>, where I primarily work with Laravel and WordPress building bespoke systems and websites.</p>
                 <p class="font-medium text-white text-xl my-4 lg:text-2xl">I have 8 years of experience across a wide variety of languages and technologies with my current tech stack being Laravel, Livewire, AlpineJS and Tailwind.</p>
@@ -17,12 +17,12 @@
                     </a>
                 </div>
             </div>
-            <div class="">
-                <img class="relative rounded-lg shadow-lg z-10 lg:max-w-md" src="/assets/images/me.jpg" alt="Jethro May">
+            <div class="px-6">
+                <img class="relative rounded-lg shadow-lg z-10 sm:px-6 lg:max-w-md" src="/assets/images/me.jpg" alt="Jethro May">
             </div>
         </div>
     </section>
-    <section id="articles" class="bg-white pt-12 pb-24 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
+    <section id="articles" class="bg-white pt-12 pb-24 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
         @foreach ($posts as $post)
             <article class="pt-12">
                 <header class="flex flex-col">

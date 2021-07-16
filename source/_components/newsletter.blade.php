@@ -1,12 +1,12 @@
-<section class="bg-niagara py-24">
-    <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+<section class="bg-niagara sm:py-12 lg:py-24">
+    <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="relative px-6 py-10 overflow-hidden sm:px-12 sm:py-20">
             <div class="relative">
                 <div class="sm:text-center">
                     <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
                         Join my mailing list.
                     </h2>
-                    <p class="mt-6 mx-auto max-w-2xl text-lg text-white">
+                    <p class="mt-6 mx-auto max-w-2xl text-base text-white lg:text-lg">
                         Receive my latest content by email. No spam, ever.
                     </p>
                 </div>
