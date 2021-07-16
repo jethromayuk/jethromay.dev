@@ -17,7 +17,7 @@
         @foreach ($posts as $post)
             <article class="pt-12">
                 <header class="flex flex-col">
-                    <h3 class="text-3xl leading-snug mr-3">
+                    <h3 class="text-madison text-3xl leading-snug mr-3">
                         <a href="{{ $post->getUrl() }}">
                             {{ $post->title }}
                         </a>

@@ -37,4 +37,5 @@
             </a>
         </footer>
     </article>
+    <x-newsletter />
 @endsection
