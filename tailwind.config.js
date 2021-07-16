@@ -12,7 +12,10 @@ module.exports = {
     extend: {
         colors: {
             madison: '#2d3e50',
-            niagara: '#17a085'
+            niagara: {
+                light: '#1bb698',
+                DEFAULT: '#17a085'
+            }
         },
         fontFamily: {
             sans: ['Karla', ...defaultTheme.fontFamily.sans],

@@ -4,7 +4,7 @@ section: content
 title: "Get Down With Markdown"
 description: "In this tutorial I will cover some basic syntax used inside markdown files which will allow you to start creating beautifully structured content."
 date: 2020-07-19T12:58:51+02:00
-categories: Markdown
+categories: [Markdown]
 ---
 
 Most developers will encounter Markdown files at some stage of their careers, via repository platforms such as GitHub or Bitbucket. Markdown files use the `.md` file extension and will contain specific syntax used to construct the file. Many content management systems and frameworks support markdown out the box, so to start using it is as simple as creating a file and adding its content.
