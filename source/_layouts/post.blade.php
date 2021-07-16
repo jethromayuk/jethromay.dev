@@ -24,7 +24,7 @@
             @endforeach
         @endif
         </header>
-        <div>
+        <div class="prose">
             @yield('content')
         </div>
         <footer class="mt-6">
