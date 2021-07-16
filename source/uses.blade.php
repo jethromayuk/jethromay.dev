@@ -56,7 +56,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="https://tinkerwell.app" class="text-green-500 underline" target="_blank">
+                <a href="https://a.paddle.com/v2/click/103161/122770?link=2106" class="text-green-500 underline" target="_blank">
                     Tinkerwell
                 </a>
             </p>
@@ -64,7 +64,7 @@ description: The list of blog posts for the site
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="https://usehelo.com" class="text-green-500 underline" target="_blank">
+                <a href="https://a.paddle.com/v2/click/103161/122770?link=2990" class="text-green-500 underline" target="_blank">
                     HELO
                 </a>
             </p>
