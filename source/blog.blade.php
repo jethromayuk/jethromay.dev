@@ -10,7 +10,7 @@ pagination:
 @section('body')
 <article class="py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
     <header class="mb-3">
-        <h1 class="text-5xl font-extrabold">Blog</h1>
+        <h1 class="text-5xl font-extrabold text-madison">Blog</h1>
     </header>
 
     @foreach ($pagination->items as $post)
@@ -23,7 +23,7 @@ pagination:
                 <a
                     href="{{ $post->getUrl() }}"
                     title="Read more - {{ $post->title }}"
-                    class="text-gray-900 font-extrabold"
+                    class="text-madison font-extrabold"
                 >{{ $post->title }}</a>
             </h2>
 
@@ -32,7 +32,7 @@ pagination:
             <a
                 href="{{ $post->getUrl() }}"
                 title="Read more - {{ $post->title }}"
-                class="uppercase font-semibold tracking-wide mb-2"
+                class="uppercase font-semibold tracking-wide text-madison mb-2"
             >Read</a>
         </div>
 
