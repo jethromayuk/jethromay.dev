@@ -23,7 +23,7 @@
                         </a>
                     </h3>
                     <p class="text-sm mb-6 mt-1">
-                        <time>{{ date('F j, Y', $post->date) }}</time> •
+                        <time>{{ date('F j, Y', $post->date) }}</time> • {{ $post->estimate_reading_time }}
                     </p>
                 </header>
                 <p class="text-xl">

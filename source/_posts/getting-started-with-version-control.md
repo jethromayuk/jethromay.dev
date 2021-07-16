@@ -49,7 +49,7 @@ For us to use this new CLI tool, we will install it with instructions found at t
 
 Once installed, open up a terminal window if you don't already have one open and the last step to take is to authenticate with our GitHub account. We do this by typing the following:
 
-```
+```bash
 gh auth login
 ```
 
@@ -61,7 +61,7 @@ Follow the prompts which will allow you to log in via the browser and type in a 
 
 Cloning the GitHub repository is quite simple, we will use the following command in our terminal:
 
-```
+```bash
 gh repo clone <repository> <directory>
 ```
 

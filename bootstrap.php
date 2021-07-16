@@ -17,3 +17,4 @@ use TightenCo\Jigsaw\Jigsaw;
  */
 $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);
+$events->afterCollections(App\Listeners\GenerateEstimateReadingTime::class);
