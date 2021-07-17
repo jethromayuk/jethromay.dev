@@ -78,7 +78,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 				if(fulfilled) {
 /******/ 					deferred.splice(i--, 1)
-/******/ 					result = fn();
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
 /******/ 				}
 /******/ 			}
 /******/ 			return result;

@@ -8,7 +8,7 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-<section class="py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
+<section class="px-6 py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold text-madison">Blog</h1>
     </header>
@@ -25,11 +25,11 @@ pagination:
                     <time>{{ date('F j, Y', $post->date) }}</time> • {{ $post->estimate_reading_time }}
                 </p>
             </header>
-            <p class="text-xl">
+            <p class="text-lg md:text-xl">
                 {{ $post->description }}
             </p>
             <footer class="mt-4">
-                <a class="flex items-center text-xl text-madison hover:underline" href="{{ $post->getUrl() }}">
+                <a class="flex items-center text-lg text-madison hover:underline md:text-xl" href="{{ $post->getUrl() }}">
                     Read More
                 </a>
             </footer>
