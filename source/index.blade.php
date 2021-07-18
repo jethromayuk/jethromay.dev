@@ -23,7 +23,7 @@
         </div>
     </section>
     <section id="articles" class="bg-white pt-12 pb-24 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
-        @foreach ($posts as $post)
+        @foreach ($posts->take(3) as $post)
             <article class="pt-12">
                 <header class="flex flex-col">
                     <h3 class="text-madison text-3xl leading-snug mr-3 hover:underline">
