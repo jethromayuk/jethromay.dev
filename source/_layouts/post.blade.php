@@ -32,7 +32,7 @@
             @yield('content')
         </div>
         <footer class="mt-6">
-            <a class="text-lg underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text=2020%20In%20Review via @jethromayuk&amp;url=https%3a%2f%2fjethromay.com%2fposts%2f2020-in-review%2f" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text=2020%20In%20Review via @jethromayuk&amp;url=https%3a%2f%2fjethromay.com%2fposts%2f2020-in-review%2f" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                 Share on Twitter
             </a>
         </footer>

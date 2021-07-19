@@ -46,11 +46,11 @@ I achieved this goal, and I will most likely redesign the website at some point 
 
 I didn't write nearly enough articles in 2020 but I achieved this goal and wrote five articles:
 
-1. [2020 Website Refresh](https://jethromay.com/posts/2020-website-refresh/)
-2. [Migrating My Website To Hugo](https://jethromay.com/posts/migrating-my-website-to-hugo/)
-3. [Get Down With Markdown](https://jethromay.com/posts/get-down-with-markdown/)
-4. [8 HTML Elements You Might Not Know About](https://jethromay.com/posts/8-html-elements-you-might-not-know-about/)
-5. [Getting Started With Version Control](https://jethromay.com/posts/getting-started-with-version-control/)
+1. [2020 Website Refresh](https://jethromay.com/blog/2020-website-refresh/)
+2. [Migrating My Website To Hugo](https://jethromay.com/blog/migrating-my-website-to-hugo/)
+3. [Get Down With Markdown](https://jethromay.com/blog/get-down-with-markdown/)
+4. [8 HTML Elements You Might Not Know About](https://jethromay.com/blog/8-html-elements-you-might-not-know-about/)
+5. [Getting Started With Version Control](https://jethromay.com/blog/getting-started-with-version-control/)
 
 I have begun plotting out a few ideas for 2021's articles, which I will likely be starting once I return from my much-needed break.
 
