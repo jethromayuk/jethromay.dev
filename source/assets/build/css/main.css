@@ -1089,16 +1089,6 @@ video {
 .justify-between {
 	justify-content: space-between;
 }
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-x-reverse: 0;
-	margin-right: calc(1rem * var(--tw-space-x-reverse));
-	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-y-reverse: 0;
-	margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-	margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-y-reverse: 0;
 	margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1108,6 +1098,16 @@ video {
 	--tw-space-y-reverse: 0;
 	margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(1rem * var(--tw-space-x-reverse));
+	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
@@ -1205,14 +1205,14 @@ video {
 .pt-12 {
 	padding-top: 3rem;
 }
+.pl-4 {
+	padding-left: 1rem;
+}
 .pb-12 {
 	padding-bottom: 3rem;
 }
 .pb-24 {
 	padding-bottom: 6rem;
-}
-.pl-4 {
-	padding-left: 1rem;
 }
 .pb-6 {
 	padding-bottom: 1.5rem;
@@ -1271,14 +1271,14 @@ video {
 .font-extrabold {
 	font-weight: 800;
 }
+.font-bold {
+	font-weight: 700;
+}
 .font-medium {
 	font-weight: 500;
 }
 .font-semibold {
 	font-weight: 600;
-}
-.font-bold {
-	font-weight: 700;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -1330,6 +1330,10 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
+.text-niagara {
+	--tw-text-opacity: 1;
+	color: rgba(23, 160, 133, var(--tw-text-opacity));
+}
 .text-green-500 {
 	--tw-text-opacity: 1;
 	color: rgba(16, 185, 129, var(--tw-text-opacity));
@@ -1337,10 +1341,6 @@ video {
 .text-white {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-.text-niagara {
-	--tw-text-opacity: 1;
-	color: rgba(23, 160, 133, var(--tw-text-opacity));
 }
 .text-gray-900 {
 	--tw-text-opacity: 1;
