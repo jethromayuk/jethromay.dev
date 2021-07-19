@@ -59,7 +59,10 @@ Throughout this tutorial I will be using an opinionated folder structure as well
 
 After running the command to create a new project, Hugo will generate the following directory structure:
 
-{{< figure src="folder-structure.jpg" alt="Hugo folder structure" caption="Hugo folder structure" >}}
+<figure>
+    <img src="/assets/images/folder-structure.jpg" alt="Hugo folder structure" loading="lazy">
+    <figcaption>Hugo folder structure</figcaption>
+</figure>
 
 This folder structure may seem foreign at first, but I can assure you that once you get accustomed to it like most things, it is relatively straight forward.
 
