@@ -67,7 +67,10 @@ This folder structure may seem foreign at first, but I can assure you that once 
 
 My archetype directory contains one template for posts, which has the following frontmatter variables defined:
 
-{{< figure src="archetype-posts.jpg" alt="Hugo archetype configuration" caption="Hugo archetype configuration" >}}
+<figure>
+    <img src="/assets/images/archetype-posts.jpg" alt="Hugo archetype configuration" loading="lazy">
+    <figcaption>Hugo archetype configuration</figcaption>
+</figure>
 
 This means that each post will have a title, date and a slug.
 
@@ -97,7 +100,10 @@ Note: Using the assets' directory is optional, I created it so that I could make
 
 My configuration file is pretty straight forward and contains some basic variables that I use throughout the site:
 
-{{< figure src="config.jpg" alt="My Hugo configuration file" caption="My Hugo configuration file" >}}
+<figure>
+    <img src="/assets/images/config.jpg" alt="My Hugo configuration file" loading="lazy">
+    <figcaption>My Hugo configuration file</figcaption>
+</figure>
 
 Custom parameters can be added to your config file, which will be available globally in your project. These are defined by adding [params] followed by each variable on a new line.
 
@@ -147,13 +153,19 @@ This creates a block called main, which will house the content of a post or page
 
 My baseof.html template is slightly more complex than what might suit most people, a simpler baseof.html file with blocks could look like this:
 
-{{< figure src="base.jpg" alt="A simple baseof.html template file" caption="A simple baseof.html template file" >}}
+<figure>
+    <img src="/assets/images/base.jpg" alt="A simple baseof.html template file" loading="lazy">
+    <figcaption>A simple baseof.html template file</figcaption>
+</figure>
 
 When working with the baseof.html template, it is important to note that should you wish to create a home page that differs from this structure, you will need to create a separate template which will override this.
 
 In order to create a home page template, create a file inside the root of the layouts' directory called index.html. The markup used inside this template will be used solely for the home page.
 
-{{< figure src="home.jpg" alt="A simple home page template" caption="A simple home page template" >}}
+<figure>
+    <img src="/assets/images/home.jpg" alt="A simple home page template" loading="lazy">
+    <figcaption>A simple home page template</figcaption>
+</figure>
 
 The content of this page can be pulled in via a markdown file inside the content directory. I chose to use markdown, so I created a file named _index.md. If you choose to not make use of a markdown file, you can also use HTML and avoid creating an _index.md file altogether.
 
@@ -236,7 +248,6 @@ The above syntax indicates that the title of the page is "About", it is visible 
     <a href="https://gohugo.io/templates/lists/#by-weight">Weighting</a> will be used to specify the order of the pages in the navigation menu, this means that if you add additional pages with the weight of 2, it will be displayed after the "About" page.
 </p>
 
-
 Directly below the frontmatter variables will be the page content, this can be in the form of plain text using markdown syntax or HTML.
 
 ## Adding Post Content:
@@ -251,7 +262,10 @@ The final step was to deploy this website to Netlify. I was previously hosting m
 
 If you have worked with Netlify you might know that you can create an optional netlify.toml file which allows you to specify additional configuration options for your project. My config file is relatively straight forward:
 
-{{< figure src="netlify.jpg" alt="My Netlify configuration file" caption="My Netlify configuration file" >}}
+<figure>
+    <img src="/assets/images/netlify.jpg" alt="My Netlify configuration file" loading="lazy">
+    <figcaption>My Netlify configuration file</figcaption>
+</figure>
 
 I specify the defaults to be used when building my project. The build command for my project is hugo followed by --minify which will minify the project at build time, and I set the default publish directory to be used which is public.
 
