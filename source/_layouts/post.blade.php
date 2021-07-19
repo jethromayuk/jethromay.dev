@@ -36,11 +36,6 @@
                 Share on Twitter
             </a>
         </footer>
-        @if ($page->getNext())
-            <p>Read my next post:
-                <a href="{{ $page->getNext()->getPath() }}">{{ $page->getNext()->title }}</a>
-            </p>
-        @endif
     </article>
     <x-newsletter />
 @endsection
