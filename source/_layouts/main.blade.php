@@ -33,8 +33,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     </head>
-    <body class="">
-        {{-- min-h-screen font-sans antialiased container mx-auto max-w-screen-lg --}}
+    <body>
         <x-header :page="$page" />
         <main role="main">
             @yield('body')

@@ -10,6 +10,7 @@
                         Receive my latest content by email. No spam, ever.
                     </p>
                 </div>
+                <label for="mc-embedded-subscribe-form" class="sr-only">Newsletter Subscription</label>
                 <form id="mc-embedded-subscribe-form" action="https://jethromay.us6.list-manage.com/subscribe/post?u=c882d43252516c87b01b2f8b2&amp;id=e9f86a5b12" method="post"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll" class="mt-6 sm:mx-auto sm:max-w-lg sm:flex">
                         <div class="min-w-0 flex-1 mc-field-group">

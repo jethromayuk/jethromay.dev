@@ -17,12 +17,15 @@
                     </a>
                 </div>
             </div>
-            <div class="px-6 mb-6 md:mb-0 lg:px-0">
+            <div class="px-6 mb-6 md:mb-6 lg:px-0">
                 <img class="relative rounded-lg shadow-lg mx-auto max-w-[75%] md:max-w-md" src="/assets/images/me.jpg" alt="Jethro May">
             </div>
         </div>
     </section>
     <section id="articles" class="bg-white pt-12 pb-24 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
+        <h2 class="text-5xl font-extrabold text-madison mb-3">
+            Latest articles
+        </h2>
         @foreach ($posts->take(3) as $post)
             <article class="pt-12">
                 <header class="flex flex-col">

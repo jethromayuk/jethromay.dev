@@ -1,6 +1,6 @@
 ---
 title: Uses
-description: The list of blog posts for the site
+description: A list of hardware, software and services that Jethro May uses
 ---
 @extends('_layouts.main')
 
