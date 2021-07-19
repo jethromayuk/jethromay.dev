@@ -29,11 +29,17 @@ The easiest way to get started is by creating an account on GitHub at the [follo
 
 We are now ready to create our first repository! To do this, click on the + symbol in the top right of the screen, which will provide you with a few options, 'New repository', 'Import repository', 'New gist', 'New organization' and lastly 'New project'.
 
-{{< figure src="new-repository.png" alt="GitHub dropdown used to create a new repository" caption="Select 'New repository' to create a new repository" >}}
+<figure>
+    <img src="/assets/images/new-repository.png" alt="GitHub dropdown used to create a new repository" loading="lazy">
+    <figcaption>Select ‘New repository’ to create a new repository</figcaption>
+</figure>
 
 All repositories require a unique name on your account, along with an optional description. You can control who can see and interact with this repository by setting the visibility to public or private. Additionally, you may choose to include a `README.md` file, a `.gitignore` file and a `LICENSE.md` file, for now, we will not add either of these additional files.
 
-{{< figure src="create-repository.png" alt="Create a new GitHub repository" caption="Create a new GitHub repository" >}}
+<figure>
+    <img src="/assets/images/create-repository.png" alt="Create a new GitHub repository" loading="lazy">
+    <figcaption>Create a new GitHub repository</figcaption>
+</figure>
 
 Once you have filled in the required information, click on 'Create repository' and you will be good to go!
 
