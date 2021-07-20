@@ -3,27 +3,27 @@
 @section('body')
     <section class="bg-madison flex sm:h-full pb-12 sm:px-6 lg:py-32" style="min-height: calc(100vh - 124px)">
         <div class="flex flex-col-reverse mx-auto max-w-7xl sm:px-6 lg:px-0 lg:flex-row lg:flex-grow lg:justify-between">
-            <div class="px-6 lg:px-0">
+            <div class="flex-1 px-6 lg:pl-0 lg:pr-6">
                 <h1 class="font-extrabold text-green-500 text-5xl tracking-tight -ml-1 lg:text-6xl">Hey, I'm Jethro.</h1>
-                <p class="font-medium text-white text-lg my-4 md:text-xl lg:text-2xl">I'm a Web Developer at <a href="https://www.minttwist.com/" target="_blank" class="font-semibold text-green-500 underline">Minttwist</a>, where I primarily work with Laravel and WordPress building bespoke systems and websites.</p>
-                <p class="font-medium text-white text-lg my-4 md:text-xl lg:text-2xl">I have 8 years of experience across a wide variety of languages and technologies with my current tech stack being Laravel, Livewire, AlpineJS and Tailwind.</p>
-                <p class="font-medium text-white text-lg mt-4 mb-10 md:text-xl lg:text-2xl">When I'm not writing code, you'll find me spending time with my wife, friends and family.</p>
+                <p class="font-medium text-white text-lg my-4 md:text-xl">I'm a Web Developer at <a href="https://www.minttwist.com/" target="_blank" class="font-semibold text-green-500 underline">Minttwist</a>, where I primarily work with Laravel and WordPress building bespoke systems and websites.</p>
+                <p class="font-medium text-white text-lg my-4 md:text-xl">I have 8 years of experience across a wide variety of languages and technologies with my current tech stack being Laravel, Livewire, AlpineJS and Tailwind.</p>
+                <p class="font-medium text-white text-lg mt-4 mb-10 md:text-xl">When I'm not writing code, you'll find me spending time with my wife, friends and family.</p>
                 <div class="flex items-center w-full space-x-4">
                     <a href="#articles" class="bg-transparent border border-white flex items-center rounded-md px-3 py-3 text-white text-xl hover:bg-white hover:text-madison">
-                        Latest posts
+                        Latest articles
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                         </svg>
                     </a>
                 </div>
             </div>
-            <div class="px-6 mb-6 md:mb-6 lg:px-0">
-                <img class="relative rounded-lg shadow-lg mx-auto max-w-[75%] md:max-w-md" src="/assets/images/me.jpg" alt="Jethro May">
+            <div class="flex-1 px-6 mb-6 md:mb-6 lg:px-0">
+                <img class="relative rounded-lg shadow-lg max-w-sm w-full mx-auto lg:m-0 lg:max-w-auto lg:ml-auto" src="/assets/images/me.jpg" alt="Jethro May">
             </div>
         </div>
     </section>
-    <section id="articles" class="bg-white pt-12 pb-24 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
-        <h2 class="text-5xl font-extrabold text-madison mb-3">
+    <section id="articles" class="bg-white pb-24 pt-16 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
+        <h2 class="text-4xl font-extrabold text-madison mb-3 lg:text-5xl">
             Latest articles
         </h2>
         @foreach ($posts->take(3) as $post)
@@ -39,7 +39,7 @@
                     </p>
                 </header>
                 <p class="text-lg md:text-xl">
-                    {{ $post->description }}
+                    {{ $post->getExcerpt() }}
                 </p>
                 <footer class="mt-4">
                     <a class="flex items-center text-lg text-madison hover:underline md:text-xl" href="{{ $post->getUrl() }}">

@@ -28,7 +28,7 @@
                 </ul>
             @endif
         </header>
-        <div class="prose max-w-full sm:prose-xl">
+        <div class="max-w-full text-lg sm:prose-xl lg:prose-xl">
             @yield('content')
         </div>
         <footer class="mt-6">

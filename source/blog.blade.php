@@ -25,7 +25,7 @@ pagination:
                 </p>
             </header>
             <p class="text-lg md:text-xl">
-                {{ $post->description }}
+                {{ $post->getExcerpt() }}
             </p>
             <footer class="mt-4">
                 <a class="flex items-center text-lg text-madison hover:underline md:text-xl" href="{{ $post->getUrl() }}">

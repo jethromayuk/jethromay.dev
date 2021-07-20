@@ -29,10 +29,12 @@ I took a further step back and thought, what did I achieve in 2020? What positiv
 
 ## My 2020 goals:
 
-1. Redesign my website.
-2. Start blogging.
-3. Move into a bigger home.
-4. Secure a job overseas.
+<ul class="list-decimal list-inside">
+    <li class="pl-0">Redesign my website.</li>
+    <li class="pl-0">Start blogging.</li>
+    <li class="pl-0">Move into a bigger home.</li>
+    <li class="pl-0">Secure a job overseas.</li>
+</ul>
 
 Let's go through each of them, keeping in mind these are in no particular order.
 
@@ -46,11 +48,23 @@ I achieved this goal, and I will most likely redesign the website at some point 
 
 I didn't write nearly enough articles in 2020 but I achieved this goal and wrote five articles:
 
-1. [2020 Website Refresh](https://jethromay.com/blog/2020-website-refresh/)
-2. [Migrating My Website To Hugo](https://jethromay.com/blog/migrating-my-website-to-hugo/)
-3. [Get Down With Markdown](https://jethromay.com/blog/get-down-with-markdown/)
-4. [8 HTML Elements You Might Not Know About](https://jethromay.com/blog/8-html-elements-you-might-not-know-about/)
-5. [Getting Started With Version Control](https://jethromay.com/blog/getting-started-with-version-control/)
+<ul class="list-decimal list-inside">
+    <li class="!pl-0">
+        <a href="https://jethromay.com/blog/2020-website-refresh/" class="hover:underline">2020 Website Refresh</a>
+    </li>
+    <li class="!pl-0">
+        <a href="https://jethromay.com/blog/migrating-my-website-to-hugo/" class="hover:underline">Migrating My Website To Hugo</a>
+    </li>
+    <li class="!pl-0">
+        <a href="https://jethromay.com/blog/get-down-with-markdown/" class="hover:underline">Get Down With Markdown</a>
+    </li>
+    <li class="!pl-0">
+        <a href="https://jethromay.com/blog/8-html-elements-you-might-not-know-about/" class="hover:underline">8 HTML Elements You Might Not Know About</a>
+    </li>
+    <li class="!pl-0">
+        <a href="https://jethromay.com/blog/getting-started-with-version-control/" class="hover:underline">Getting Started With Version Control</a>
+    </li>
+</ul>
 
 I have begun plotting out a few ideas for 2021's articles, which I will likely be starting once I return from my much-needed break.
 
@@ -82,8 +96,20 @@ Overall, 2020 was a good year for me, full of many personal and work-related acc
 
 ## My goals for 2021:
 
-1. Move to the UK.
-2. Learn more Go.
-3. Improve my fitness.
-4. Write more.
-5. Release a product and gain at least ten paying customers.
+<ul class="list-decimal list-inside">
+    <li class="!pl-0">
+    Move to the UK.
+    </li>
+    <li class="!pl-0">
+    Learn more Go.
+    </li>
+    <li class="!pl-0">
+    Improve my fitness.
+    </li>
+    <li class="!pl-0">
+    Write more.
+    </li>
+    <li class="!pl-0">
+    Release a product and gain at least ten paying customers.
+    </li>
+</ul>

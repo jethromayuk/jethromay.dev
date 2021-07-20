@@ -6,7 +6,7 @@
                     <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
                         Join my mailing list.
                     </h2>
-                    <p class="mt-6 mx-auto max-w-2xl text-base text-white lg:text-lg">
+                    <p class="mt-6 mx-auto max-w-2xl text-white text-lg lg:text-xl">
                         Receive my latest content by email. No spam, ever.
                     </p>
                 </div>

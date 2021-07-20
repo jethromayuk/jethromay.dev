@@ -6,7 +6,7 @@ return [
     'production' => false,
     'baseUrl' => '',
     'title' => 'Jethro May',
-    'description' => 'Software engineer and content creator.',
+    'description' => 'Web developer and content creator.',
     'date' => date('Y'),
     'siteName' => 'Jethro May',
     'collections' => [
@@ -27,7 +27,7 @@ return [
     'getDate' => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
-    'getExcerpt' => function ($page, $length = 255) {
+    'getExcerpt' => function ($page, $length = 155) {
         if ($page->excerpt) {
             return $page->excerpt;
         }
