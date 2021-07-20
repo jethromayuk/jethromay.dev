@@ -5,7 +5,7 @@ description: A list of hardware, software and services that Jethro May uses
 @extends('_layouts.main')
 
 @section('body')
-<article class="px-6 py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
+<article class="px-6 py-24 max-w-4xl mx-auto w-full">
     <header class="mb-3">
         <h1 class="font-extrabold text-madison text-5xl">Uses</h1>
     </header>

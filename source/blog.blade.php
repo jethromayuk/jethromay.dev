@@ -7,7 +7,7 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-<section class="px-6 py-24 max-w-4xl mx-auto w-full" itemtype="http://schema.org/Article">
+<section class="px-6 py-24 max-w-4xl mx-auto w-full">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold text-madison">Blog</h1>
     </header>
@@ -15,7 +15,7 @@ pagination:
     @foreach ($pagination->items as $post)
         <article class="pt-12">
             <header class="flex flex-col">
-                <h3 class="text-madison text-3xl leading-snug mr-3 hover:underline">
+                <h3 class="font-bold text-madison text-3xl leading-snug mr-3 hover:underline">
                     <a href="{{ $post->getUrl() }}">
                         {{ $post->title }}
                     </a>
@@ -28,8 +28,8 @@ pagination:
                 {{ $post->getExcerpt() }}
             </p>
             <footer class="mt-4">
-                <a class="flex items-center text-lg text-madison hover:underline md:text-xl" href="{{ $post->getUrl() }}">
-                    Read More
+                <a class="flex items-center text-md text-madison uppercase hover:underline" href="{{ $post->getUrl() }}">
+                    Continue reading
                 </a>
             </footer>
         </article>
