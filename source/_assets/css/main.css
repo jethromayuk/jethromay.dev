@@ -1,16 +1,70 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-
 @import 'highlight.js/styles/default.css';
-
 @import 'tailwindcss/utilities';
 
 html,body {
     scroll-behavior: smooth
 }
 
-article, p {
-    @apply my-5
+#post h1 {
+    @apply font-bold text-5xl mb-4;
+}
+
+#post h2 {
+    @apply font-bold text-3xl mb-4;
+}
+
+#post h3 {
+    @apply font-bold text-2xl mb-4;
+}
+
+#post p {
+    @apply leading-relaxed text-lg;
+}
+
+#post ul, ol {
+    @apply my-2;
+}
+
+#post ol {
+    @apply list-decimal list-inside text-lg;
+}
+
+#post pre {
+    @apply p-4 text-justify whitespace-pre-wrap break-words;
+}
+
+#post pre + h1, h2, h3, p {
+    @apply mt-4;
+}
+
+#post pre:not + blockquote {
+    @apply leading-normal pb-6 pt-3;
+}
+
+#post blockquote {
+    @apply border-l-4 border-niagara;
+}
+
+#post blockquote, .highlight {
+    @apply bg-gray-200 p-6 my-6;
+}
+
+#post blockquote p {
+    @apply mt-0;
+}
+
+#post figure {
+    @apply my-6;
+}
+
+#post figure img {
+    @apply shadow-lg w-full;
+}
+
+#post figcaption {
+    @apply text-base p-4;
 }
 
 .animate-left {

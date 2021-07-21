@@ -5,7 +5,7 @@
 @endphp
 
 @section('body')
-    <article class="max-w-4xl mx-auto px-6 py-12 w-full lg:py-24">
+    <article id="post" class="max-w-4xl mx-auto px-6 py-12 w-full lg:py-24">
         <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">{{ $page->title }}</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
