@@ -1,4 +1,4 @@
-@extends('_layouts.main')
+@extends('_layouts.master')
 
 @php
     $page->type = 'article';
@@ -28,7 +28,7 @@
                 </ul>
             @endif
         </header>
-        <div class="max-w-full text-lg sm:prose-xl lg:prose-xl">
+        <div class="max-w-full text-lg">
             @yield('content')
         </div>
         <footer class="mt-6">

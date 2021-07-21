@@ -6,6 +6,7 @@
 /.idea/
 /.vscode/
 npm-debug.log
+/torchlight_cache/
 
 # Optional ignores
 # /build_staging/

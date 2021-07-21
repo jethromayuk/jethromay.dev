@@ -5,10 +5,17 @@ module.exports = {
   mode: 'jit',
   important: true,
   purge: [
-    'source/**/*.blade.php',
-    'source/**/*.md',
     'source/**/*.html',
+    'source/**/*.md',
+    'source/**/*.js',
+    'source/**/*.php',
+    'source/**/*.vue',
   ],
+  options: {
+    whitelist: [
+      /hljs/,
+    ],
+  },
   theme: {
     extend: {
         colors: {
@@ -37,7 +44,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 };

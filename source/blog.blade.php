@@ -4,7 +4,7 @@ pagination:
     collection: posts
     perPage: 4
 ---
-@extends('_layouts.main')
+@extends('_layouts.master')
 
 @section('body')
 <section class="px-6 py-24 max-w-4xl mx-auto w-full">

@@ -11,6 +11,9 @@ mix.jigsaw()
         require('tailwindcss'),
         require('autoprefixer'),
     ])
+    .jigsaw({
+        watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.scss'],
+    })
     .options({
         processCssUrls: false
     })

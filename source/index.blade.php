@@ -1,4 +1,4 @@
-@extends('_layouts.home')
+@extends('_layouts.master')
 
 @section('body')
     <section class="bg-madison flex sm:h-full pb-12 sm:px-6 lg:py-32" style="min-height: calc(100vh - 124px)">

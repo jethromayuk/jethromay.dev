@@ -1,9 +1,16 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+
+@import 'highlight.js/styles/default.css';
+
 @import 'tailwindcss/utilities';
 
 html,body {
     scroll-behavior: smooth
+}
+
+article, p {
+    @apply my-5
 }
 
 .animate-left {
