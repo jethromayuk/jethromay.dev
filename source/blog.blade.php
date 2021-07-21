@@ -13,7 +13,7 @@ pagination:
     </header>
 
     @foreach ($pagination->items as $post)
-        <article class="pt-12">
+        <article class="pt-6">
             <header class="flex flex-col">
                 <h3 class="font-bold text-madison text-3xl leading-snug mr-3 hover:underline">
                     <a href="{{ $post->getUrl() }}">

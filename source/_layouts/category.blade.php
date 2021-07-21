@@ -11,7 +11,7 @@
         </div>
         <div class="space-y-8 divide-y-2 ">
             @foreach ($page->posts($posts) as $post)
-            <article class="pt-12">
+            <article class="pt-6">
                 <header class="flex flex-col">
                     <h3 class="font-bold text-madison text-3xl leading-snug mr-3 hover:underline">
                         <a href="{{ $post->getUrl() }}">

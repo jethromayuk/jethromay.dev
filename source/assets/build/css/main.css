@@ -1001,8 +1001,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 	padding-top: 2.5rem !important;
 	padding-bottom: 2.5rem !important;
 }
-.pt-12 {
-	padding-top: 3rem !important;
+.pt-6 {
+	padding-top: 1.5rem !important;
 }
 .pb-12 {
 	padding-bottom: 3rem !important;
@@ -1015,6 +1015,9 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 .pl-4 {
 	padding-left: 1rem !important;
+}
+.pt-12 {
+	padding-top: 3rem !important;
 }
 .pb-6 {
 	padding-bottom: 1.5rem !important;
@@ -1248,13 +1251,18 @@ html,body {
 	line-height: 1.75rem;
 }
 #post pre {
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-	padding: 1rem;
-	text-align: justify;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    overflow-x: auto;
 }
 #post pre + h1, h2, h3, p {
 	margin-top: 1rem;
+}
+#post pre, p > img {
+    border-radius: .25rem;
 }
 #post pre:not + blockquote {
 	padding-bottom: 1.5rem;
