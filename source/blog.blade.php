@@ -7,13 +7,13 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
-<section class="px-6 py-24 max-w-4xl mx-auto w-full">
+<section class="px-6 py-24 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
     <header class="mb-3">
         <h1 class="text-5xl font-extrabold text-madison">Blog</h1>
     </header>
 
     @foreach ($pagination->items as $post)
-        <article class="pt-6">
+        <article class="pt-4">
             <header class="flex flex-col">
                 <h3 class="font-bold text-madison text-3xl leading-snug mr-3 hover:underline">
                     <a href="{{ $post->getUrl() }}">
@@ -24,7 +24,7 @@ pagination:
                     <time>{{ date('F j, Y', $post->date) }}</time> • {{ $post->estimate_reading_time }}
                 </p>
             </header>
-            <p class="text-lg md:text-xl">
+            <p class="mt-0 text-lg md:text-xl">
                 {{ $post->getExcerpt() }}
             </p>
             <footer class="mt-4">
@@ -33,12 +33,9 @@ pagination:
                 </a>
             </footer>
         </article>
-        @if ($post != $pagination->items->last())
-            <hr class="border-b my-6">
-        @endif
     @endforeach
     @if ($pagination->pages->count() > 1)
-    <nav class="flex text-base my-8">
+    <nav class="flex text-base my-8 border-transparent">
         @if ($previous = $pagination->previous)
             <a href="{{ $previous }}"
                 title="Previous Page"

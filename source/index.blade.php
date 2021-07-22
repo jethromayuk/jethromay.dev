@@ -9,8 +9,8 @@
                 <p class="font-medium text-white text-lg my-4 md:text-xl">I have 8 years of experience across a wide variety of languages and technologies with my current tech stack being Laravel, Livewire, AlpineJS and Tailwind.</p>
                 <p class="font-medium text-white text-lg mt-4 mb-10 md:text-xl">When I'm not writing code, you'll find me spending time with my wife, friends and family.</p>
                 <div class="flex items-center w-full space-x-4">
-                    <a href="#articles" class="bg-transparent border border-white flex items-center rounded-md px-3 py-3 text-white text-xl hover:bg-white hover:text-madison">
-                        Latest articles
+                    <a href="#posts" class="bg-transparent border border-white flex items-center rounded-md px-3 py-3 text-white text-xl hover:bg-white hover:text-madison">
+                        Latest posts
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                         </svg>
@@ -22,12 +22,12 @@
             </div>
         </div>
     </section>
-    <section id="articles" class="bg-white pb-24 pt-16 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
+    <section id="posts" class="bg-white pb-24 pt-16 px-6 max-w-4xl mx-auto space-y-8 divide-y-2 w-full">
         <h2 class="text-4xl font-extrabold text-madison mb-3 lg:text-5xl">
-            Latest articles
+            Latest posts
         </h2>
         @foreach ($posts->take(3) as $post)
-            <article class="pt-6">
+            <article class="pt-4">
                 <header class="flex flex-col">
                     <h3 class="font-bold text-madison text-3xl leading-snug mr-3 hover:underline">
                         <a href="{{ $post->getUrl() }}">
@@ -38,7 +38,7 @@
                         <time>{{ date('F j, Y', $post->date) }}</time> • {{ $post->estimate_reading_time }}
                     </p>
                 </header>
-                <p class="text-lg md:text-xl">
+                <p class="mt-0 text-lg md:text-xl">
                     {{ $post->getExcerpt() }}
                 </p>
                 <footer class="mt-4">
