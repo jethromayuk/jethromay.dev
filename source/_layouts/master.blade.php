@@ -25,8 +25,14 @@
         <link rel="icon" href="/favicon.ico">
 
         @if ($page->production)
-            <!-- Insert analytics code here -->
+            <script src="https://cdn.splitbee.io/sb.js" defer></script>
         @endif
+
+        <meta name="monetization" content="$ilp.uphold.com/kHR3Z9ULUw2p">
+
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
