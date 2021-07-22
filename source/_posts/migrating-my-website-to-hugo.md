@@ -41,14 +41,14 @@ I predominantly work on Mac so for the purpose of this tutorial I will not be co
 
 In order to get started with Hugo, the easiest way is by making use of [Homebrew](https://brew.sh/).
 
-```
-$ brew install hugo
+```bash
+brew install hugo
 ```
 
 Once this is installed you can create a new Hugo project by running the following command:
 
-```
-$ hugo new site site_name
+```bash
+hugo new site site_name
 ```
 
 There are many other helpful commands that can be used in Hugo projects which can be found [here](https://gohugo.io/commands/).
@@ -79,8 +79,8 @@ This means that each post will have a title, date and a slug.
 
 To use this template, I can run the following command:
 
-```
-$ hugo new posts/new-post.md
+```bash
+hugo new posts/new-post.md
 ```
 
 This command creates a new post in the content/posts directory with the frontmatter values populated accordingly.
@@ -120,21 +120,24 @@ Once these params are added you can access them throughout the project by using 
 
 I needed to add a few additional packages to my project, Tailwind, PostCSS and Autoprefixer which are installed by running the following commands chained together:
 
-```
-$ npm i tailwindcss && npm i postcss && npm i autoprefixer
+```bash
+npm i tailwindcss && npm i postcss && npm i autoprefixer
 ```
 
 I use Tailwind for all of my personal projects, it provides a fantastic base to work with when starting new projects. PostCSS can be used to require a wide variety of additional plugins including the above mentioned Tailwind and Autoprefixer. I initialize Tailwind and create a postcss.config.js file with the following commands:
 
-```
-$ npx tailwind init && touch postcss.config.js
+```bash
+npx tailwind init && touch postcss.config.js
 ```
 
 The first command initializes a blank Tailwind configuration file followed by creating the PostCSS configuration file.
 
 Once this is created I add the following:
 
-{{< figure src="postcss-config.jpg" alt="My PostCSS configuration file" caption="My PostCSS configuration file" >}}
+<figure>
+    <img src="/assets/images/postcss-config.jpg" alt="My PostCSS configuration file" loading="lazy">
+    <figcaption>My PostCSS configuration file</figcaption>
+</figure>
 
 ## Adding Layouts:
 
@@ -237,7 +240,7 @@ Page content can be pulled into layouts via a variety of data sources, the most 
 
 Hugo allows pages to specify frontmatter variables at the top of each file, which follow the same format as markdown:
 
-```
+```markdown
 ---
 title: "About"
 menu: main

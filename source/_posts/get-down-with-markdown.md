@@ -17,20 +17,24 @@ In this tutorial, I will cover some basic syntax used inside Markdown files whic
 
 Headings will be represented by adding a # symbol before the title. The number of # symbols signifies the order of importance, so by adding a single # it will represent a `<h1>` tag. Adding additional # symbols will decrease the order of importance with the number of symbols indicating the appropriate `<h1>` to `<h6>` tag.
 
-    # Heading 1 <h1>
-    ## Heading 2 <h2>
-    ### Heading 3 <h3>
-    #### Heading 4 <h4>
-    ##### Heading 5 <h5>
-    ###### Heading 6 <h6>
+```markdown
+# Heading 1 <h1>
+## Heading 2 <h2>
+### Heading 3 <h3>
+#### Heading 4 <h4>
+##### Heading 5 <h5>
+###### Heading 6 <h6>
+```
 
 ## Paragraphs:
 
 There is no specific syntax used when writing paragraphs in markdown syntax. Paragraphs can be created by adding one or more blank lines:
 
-    I am a paragraph.
+```markdown
+I am a paragraph.
 
-    I am another paragraph.
+I am another paragraph.
+```
 
 When adding headings and paragraphs, make sure they are all separated by a new line and are not on top of each other.
 
@@ -38,10 +42,11 @@ When adding headings and paragraphs, make sure they are all separated by a new l
 
 Line breaks are similar to paragraphs except instead of a single blank line you will add two blank lines to signify a line break.
 
-    I am a paragraph with a line break below me.
+```markdown
+I am a paragraph with a line break below me.
 
-
-    I am a paragraph with a line break above me.
+I am a paragraph with a line break above me.
+```
 
 ## Bold Text:
 
@@ -65,62 +70,80 @@ Lists have varying syntax.
 
 To create ordered lists, simply add items with numbers followed by a period. Each list item will need to be on a new line.
 
-    1. Ordered list item #1
-    2. Ordered list item #2
-    3. Ordered list item #3
+```markdown
+1. Ordered list item #1
+2. Ordered list item #2
+3. Ordered list item #3
+```
 
 They do not need to be in numerical order:
 
-    1. Ordered list item #1
-    3. Ordered list item #3
-    2. Ordered list item #2
+```markdown
+1. Ordered list item #1
+3. Ordered list item #3
+2. Ordered list item #2
+```
 
 You may also nest lists:
 
-    1. Ordered list item #1
-    2. Ordered list item #2
-    3. Ordered list item #3
-        1. Ordered nested list item #1
-        2. Ordered nested list item #2
+```markdown
+1. Ordered list item #1
+2. Ordered list item #2
+3. Ordered list item #3
+    1. Ordered nested list item #1
+    2. Ordered nested list item #2
+```
 
 To create an unordered list, simply add either a dash (-), asterisk (*), or plus signs (+) in front of your line items.
 
-    - Unordered list item #1
-    - Unordered list item #2
-    - Unordered list item #3
+```markdown
+- Unordered list item #1
+- Unordered list item #2
+- Unordered list item #3
+```
 
 Much like the ordered list, the same principle applies when nesting unordered lists.
 
-    - Unordered list item #1
-    - Unordered list item #2
-    - Unordered list item #3
-        - Unordered nested list item #1
-        - Unordered nested list item #2
-        - Unordered nested list item #3
+```markdown
+- Unordered list item #1
+- Unordered list item #2
+- Unordered list item #3
+    - Unordered nested list item #1
+    - Unordered nested list item #2
+    - Unordered nested list item #3
+```
 
 ## Links:
 
 To create a link, enclose the text you wish to link with square brackets followed by the link in parentheses.
 
-    [example.com](https://example.com/)
+```markdown
+[example.com](https://example.com/)
+```
 
 [example.com](https://example.com/)
 
 If you would like to add a title to the link, you would add the following:
 
-    [example.com](https://example.com/ "Link title")
+```markdown
+[example.com](https://example.com/ "Link title")
+```
 
- [example.com](https://example.com/ "Link title")
+[example.com](https://example.com/ "Link title")
 
 Links can also be created by adding a chevron on either side of the link:
 
-    <https://example.com>
+```markdown
+<https://example.com>
+```
 
 <https://example.com>
 
 Using the above syntax is especially useful for email addresses:
 
-    [Email us!](mailto:email@example.com)
+```markdown
+[Email us!](mailto:email@example.com)
+```
 
  [Email us!](mailto:email@example.com)
 
@@ -128,13 +151,17 @@ Using the above syntax is especially useful for email addresses:
 
 Images have a similar syntax to links, except they have an exclamation mark in front of the square brackets, followed by the alt text inside the square brackets and the path to the image in parentheses.
 
-    ![Alt text](/assets/images/image-1.jpg)
+```markdown
+![Alt text](/assets/images/image-1.jpg)
+```
 
 ![Alt text](/assets/images/image-1.jpg)
 
 Much like links a title can also be added to an image by adding the following:
 
-    ![I am the alt text](/assets/images/image-2.jpg "Image title")
+```markdown
+![I am the alt text](/assets/images/image-2.jpg "Image title")
+```
 
 ![I am the alt text](/assets/images/image-2.jpg "Image title")
 
@@ -142,7 +169,9 @@ Much like links a title can also be added to an image by adding the following:
 
 A blockquote can be created by adding a right-facing chevron `>` in front of a paragraph.
 
-    > I am a blockquote
+```markdown
+> I am a blockquote
+```
 
 Using this syntax will render the following:
 
@@ -152,21 +181,27 @@ Using this syntax will render the following:
 
 Code blocks can be added to markdown files by enclosing the word, phrase or code with backticks. (``)
 
-    `A code block using backticks`
+```markdown
+`A code block using backticks`
+```
 
 Alternatively you may create code blocks by indenting by at least four spaces or with one tab:
 
-    A code block created using four spaces or one tab.
+```markdown
+A code block created using four spaces or one tab.
+```
 
 ## Horizontal rules:
 
 There are a number of ways to add a horizontal rule to a document by either adding three or more asterisks (***), dashes or underscores:
 
-    ---
+```markdown
+---
 
-    _________________
+_________________
 
-    ***
+***
+```
 
 Any of the above will render:
 
@@ -176,7 +211,9 @@ Any of the above will render:
 
 Some Markdown applications or frameworks allow you to insert HTML tags into the file. This is useful if you would like to use certain HTML tags instead of Markdown syntax. Using this approach it is much easier to change the attributes of an element.
 
-    I am using regular **bold** syntax with an HTML link <a href="#" class="text-blue-100">Link</a>
+```markdown
+I am using regular **bold** syntax with an HTML link <a href="#" class="text-blue-100">Link</a>
+```
 
 ## Conclusion:
 

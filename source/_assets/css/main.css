@@ -32,12 +32,35 @@ html,body {
 }
 
 #post pre {
-    display: block;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
+    --bg-opacity: 1;
+    background-color: #edf2f7;
+    background-color: rgba(237, 242, 247, var(--bg-opacity));
+    line-height: 1.75;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     overflow-x: auto;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    font-size: 1rem;
+}
+
+code.hljs {
+    background-color: transparent;
+    padding: 0;
+}
+
+iframe {
+    @apply mt-4;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    background: #fefefe;
+    background-color: rgb(254, 254, 254);
+    color: #545454;
+    padding: 0.5em;
 }
 
 #post pre + h1, h2, h3, p {
