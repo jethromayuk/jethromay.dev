@@ -1148,17 +1148,17 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 	--tw-text-opacity: 1 !important;
 	color: rgba(29, 78, 216, var(--tw-text-opacity)) !important;
 }
-.text-green-500 {
+.text-niagara {
 	--tw-text-opacity: 1 !important;
-	color: rgba(16, 185, 129, var(--tw-text-opacity)) !important;
+	color: rgba(23, 160, 133, var(--tw-text-opacity)) !important;
 }
 .text-white {
 	--tw-text-opacity: 1 !important;
 	color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
-.text-niagara {
+.text-green-500 {
 	--tw-text-opacity: 1 !important;
-	color: rgba(23, 160, 133, var(--tw-text-opacity)) !important;
+	color: rgba(16, 185, 129, var(--tw-text-opacity)) !important;
 }
 .text-gray-900 {
 	--tw-text-opacity: 1 !important;
