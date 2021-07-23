@@ -1,6 +1,6 @@
 <header class="bg-madison py-12 px-6" role="banner">
     <nav class="relative max-w-7xl mx-auto flex items-center justify-between" aria-label="Global">
-        <a href="/" class="text-white font-bold text-2xl hover:text-green-500 lg:text-3xl" title="{{ $page->siteName }}">
+        <a href="/" class="text-white font-bold text-2xl hover:text-niagara lg:text-3xl" title="{{ $page->siteName }}">
             Jethro May.
         </a>
         <nav class="inline-block" aria-label="Main">
