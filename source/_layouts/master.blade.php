@@ -38,11 +38,11 @@
         <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/icons/apple-touch-icon-120x120.png" />
         <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/icons/apple-touch-icon-76x76.png" />
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/icons/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon-128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-128.png" sizes="128x128" />
 
         <meta name="application-name" content="&nbsp;"/>
         <meta name="msapplication-TileColor" content="#FFFFFF" />
