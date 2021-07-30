@@ -75,7 +75,7 @@ Replace <repository> with the full URL to your GitHub repository and replace <di
 
 Alternatively, if you run the command inside a folder that you have already created you can omit the directory and instead use a period. This will clone the repository into your current folder::
 
-```
+```bash
 gh repo clone <repository> .
 ```
 
@@ -89,26 +89,26 @@ Open the project in any code editor of your choice and create a new file, for ex
 
 Before pushing new changes, you must ensure that you have all of the repositories files in your local version of the project. Assuming you are using the default GitHub branch name, you will run the following command in your terminal:
 
-```
+```bash
 git pull
 ```
 
 or
 
-```
+```bash
 git pull origin main
 ```
 
 Once you have pulled down any changes, you will be ready to add your files to a commit and push them to the repository. We can do this by running the following commands:
 
-```
+```bash
 git add index.html
 git commit -m "Initial commit"
 ```
 
 The first command will add the `index.html` file to your commit, and the second command will commit your file with a message. The '-m' option indicates what your commit message is, followed by the actual message. If you have a lot of changes, you can omit the 'git add' step and run the following command:
 
-```
+```bash
 git commit -a -m "Initial commit"
 ```
 
@@ -118,7 +118,7 @@ Our last step is to push the code!
 
 Once you are happy with your commit and message, run the following command to push code to your GitHub repository:
 
-```
+```bash
 git push
 ```
 

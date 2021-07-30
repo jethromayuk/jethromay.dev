@@ -20,4 +20,4 @@ $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);
 $events->afterCollections(App\Listeners\GenerateEstimateReadingTime::class);
 
-// TorchlightExtension::make($container, $events)->boot();
+TorchlightExtension::make($container, $events)->boot();

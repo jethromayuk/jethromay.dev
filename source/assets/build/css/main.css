@@ -1156,10 +1156,6 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 	--tw-text-opacity: 1 !important;
 	color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
-.text-green-500 {
-	--tw-text-opacity: 1 !important;
-	color: rgba(16, 185, 129, var(--tw-text-opacity)) !important;
-}
 .text-gray-900 {
 	--tw-text-opacity: 1 !important;
 	color: rgba(17, 24, 39, var(--tw-text-opacity)) !important;
@@ -1253,33 +1249,47 @@ html,body {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
-#post pre {
-    --bg-opacity: 1;
-    background-color: #edf2f7;
-    background-color: rgba(237, 242, 247, var(--bg-opacity));
-    line-height: 1.75;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    overflow-x: auto;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    font-size: 1rem;
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+pre {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	overflow-x: auto;
+	border-radius: 0.25rem;
 }
-code.hljs {
-    background-color: transparent;
-    padding: 0;
+/*
+ Add some vertical padding and expand the width
+ to fill its container. The horizontal padding
+ comes at the line level so that background
+ colors extend edge to edge.
+*/
+pre code.torchlight {
+	display: block;
+	min-width: -webkit-max-content;
+	min-width: -moz-max-content;
+	min-width: max-content;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+/*
+ Horizontal line padding.
+*/
+pre code.torchlight .line {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+/*
+
+ Push the code away from the line numbers and
+ summary caret indicators.
+*/
+pre code.torchlight .line-number, pre code.torchlight .summary-caret {
+	margin-right: 1rem;
 }
 iframe {
 	margin-top: 1rem;
-}
-.hljs {
-    display: block;
-    overflow-x: auto;
-    background: #fefefe;
-    background-color: rgb(254, 254, 254);
-    color: #545454;
-    padding: 0.5em;
 }
 #post pre + h1, h2, h3, p {
 	margin-top: 1rem;
@@ -1354,6 +1364,10 @@ iframe {
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
 }
+.hover\:text-niagara-light:hover {
+	--tw-text-opacity: 1 !important;
+	color: rgba(27, 182, 152, var(--tw-text-opacity)) !important;
+}
 .hover\:text-madison:hover {
 	--tw-text-opacity: 1 !important;
 	color: rgba(45, 62, 80, var(--tw-text-opacity)) !important;
@@ -1361,14 +1375,6 @@ iframe {
 .hover\:text-niagara:hover {
 	--tw-text-opacity: 1 !important;
 	color: rgba(23, 160, 133, var(--tw-text-opacity)) !important;
-}
-.hover\:text-green-500:hover {
-	--tw-text-opacity: 1 !important;
-	color: rgba(16, 185, 129, var(--tw-text-opacity)) !important;
-}
-.hover\:text-niagara-light:hover {
-	--tw-text-opacity: 1 !important;
-	color: rgba(27, 182, 152, var(--tw-text-opacity)) !important;
 }
 .hover\:underline:hover {
 	text-decoration: underline !important;

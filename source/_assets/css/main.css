@@ -31,36 +31,47 @@ html,body {
     @apply list-decimal list-inside text-lg;
 }
 
-#post pre {
-    --bg-opacity: 1;
-    background-color: #edf2f7;
-    background-color: rgba(237, 242, 247, var(--bg-opacity));
-    line-height: 1.75;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    overflow-x: auto;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    font-size: 1rem;
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+
+pre {
+    @apply my-4 rounded overflow-x-auto;
 }
 
-code.hljs {
-    background-color: transparent;
-    padding: 0;
+/*
+ Add some vertical padding and expand the width
+ to fill its container. The horizontal padding
+ comes at the line level so that background
+ colors extend edge to edge.
+*/
+
+pre code.torchlight {
+    @apply block py-4 min-w-max;
+}
+
+/*
+ Horizontal line padding.
+*/
+
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+/*
+
+ Push the code away from the line numbers and
+ summary caret indicators.
+*/
+
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply mr-4;
 }
 
 iframe {
     @apply mt-4;
-}
-
-.hljs {
-    display: block;
-    overflow-x: auto;
-    background: #fefefe;
-    background-color: rgb(254, 254, 254);
-    color: #545454;
-    padding: 0.5em;
 }
 
 #post pre + h1, h2, h3, p {
