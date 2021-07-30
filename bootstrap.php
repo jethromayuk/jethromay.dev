@@ -1,7 +1,6 @@
 <?php
 
 use TightenCo\Jigsaw\Jigsaw;
-use Torchlight\Jigsaw\TorchlightExtension;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -20,4 +19,4 @@ $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);
 $events->afterCollections(App\Listeners\GenerateEstimateReadingTime::class);
 
-TorchlightExtension::make($container, $events)->boot();
+Torchlight\Jigsaw\TorchlightExtension::make($container, $events)->boot();
