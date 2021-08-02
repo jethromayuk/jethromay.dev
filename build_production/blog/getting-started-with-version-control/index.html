@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Web developer and content creator.">
+
+        <meta property="og:title" content="Getting Started With Version Control | Jethro May"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://jethromay.com/blog/getting-started-with-version-control"/>
+        <meta property="og:description" content="Web developer and content creator." />
+
+        <meta name=twitter:url content="https://jethromay.com/blog/getting-started-with-version-control">
+        <meta name=twitter:title content="Getting Started With Version Control | Jethro May">
+        <meta name=twitter:image content="https://jethromay.com/assets/images/me.jpg">
+        <meta name=twitter:card content="summary_large_image">
+        <meta name=twitter:site content="@may_jethro">
+
+        <meta name="keywords" content="PHP web developer,HTML,CSS,JS,PHP,Laravel,South Africa">
+
+        <title>Getting Started With Version Control | Jethro May</title>
+
+        <link rel="home" href="https://jethromay.com">
+        <link rel="icon" href="/favicon.ico">
+
+                    <script src="https://cdn.splitbee.io/sb.js" defer></script>
+        
+        <meta name="monetization" content="$ilp.uphold.com/kHR3Z9ULUw2p">
+
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/icons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon-128.png" sizes="128x128" />
+
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="/assets/images/icons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="/assets/images/icons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="/assets/images/icons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="/assets/images/icons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="/assets/images/icons/mstile-310x310.png" />
+        <meta name="p:domain_verify" content="6eae6b0d19fa67ad308a2195191cfb44"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=71c2f1616b39e94ca2b7">
+    </head>
+    <body>
+         <header class="bg-madison py-12 px-6" role="banner">
+    <nav class="relative max-w-7xl mx-auto flex items-center justify-between" aria-label="Global">
+        <a href="/" class="text-white font-bold text-2xl hover:text-niagara lg:text-3xl" title="Jethro May">
+            Jethro May.
+        </a>
+        <nav class="inline-block" aria-label="Main">
+            <ul class="flex items-center justify-end space-x-8 text-white font-semibold" role="menubar">
+                <li role="menuitem">
+                    <a href="/blog" class="text-xl animate-left">Blog</a>
+                </li>
+                <li role="menuitem">
+                    <a href="/uses" class="text-xl animate-left">Uses</a>
+                </li>
+                <li class="hidden sm:flex" role="menuitem">
+                    <a href="https://twitter.com/jethromayuk" rel="noopener noreferrer" class="hover:text-niagara">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="fill-current w-6 h-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67v-.53c.8-.59 1.49-1.3 2.04-2.13-.75.33-1.54.55-2.36.65a4.12 4.12 0 0 0 1.8-2.27c-.8.48-1.68.81-2.6 1a4.1 4.1 0 0 0-7 3.74 11.65 11.65 0 0 1-8.45-4.3 4.1 4.1 0 0 0 1.27 5.49C2.01 8.2 1.37 8.03.8 7.7v.05a4.1 4.1 0 0 0 3.3 4.03 4.1 4.1 0 0 1-1.86.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 16.4a11.62 11.62 0 0 0 6.29 1.84"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="hidden sm:flex" role="menuitem">
+                    <a href="https://github.com/jethromayuk" rel="noopener noreferrer" class="hover:text-niagara">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="fill-current w-6 h-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</header>
+ 
+        <main role="main">
+                <article id="post" class="max-w-4xl mx-auto px-6 py-12 w-full lg:py-24">
+        <header class="mb-6">
+            <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">Getting Started With Version Control</h1>
+            <p class="text-sm text-gray-600 mb-6 mr-2">
+                <time>October 18, 2020</time> • 7 min read •
+                <a href="http://twitter.com/share?text=Getting Started With Version Control via @jethromayuk&amp;url=https://jethromay.comhttps://jethromay.com/blog/getting-started-with-version-control" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+                    Share
+                </a>
+            </p>
+                            <ul class="flex items-center">
+                                        <li>
+                        <a
+                            href="/blog/categories/git"
+                            title="View posts in git"
+                            class="inline-block bg-gray-300 hover:bg-gray-400 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                        >git</a>
+                    </li>
+                                    </ul>
+                    </header>
+        <div class="max-w-full text-lg">
+            <p>One of the fundamental topics that every developer needs to learn is version control and how to work with a codebase which could be updating and changing over time.</p>
+
+<p>A version control system allows multiple people to work on a single project at the same time. Each person will have a copy of a project running on their computer, allowing them to make changes which won't affect the rest of the team. Once complete, the developer will be able to submit or push these updates to the version control system and ultimately merge their changes into the main project. The rest of the team will then have access to these new changes by pulling them down into their version of the project on their computers.</p>
+
+<p>Each change will have a timestamp as well as information about who made that change, usually the developer's name and email address.</p>
+
+<p>There are various types of version control systems, such as Git, Mercurial and many more. In this tutorial, we will be covering the basics of version control using Git utilizing a platform called GitHub.</p>
+
+<h2>What is Git?</h2>
+
+<p>Git is a version control system used for tracking changes in a codebase during development. The purpose of Git is to coordinate changes among developers; it can, however, track changes in any set of files.</p>
+
+<h2>What is GitHub?</h2>
+
+<p>GitHub is a Git repository hosting platform that allows developers to store their code which can be publically visible or private from the rest of the world. It keeps track of the various changes made to each of your projects and presents itself in an intuitive and easy to use interface. It is free to use but also offers a premium plan. Read more about their features <a href="https://github.com/features">here</a>.</p>
+
+<h2>First Steps:</h2>
+
+<p>The easiest way to get started is by creating an account on GitHub at the <a href="https://github.com/join">following link</a>. Once you have created an account and you have logged in, you will be able to start creating repositories used to store your code. The home page will contain a feed which will display recent activity on repositories from people you follow on GitHub, so at first, you will not see anything here.</p>
+
+<p>We are now ready to create our first repository! To do this, click on the + symbol in the top right of the screen, which will provide you with a few options, 'New repository', 'Import repository', 'New gist', 'New organization' and lastly 'New project'.</p>
+
+<figure>
+    <img src="/assets/images/new-repository.png" alt="GitHub dropdown used to create a new repository" loading="lazy">
+    <figcaption>Select ‘New repository’ to create a new repository</figcaption>
+</figure>
+
+<p>All repositories require a unique name on your account, along with an optional description. You can control who can see and interact with this repository by setting the visibility to public or private. Additionally, you may choose to include a <code>README.md</code> file, a <code>.gitignore</code> file and a <code>LICENSE.md</code> file, for now, we will not add either of these additional files.</p>
+
+<figure>
+    <img src="/assets/images/create-repository.png" alt="Create a new GitHub repository" loading="lazy">
+    <figcaption>Create a new GitHub repository</figcaption>
+</figure>
+
+<p>Once you have filled in the required information, click on 'Create repository' and you will be good to go!</p>
+
+<h2>Setup:</h2>
+
+<p>There are two primary ways of interacting with a repository on GitHub, using the <a href="https://desktop.github.com/">desktop app</a> and by using the command line. This guide will cover using the command line, as well as using GitHub's <a href="https://cli.github.com/">new CLI tool</a> but feel free to use the desktop application or another GUI (Graphical User Interface) if you are more comfortable with a visual representation of the process.</p>
+
+<blockquote>
+  <p>To interact with Git via the command line, you will need to have Git installed on your machine. Git comes preinstalled on Mac, however, on Windows it does not. If you are on Windows, please follow <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">this guide</a> to install Git on your machine.</p>
+</blockquote>
+
+<p>The GitHub CLI (Command Line Interface) allows you to easily interact directly with your repositories and even the GitHub API (Application Programming Interface.) It's worth noting that you don't have to use this CLI tool if you choose to work with the command line, you can still work with Git without it.</p>
+
+<p>For us to use this new CLI tool, we will install it with instructions found at the following <a href="https://github.com/cli/cli">link</a>.</p>
+
+<p>Once installed, open up a terminal window if you don't already have one open and the last step to take is to authenticate with our GitHub account. We do this by typing the following:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">gh auth login</span></div></code></pre>
+
+<p>All interactions with the GitHub CLI start with 'gh' followed by the command. A full list of the currently available commands is available here.</p>
+
+<p>Follow the prompts which will allow you to log in via the browser and type in a code. Once you have successfully logged in, it will ask you to select your default git protocol which will be either https or ssh. We won't be covering how to setup ssh keys, selecting https will be the final step in our setup.</p>
+
+<h2>Cloning Our Repo:</h2>
+
+<p>Cloning the GitHub repository is quite simple, we will use the following command in our terminal:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">gh repo clone </span><span style="color: #89DDFF;">&lt;</span><span style="color: #EEFFFF;">repository</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #EEFFFF;">directory</span><span style="color: #89DDFF;">&gt;</span></div></code></pre>
+
+<p>Replace <repository> with the full URL to your GitHub repository and replace <directory> with the name of the folder you would like to store this code. (Don't include the left/right chevron symbols.)</p>
+
+<p>Alternatively, if you run the command inside a folder that you have already created you can omit the directory and instead use a period. This will clone the repository into your current folder::</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">gh repo clone </span><span style="color: #89DDFF;">&lt;</span><span style="color: #EEFFFF;">repository</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;"> </span><span style="color: #82AAFF;">.</span></div></code></pre>
+
+<p>We are now ready to start adding and removing files from our repository.</p>
+
+<h2>Pushing and Pulling Changes:</h2>
+
+<p>Once you have successfully cloned a repository, you will now be able to push code changes as well as pull updates onto your locally running version of the project. At the time of writing this article, there are no commands in the CLI which will allow you to push or pull code, so we will use standard git commands to do that.</p>
+
+<p>Open the project in any code editor of your choice and create a new file, for example, <code>index.html</code>. Once you have added a new file, you will be ready to push this new file to your repository.</p>
+
+<p>Before pushing new changes, you must ensure that you have all of the repositories files in your local version of the project. Assuming you are using the default GitHub branch name, you will run the following command in your terminal:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">git pull</span></div></code></pre>
+
+<p>or</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">git pull origin main</span></div></code></pre>
+
+<p>Once you have pulled down any changes, you will be ready to add your files to a commit and push them to the repository. We can do this by running the following commands:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">git add index.html</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">git commit -m </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">Initial commit</span><span style="color: #89DDFF;">&quot;</span></div></code></pre>
+
+<p>The first command will add the <code>index.html</code> file to your commit, and the second command will commit your file with a message. The '-m' option indicates what your commit message is, followed by the actual message. If you have a lot of changes, you can omit the 'git add' step and run the following command:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">git commit -a -m </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">Initial commit</span><span style="color: #89DDFF;">&quot;</span></div></code></pre>
+
+<p>This command will add all of your new changes to the commit.</p>
+
+<p>Our last step is to push the code!</p>
+
+<p>Once you are happy with your commit and message, run the following command to push code to your GitHub repository:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">git push</span></div></code></pre>
+
+<p>If you have followed each step correctly, you will now be able to see your newly changed files in your GitHub repository. If you have chosen this repository to be publically visible, send the link to your friends and they will now be able to pull down your code from this repository.</p>
+
+<h2>Conclusion:</h2>
+
+<p>We have only scratched the surface of what can be achieved with version control, covering the basics of what Git is, how to create a repository on GitHub, how to setup GitHub's new CLI tool, cloning a repository, pulling code and pushing newly created files.</p>
+
+<p>There are many different aspects of Git that we did not cover, a few of them are:</p>
+
+<ol>
+<li>Branches</li>
+<li>Merging vs Rebasing</li>
+<li>Resetting, Checking Out, Reverting</li>
+<li>Git Log</li>
+<li>Hooks</li>
+</ol>
+
+<p>If you would like this to become a series in which we cover various other topics, let me know via Twitter!</p>
+        </div>
+        <footer class="mt-6">
+            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text=Getting Started With Version Control via @jethromayuk&amp;url=https://jethromay.comhttps://jethromay.com/blog/getting-started-with-version-control" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+                Share on Twitter
+            </a>
+        </footer>
+    </article>
+     <section class="bg-niagara sm:py-12 lg:py-24">
+    <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="relative px-6 py-10 overflow-hidden sm:px-12 sm:py-20">
+            <div class="relative">
+                <div class="sm:text-center">
+                    <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+                        Join my mailing list.
+                    </h2>
+                    <p class="mt-6 mx-auto max-w-2xl text-white text-lg lg:text-xl">
+                        Receive my latest content by email. No spam, ever.
+                    </p>
+                </div>
+                <label for="mc-embedded-subscribe-form" class="sr-only">Newsletter Subscription</label>
+                <form id="mc-embedded-subscribe-form" action="https://jethromay.us6.list-manage.com/subscribe/post?u=c882d43252516c87b01b2f8b2&amp;id=e9f86a5b12" method="post"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll" class="mt-6 sm:mx-auto sm:max-w-lg sm:flex">
+                        <div class="min-w-0 flex-1 mc-field-group">
+                            <label for="mce-EMAIL" class="sr-only">Email address</label>
+                            <input id="mce-EMAIL" type="email" value="" name="EMAIL" class="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-offset-2 " placeholder="Enter your email" required>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c882d43252516c87b01b2f8b2_e9f86a5b12" tabindex="-1" value=""></div>
+                        <div class="mt-4 sm:mt-0 sm:ml-3">
+                            <button id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="block w-full rounded-md border px-5 py-3 bg-transparent border-white text-base font-medium text-white shadow hover:bg-white hover:text-madison focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 sm:px-10">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ 
+        </main>
+         <footer class="bg-madison flex flex-col text-center text-white pt-12 pb-6" role="contentinfo">
+    <div class="flex flex-col items-center justify-center">
+        <p class="text-sm mb-1">
+            <time>© 2021</time> • Copyright Jethro May. All rights reserved.
+        </p>
+    </div>
+    <div class="flex items-center justify-center">
+        <a href="https://twitter.com/jethromayuk" class="text-sm mr-2 ml-2 hover:text-niagara" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://github.com/jethromayuk" class="text-sm mr-2 ml-2 hover:text-niagara" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://jethromay.com/rss.xml" class="text-sm mr-2 ml-2 hover:text-niagara">RSS</a>
+    </div>
+</footer>
+ 
+        <script src="/assets/build/js/main.js?id=8a48de5c68e818d8ab68"></script>
+            </body>
+</html>
