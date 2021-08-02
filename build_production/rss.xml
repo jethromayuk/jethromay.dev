@@ -6,13 +6,41 @@
         <description><![CDATA[]]></description>
         <atom:link href="https://jethromay.com/rss.xml" rel="self" type="application/rss+xml" />
         <language></language>
-        <lastBuildDate>Sat, 02 Jan 2021 08:39:03 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 02 Aug 2021 10:46:00 +0000</lastBuildDate>
 
+                    <item>
+                <title><![CDATA[Testing Mails Using The Command Line]]></title>
+                <link>https://jethromay.com/blog/sending-a-test-mail-from-the-command-line</link>
+                <guid isPermaLink="true">https://jethromay.com/blog/sending-a-test-mail-from-the-command-line</guid>
+                <description><![CDATA[Web developer and content creator.]]></description>
+                <content:encoded><![CDATA[<p>Sometimes you might need to test Laravel mails using the command line, to see if they are being sent/received.</p>
+
+<p>I will often use <a href="https://a.paddle.com/v2/click/103161/122770?link=2106" class="text-niagara hover:underline" target="_blank">Tinkerwell</a> and <a href="https://a.paddle.com/v2/click/103161/122770?link=2990" class="text-niagara hover:underline" target="_blank">HELO</a> for this but you can also use <code>php artisan tinker</code> and your regular email client.</p>
+
+<p>Simply paste in the following snippet and update the email address to send the email:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">Mail::raw</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #EEFFFF;">, function</span><span style="color: #89DDFF;">($</span><span style="color: #EEFFFF;">msg</span><span style="color: #89DDFF;">)</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">    </span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">msg-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">to</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">email@example.com</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span><span style="color: #EEFFFF;">-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">subject</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #89DDFF;">});</span></div></code></pre>
+
+<p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
+
+<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">Mail::raw</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #EEFFFF;">, fn</span><span style="color: #89DDFF;">($</span><span style="color: #EEFFFF;">msg</span><span style="color: #89DDFF;">)</span><span style="color: #EEFFFF;"> =</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">msg-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">to</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">email@example.com</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">    -</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">subject</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">));</span></div></code></pre>
+
+<p>After running the above snippet you will receive an email if everything has worked correctly:</p>
+
+<figure>
+    <img src="/assets/images/successful-email.png" alt="A test email sent using the code snippet." loading="lazy">
+    <figcaption>A test email sent using the code snippet.</figcaption>
+</figure>
+]]></content:encoded>
+                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jethro May</dc:creator>
+                <pubDate>Mon, 02 Aug 2021 10:46:00 +0000</pubDate>
+
+                            </item>
                     <item>
                 <title><![CDATA[2020 In Review]]></title>
                 <link>https://jethromay.com/blog/2020-in-review</link>
                 <guid isPermaLink="true">https://jethromay.com/blog/2020-in-review</guid>
-                <description><![CDATA[2020 has been a tough year for everyone, personally it has been one filled with many accomplishments and I am looking forward to 2021.]]></description>
+                <description><![CDATA[Web developer and content creator.]]></description>
                 <content:encoded><![CDATA[<p>2020 has been a year to forget for many people around the world. There have been many ups and downs in everyone's lives. I will be reflecting on the year and what I achieved.</p>
 
 <p>At the start of the year, up until June/July, I worked on many personal projects and upskilled myself on various topics. I then started to feel quite a bit of burnout.</p>
@@ -128,7 +156,7 @@
                 <title><![CDATA[Getting Started With Version Control]]></title>
                 <link>https://jethromay.com/blog/getting-started-with-version-control</link>
                 <guid isPermaLink="true">https://jethromay.com/blog/getting-started-with-version-control</guid>
-                <description><![CDATA[One of the fundamental topics that every developer needs to learn is version control and how to work with a codebase which could be updating and changing over time.]]></description>
+                <description><![CDATA[Web developer and content creator.]]></description>
                 <content:encoded><![CDATA[<p>One of the fundamental topics that every developer needs to learn is version control and how to work with a codebase which could be updating and changing over time.</p>
 
 <p>A version control system allows multiple people to work on a single project at the same time. Each person will have a copy of a project running on their computer, allowing them to make changes which won't affect the rest of the team. Once complete, the developer will be able to submit or push these updates to the version control system and ultimately merge their changes into the main project. The rest of the team will then have access to these new changes by pulling them down into their version of the project on their computers.</p>
@@ -255,7 +283,7 @@
                 <title><![CDATA[8 HTML Elements You Might Not Know About]]></title>
                 <link>https://jethromay.com/blog/8-html-elements-you-might-not-know-about</link>
                 <guid isPermaLink="true">https://jethromay.com/blog/8-html-elements-you-might-not-know-about</guid>
-                <description><![CDATA[In this guide, we will cover eight elements that you may not have heard of, or used before and look at examples of how you could use them in your next project.]]></description>
+                <description><![CDATA[Web developer and content creator.]]></description>
                 <content:encoded><![CDATA[<p>HTML which stands for "Hypertext Markup Language," is used to structure the content of a web page. It consists of a series of elements which enclose different parts of the page content to make them appear or act in a certain way.</p>
 
 <p>As a developer, being able to write high-quality, accessible and semantic HTML is a great skill to have in your toolset.</p>
@@ -378,7 +406,7 @@
                 <title><![CDATA[Get Down With Markdown]]></title>
                 <link>https://jethromay.com/blog/get-down-with-markdown</link>
                 <guid isPermaLink="true">https://jethromay.com/blog/get-down-with-markdown</guid>
-                <description><![CDATA[In this tutorial I will cover some basic syntax used inside markdown files which will allow you to start creating beautifully structured content.]]></description>
+                <description><![CDATA[Web developer and content creator.]]></description>
                 <content:encoded><![CDATA[<p>Most developers will encounter Markdown files at some stage of their careers, via repository platforms such as GitHub or Bitbucket. Markdown files use the <code>.md</code> file extension and will contain specific syntax used to construct the file. Many content management systems and frameworks support markdown out the box, so to start using it is as simple as creating a file and adding its content.</p>
 
 <p>Markdown files are extremely powerful because it allows the creator the ability to easily construct beautiful and semantic markup without having to build it with code. They are often used inside git repositories as documentation but have also grown to be extremely popular on blogging platforms. I personally store my posts on <a href="https://github.com/jethromay/jethromay.com/">GitHub</a> which <a href="https://gohugo.io/">Hugo</a> then turns into semantic HTML.</p>
@@ -535,7 +563,7 @@
                 <title><![CDATA[Migrating My Website To Hugo]]></title>
                 <link>https://jethromay.com/blog/migrating-my-website-to-hugo</link>
                 <guid isPermaLink="true">https://jethromay.com/blog/migrating-my-website-to-hugo</guid>
-                <description><![CDATA[Originally built with Next.js and hosted on Vercel, this setup didn’t fit my needs for a couple of reasons.]]></description>
+                <description><![CDATA[Web developer and content creator.]]></description>
                 <content:encoded><![CDATA[<p>During the last 12 months I have gone through various iterations of my website, which was created to publish educational articles on various tech related topics. Originally built with Next.js and hosted on Vercel, this setup didn’t fit my needs for a couple of reasons.</p>
 
 <p>First and foremost I have come to the realisation that I much prefer working with static HTML, CSS and a sprinkling of JavaScript where needed, returning to the basics that made the web so wonderful in the first place. It enables me to quickly scaffold projects without worrying about the complexity of React, Vue or other frameworks. This means that while Next.js is relatively lightweight compared to other frameworks, it is still too verbose for my needs.</p>
@@ -781,7 +809,7 @@ This doesn’t mean that everything I am working on is completely vanilla these 
                 <title><![CDATA[2020 Website Refresh]]></title>
                 <link>https://jethromay.com/blog/2020-website-refresh</link>
                 <guid isPermaLink="true">https://jethromay.com/blog/2020-website-refresh</guid>
-                <description><![CDATA[With the advent of 2020, I decided that it was time to launch a brand-new website]]></description>
+                <description><![CDATA[Web developer and content creator.]]></description>
                 <content:encoded><![CDATA[<p>With the advent of 2020, I decided that it was time to launch a brand-new website. Not only did I want to refresh the look and feel of my website, but I also wanted to create a platform where I could share my thoughts as well as the knowledge I have learnt throughout my career thus far, hopefully helping other developers.</p>
 
 <p>When it came to designing the website, I decided that I wanted to focus on minimalism and develop a site that's main focus was the content. I did not want a website that looked busy or overly flashy. It had to be clean, legible and have subtle nuances that complimented the overall look and feel of the website.</p>
