@@ -2,7 +2,6 @@
 extends: _layouts.post
 section: content
 title: "Migrating My Website To Hugo"
-description: "Originally built with Next.js and hosted on Vercel, this setup didn’t fit my needs for a couple of reasons."
 date: 2020-06-23T12:46:00+02:00
 categories: [website]
 ---

@@ -2,7 +2,6 @@
 extends: _layouts.post
 section: content
 title: "2020 Website Refresh"
-description: "With the advent of 2020, I decided that it was time to launch a brand-new website"
 date: 2020-01-03
 categories: [website]
 ---

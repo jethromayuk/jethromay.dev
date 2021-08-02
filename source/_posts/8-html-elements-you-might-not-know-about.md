@@ -2,7 +2,6 @@
 extends: _layouts.post
 section: content
 title: "8 HTML Elements You Might Not Know About"
-description: "In this guide, we will cover eight elements that you may not have heard of, or used before and look at examples of how you could use them in your next project."
 date: 2020-08-02T11:43:13+02:00
 categories: [html]
 ---

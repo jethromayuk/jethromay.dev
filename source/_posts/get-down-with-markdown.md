@@ -2,7 +2,6 @@
 extends: _layouts.post
 section: content
 title: "Get Down With Markdown"
-description: "In this tutorial I will cover some basic syntax used inside markdown files which will allow you to start creating beautifully structured content."
 date: 2020-07-19T12:58:51+02:00
 categories: [markdown]
 ---
