@@ -1,4 +1,4 @@
-<footer class="bg-madison flex flex-col text-center text-white pt-12 pb-6" role="contentinfo">
+<footer class="bg-madison flex flex-col text-center text-white py-6" role="contentinfo">
     <div class="flex flex-col items-center justify-center">
         <p class="text-sm mb-1">
             <time>© {{ date('Y') }}</time> • Copyright {{ $page->siteName }}. All rights reserved.
