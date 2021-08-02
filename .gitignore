@@ -8,6 +8,7 @@
 /.vscode/
 npm-debug.log
 /torchlight_cache/
+/build_production/
 
 # Optional ignores
 # /build_staging/
