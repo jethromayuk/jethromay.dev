@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: "Testing Mails Using The Command Line"
 date: 2021-08-02T12:46:00+02:00
-categories: [laravel]
+categories: [laravel, snippet]
 ---
 
 Sometimes you might need to test Laravel mails using the command line, to see if they are being sent/received.

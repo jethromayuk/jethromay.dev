@@ -4,22 +4,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Web developer and content creator.">
+        <meta name="description" content="These posts have all been categorised as Snippet.">
 
-        <meta property="og:title" content="Testing Mails Using The Command Line | Jethro May"/>
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://jethromay.com/blog/sending-a-test-mail-from-the-command-line"/>
-        <meta property="og:description" content="Web developer and content creator." />
+        <meta property="og:title" content="Snippet | Jethro May"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jethromay.com/blog/categories/snippet"/>
+        <meta property="og:description" content="These posts have all been categorised as Snippet." />
 
-        <meta name=twitter:url content="https://jethromay.com/blog/sending-a-test-mail-from-the-command-line">
-        <meta name=twitter:title content="Testing Mails Using The Command Line | Jethro May">
+        <meta name=twitter:url content="https://jethromay.com/blog/categories/snippet">
+        <meta name=twitter:title content="Snippet | Jethro May">
         <meta name=twitter:image content="https://jethromay.com/assets/images/me.jpg">
         <meta name=twitter:card content="summary_large_image">
         <meta name=twitter:site content="@may_jethro">
 
         <meta name="keywords" content="PHP web developer,HTML,CSS,JS,PHP,Laravel,South Africa">
 
-        <title>Testing Mails Using The Command Line | Jethro May</title>
+        <title>Snippet | Jethro May</title>
 
         <link rel="home" href="https://jethromay.com">
         <link rel="icon" href="/favicon.ico">
@@ -91,58 +91,39 @@
 </header>
  
         <main role="main">
-                <article id="post" class="max-w-4xl mx-auto px-6 py-12 w-full lg:py-24">
-        <header class="mb-6">
-            <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">Testing Mails Using The Command Line</h1>
-            <p class="text-sm text-gray-600 mb-6 mr-2">
-                <time>August 2, 2021</time> • 34 sec read •
-                <a href="http://twitter.com/share?text=2020%20In%20Review via @jethromayuk&amp;url=https%3a%2f%2fjethromay.com%2fposts%2f2020-in-review%2f" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
-                    Share
-                </a>
-            </p>
-                            <ul class="flex items-center">
-                                        <li>
-                        <a
-                            href="/blog/categories/laravel"
-                            title="View posts in laravel"
-                            class="inline-block bg-gray-300 hover:bg-gray-400 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-                        >laravel</a>
-                    </li>
-                                        <li>
-                        <a
-                            href="/blog/categories/snippet"
-                            title="View posts in snippet"
-                            class="inline-block bg-gray-300 hover:bg-gray-400 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-                        >snippet</a>
-                    </li>
-                                    </ul>
-                    </header>
-        <div class="max-w-full text-lg">
-            <p>Sometimes you might need to test Laravel mails using the command line, to see if they are being sent/received.</p>
+                <section class="px-6 py-24 max-w-4xl mx-auto w-full">
+        <header class="mb-3">
+            <h1 class="text-5xl font-extrabold text-madison">Snippet</h1>
+        </header>
 
-<p>I will often use <a href="https://a.paddle.com/v2/click/103161/122770?link=2106" class="text-niagara hover:underline" target="_blank">Tinkerwell</a> and <a href="https://a.paddle.com/v2/click/103161/122770?link=2990" class="text-niagara hover:underline" target="_blank">HELO</a> for this but you can also use <code>php artisan tinker</code> and your regular email client.</p>
-
-<p>Simply paste in the following snippet and update the email address to send the email:</p>
-
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">Mail::raw</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #EEFFFF;">, function</span><span style="color: #89DDFF;">($</span><span style="color: #EEFFFF;">msg</span><span style="color: #89DDFF;">)</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">    </span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">msg-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">to</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">email@example.com</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span><span style="color: #EEFFFF;">-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">subject</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #89DDFF;">});</span></div></code></pre>
-
-<p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
-
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">Mail::raw</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #EEFFFF;">, fn</span><span style="color: #89DDFF;">($</span><span style="color: #EEFFFF;">msg</span><span style="color: #89DDFF;">)</span><span style="color: #EEFFFF;"> =</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">msg-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">to</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">email@example.com</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">    -</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;">subject</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">));</span></div></code></pre>
-
-<p>After running the above snippet you will receive an email if everything has worked correctly:</p>
-
-<figure>
-    <img src="/assets/images/successful-email.png" alt="A test email sent using the code snippet." loading="lazy">
-    <figcaption>A test email sent using the code snippet.</figcaption>
-</figure>
+        <div class="text-2xl border-b border-blue-200 mb-6 pb-10">
+            <p>These posts have all been categorised as Snippet.</p>
         </div>
-        <footer class="mt-6">
-            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text=2020%20In%20Review via @jethromayuk&amp;url=https%3a%2f%2fjethromay.com%2fposts%2f2020-in-review%2f" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
-                Share on Twitter
-            </a>
-        </footer>
-    </article>
+        <div class="space-y-8 divide-y-2 ">
+                        <article class="pt-6">
+                <header class="flex flex-col">
+                    <h3 class="font-bold text-madison text-3xl leading-snug mr-3 hover:underline">
+                        <a href="https://jethromay.com/blog/sending-a-test-mail-from-the-command-line">
+                            Testing Mails Using The Command Line
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-6 mt-1">
+                        <time>August 2, 2021</time> • 34 sec read
+                    </p>
+                </header>
+                <p class="text-xl">
+                    Sometimes you might need to test Laravel mails using the command line, to see if they are being sent/received.
+
+I will often use Tinkerwell and HELO for...
+                </p>
+                <footer class="mt-4">
+                    <a class="flex items-center text-md text-madison uppercase hover:underline" href="https://jethromay.com/blog/sending-a-test-mail-from-the-command-line">
+                        Continue reading
+                    </a>
+                </footer>
+            </article>
+                    </div>
+    </section>
      <section class="bg-niagara sm:py-12 lg:py-24">
     <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="relative px-6 py-10 overflow-hidden sm:px-12 sm:py-20">
