@@ -19,7 +19,11 @@
 
         <meta name="keywords" content="PHP web developer,HTML,CSS,JS,PHP,Laravel,South Africa">
 
+        @if($page->getUrl() === '/')
+        <title>{{ $page->title }}</title>
+        @else
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+        @endif
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">
