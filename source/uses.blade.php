@@ -79,7 +79,17 @@ description: A list of hardware, software and services that Jethro May uses
                 </a>
             </p>
             <p>
-                This is a recent addition to my toolbelt, which replaced Laravel Valet's share functionality. Its easy to use and best of all it's free.
+                I really enjoy working with Expose, which replaced Laravel Valet's share functionality. Its easy to use and best of all it's free, it allows me to easily share local sites that I'm developing to the internet.
+            </p>
+        </li>
+        <li class="space-y-2">
+            <p class="font-bold leading-normal">
+                <a href="https://myray.app" class="text-niagara underline" target="_blank">
+                    Ray
+                </a>
+            </p>
+            <p>
+                This is a recent addition to my toolbelt, it enables me to debug any PHP project with ease.
             </p>
         </li>
     </ul>
