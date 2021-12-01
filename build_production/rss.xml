@@ -6,8 +6,33 @@
         <description><![CDATA[]]></description>
         <atom:link href="https://jethromay.com/rss.xml" rel="self" type="application/rss+xml" />
         <language></language>
-        <lastBuildDate>Mon, 02 Aug 2021 10:46:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 01 Dec 2021 10:49:00 +0000</lastBuildDate>
 
+                    <item>
+                <title><![CDATA[Simplifying 'Belongs To' Relationship Queries]]></title>
+                <link>https://jethromay.com/blog/simplifying-belongs-to-relationship-queries</link>
+                <guid isPermaLink="true">https://jethromay.com/blog/simplifying-belongs-to-relationship-queries</guid>
+                <description><![CDATA[Web developer and content creator.]]></description>
+                <content:encoded><![CDATA[<p>A useful addition to the <a href="https://laravel.com">Laravel</a> framework was added recently, which allows for a cleaner syntax when retrieving items via a 'belongsTo' relationship.</p>
+
+<p>Previously if you wanted to retrieve posts for a specific user you would build out a where clause as follows:</p>
+
+<pre><code class='language-php torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #F78C6C;">use</span><span style="color: #FFCB6B;"> </span><span style="color: #EEFFFF;">App</span><span style="color: #89DDFF;">\</span><span style="color: #EEFFFF;">Models</span><span style="color: #89DDFF;">\</span><span style="color: #EEFFFF;">Post</span><span style="color: #89DDFF;">;</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span>&nbsp;</div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">posts </span><span style="color: #89DDFF;">=</span><span style="color: #EEFFFF;"> </span><span style="color: #FFCB6B;">Post</span><span style="color: #89DDFF;">::</span><span style="color: #82AAFF;">where</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">user_id</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">,</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">user</span><span style="color: #89DDFF;">-&gt;</span><span style="color: #EEFFFF;">id</span><span style="color: #89DDFF;">)-&gt;</span><span style="color: #82AAFF;">get</span><span style="color: #89DDFF;">();</span></div></code></pre>
+
+<p>A newer and cleaner syntax allows you to do the following:</p>
+
+<pre><code class='language-php torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">posts </span><span style="color: #89DDFF;">=</span><span style="color: #EEFFFF;"> </span><span style="color: #FFCB6B;">Post</span><span style="color: #89DDFF;">::</span><span style="color: #82AAFF;">whereBelongsTo</span><span style="color: #89DDFF;">($</span><span style="color: #EEFFFF;">user</span><span style="color: #89DDFF;">)-&gt;</span><span style="color: #82AAFF;">get</span><span style="color: #89DDFF;">();</span></div></code></pre>
+
+<p>You may also manually specify which relationship to query by providing the name of the relationship as the second argument:</p>
+
+<pre><code class='language-php torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #89DDFF;">$</span><span style="color: #EEFFFF;">posts </span><span style="color: #89DDFF;">=</span><span style="color: #EEFFFF;"> </span><span style="color: #FFCB6B;">Post</span><span style="color: #89DDFF;">::</span><span style="color: #82AAFF;">whereBelongsTo</span><span style="color: #89DDFF;">($</span><span style="color: #EEFFFF;">user</span><span style="color: #89DDFF;">,</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">author</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)-&gt;</span><span style="color: #82AAFF;">get</span><span style="color: #89DDFF;">();</span></div></code></pre>
+
+<p>I'm always a huge fan of changes like these that improve code readability.</p>
+]]></content:encoded>
+                <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jethro May</dc:creator>
+                <pubDate>Wed, 01 Dec 2021 10:49:00 +0000</pubDate>
+
+                            </item>
                     <item>
                 <title><![CDATA[Testing Mails Using The Command Line]]></title>
                 <link>https://jethromay.com/blog/sending-a-test-mail-from-the-command-line</link>
