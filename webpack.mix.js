@@ -9,12 +9,8 @@ mix.jigsaw()
     .postCss('source/_assets/css/main.css', 'css', [
         require('postcss-import'),
         require('tailwindcss'),
-        require('autoprefixer'),
     ])
-    .jigsaw({
-        watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.scss'],
-    })
     .options({
-        processCssUrls: false
+        processCssUrls: false,
     })
     .version();
