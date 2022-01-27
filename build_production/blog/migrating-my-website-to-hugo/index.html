@@ -54,10 +54,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=79210fb56ebe73b7f636">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=9e02cec9748161d0d151">
     </head>
     <body>
-         <header class="bg-madison py-12 px-6" role="banner">
+        <header class="bg-madison py-12 px-6" role="banner">
     <nav class="relative max-w-7xl mx-auto flex items-center justify-between" aria-label="Global">
         <a href="/" class="text-white font-bold text-2xl hover:text-niagara lg:text-3xl" title="Jethro May">
             Jethro May.
@@ -89,7 +89,6 @@
             </ul>
         </nav>
 </header>
- 
         <main role="main">
                 <article id="post" class="max-w-4xl mx-auto px-6 py-12 w-full lg:py-24">
         <header class="mb-6">
@@ -147,11 +146,11 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>In order to get started with Hugo, the easiest way is by making use of <a href="https://brew.sh/">Homebrew</a>.</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">brew</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">install</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">hugo</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>brew install hugo</div></code></pre>
 
 <p>Once this is installed you can create a new Hugo project by running the following command:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">hugo</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">new</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">site</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">site_name</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>hugo new site site_name</div></code></pre>
 
 <p>There are many other helpful commands that can be used in Hugo projects which can be found <a href="https://gohugo.io/commands/">here</a>.</p>
 
@@ -181,7 +180,7 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>To use this template, I can run the following command:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">hugo</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">new</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">posts/new-post.md</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>hugo new posts/new-post.md</div></code></pre>
 
 <p>This command creates a new post in the content/posts directory with the frontmatter values populated accordingly.</p>
 
@@ -212,17 +211,17 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>Once these params are added you can access them throughout the project by using the following syntax, changing out the last value for the desired key:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ $.Site.Params.title }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ $.Site.Params.title }}</div></code></pre>
 
 <h2>Additional Setup:</h2>
 
 <p>I needed to add a few additional packages to my project, Tailwind, PostCSS and Autoprefixer which are installed by running the following commands chained together:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">npm</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">i</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">tailwindcss</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&amp;&amp;</span><span style="color: #EEFFFF;"> </span><span style="color: #FFCB6B;">npm</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">i</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">postcss</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&amp;&amp;</span><span style="color: #EEFFFF;"> </span><span style="color: #FFCB6B;">npm</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">i</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">autoprefixer</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>npm i tailwindcss &amp;&amp; npm i postcss &amp;&amp; npm i autoprefixer</div></code></pre>
 
 <p>I use Tailwind for all of my personal projects, it provides a fantastic base to work with when starting new projects. PostCSS can be used to require a wide variety of additional plugins including the above mentioned Tailwind and Autoprefixer. I initialize Tailwind and create a postcss.config.js file with the following commands:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">npx</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">tailwind</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">init</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&amp;&amp;</span><span style="color: #EEFFFF;"> </span><span style="color: #FFCB6B;">touch</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">postcss.config.js</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>npx tailwind init &amp;&amp; touch postcss.config.js</div></code></pre>
 
 <p>The first command initializes a blank Tailwind configuration file followed by creating the PostCSS configuration file.</p>
 
@@ -245,7 +244,7 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>A block can be defined with the following syntax:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ block &quot;main&quot; . }} {{ end }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ block &quot;main&quot; . }} {{ end }}</div></code></pre>
 
 <p>This creates a block called main, which will house the content of a post or page.</p>
 
@@ -269,37 +268,37 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>To create a page template, a single.html must be created inside the _default directory to display its content, which can include optional markup if needed. My single.html simply makes use of the main block and fills it with the content of my pages. I do not need any custom markup for my pages so the following suits my needs:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ define &quot;main&quot; }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">{{ .Content }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #EEFFFF;">{{ end }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>{{ .Content }}</div><div class='line'>{{ end }}</div></code></pre>
 
 <p>In my project I do not use this template for my posts because my requirements for this template are slightly more complex. In order to create a specific layout for my posts, I created a directory within layouts called posts and then added a single.html file. Creating this folder indicates that this layout is purely for the posts content type. The reason I chose to not use the default single.html is because I wanted to be able to update the meta tags, add a canonical link for each post and add some additional markup that is used purely on posts.</p>
 
 <p>Inside my posts template I define meta which will be used for each post, this includes twitter cards, open graph meta tags and a canonical link for my post. This meta is then injected into the head tags of my website.</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ define &quot;meta&quot; }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">{{ end }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">4</span><span style="color: #EEFFFF;">{{ define &quot;main&quot; }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">5</span><span style="color: #EEFFFF;">{{ end }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;meta&quot; }}</div><div class='line'>{{ end }}</div><div class='line'></div><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>{{ end }}</div></code></pre>
 
 <p>In order to display a list of posts on my posts page I created a list.html template inside the layouts/posts directory. This template needed to have the ability to paginate posts, luckily Hugo already ships with some boilerplate code known as internal templates. Internal templates cover a lot of common use cases such as pagination, google analytics, disqus comments and more.</p>
 
 <p>I included the pagination.html template using the following syntax:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ template &quot;_internal/pagination.html&quot; .  }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ template &quot;_internal/pagination.html&quot; .  }}</div></code></pre>
 
 <p>To make use of this pagination template, I had to create a range loop which will loop through everything which has the content type of posts. I created a variable called $paginator, set which content type I wanted to loop through and set the loop to iterate through my posts:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot; ) }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">{{ range $paginator.Pages }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #EEFFFF;">{{ .Title }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">4</span><span style="color: #EEFFFF;">{{ end }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot; ) }}</div><div class='line'>{{ range $paginator.Pages }}</div><div class='line'>{{ .Title }}</div><div class='line'>{{ end }}</div></code></pre>
 
 <p>This will loop through the content inside my posts directory and output the titles of each post which is specified in the frontmatter variables. The default number of paginated posts is 10 per page which can be overridden inside your config.toml file by adding the "paginate" variable followed by your desired value:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">Paginate: 5</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>Paginate: 5</div></code></pre>
 
 <p>The final layout which I created was a custom 404.html template which follows the same structure as a single.html template. This template will be used when a user attempts to visit a broken link, or a link that does not exist.</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ define &quot;main&quot; }}</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #EEFFFF;">&lt;h1&gt;Oops!&lt;/h1&gt;</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #EEFFFF;">{{ end }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>&lt;h1&gt;Oops!&lt;/h1&gt;</div><div class='line'>{{ end }}</div></code></pre>
 
 <h2>Adding Partials:</h2>
 
 <p>A partial is a file that is used to include something on a page, this could be anything from a newsletter signup form or a header/footer component etc. Partials will be used to include components that are reused throughout the site and serves as a handy method to avoid duplicate code. Partials can be created by adding a partials' directory inside the layouts' directory. Once you have created your partial, you can include that file by using the following syntax in the desired location of your project:</p>
 
-<pre><code class='torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">{{ partial &quot;header.html&quot; . }}</span></div></code></pre>
+<pre><code class='torchlight' style=''><div class='line'>{{ partial &quot;header.html&quot; . }}</div></code></pre>
 
 <h2>Adding Page Content:</h2>
 
@@ -307,7 +306,7 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>Hugo allows pages to specify frontmatter variables at the top of each file, which follow the same format as markdown:</p>
 
-<pre><code class='language-markdown torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #EEFFFF;">---</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #F07178;">title</span><span style="color: #89DDFF;">:</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">About</span><span style="color: #89DDFF;">&quot;</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #F07178;">menu</span><span style="color: #89DDFF;">:</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">main</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">4</span><span style="color: #F07178;">weight</span><span style="color: #89DDFF;">:</span><span style="color: #EEFFFF;"> </span><span style="color: #F78C6C;">1</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">5</span><span style="color: #EEFFFF;">---</span></div></code></pre>
+<pre><code class='language-markdown torchlight' style=''><div class='line'>---</div><div class='line'>title: &quot;About&quot;</div><div class='line'>menu: main</div><div class='line'>weight: 1</div><div class='line'>---</div></code></pre>
 
 <p>The above syntax indicates that the title of the page is "About", it is visible inside the main menu and specifies a weight of 1.</p>
 
@@ -354,7 +353,7 @@ This doesn’t mean that everything I am working on is completely vanilla these 
             </a>
         </footer>
     </article>
-     <section class="bg-niagara sm:py-12 lg:py-24">
+    <section class="bg-niagara sm:py-12 lg:py-24">
     <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="relative px-6 py-10 overflow-hidden sm:px-12 sm:py-20">
             <div class="relative">
@@ -390,12 +389,11 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 
 
- 
         </main>
-         <footer class="bg-madison flex flex-col text-center text-white py-6" role="contentinfo">
+        <footer class="bg-madison flex flex-col text-center text-white py-6" role="contentinfo">
     <div class="flex flex-col items-center justify-center">
         <p class="text-sm mb-1">
-            <time>© 2021</time> • Copyright Jethro May. All rights reserved.
+            <time>© 2022</time> • Copyright Jethro May. All rights reserved.
         </p>
     </div>
     <div class="flex items-center justify-center">
@@ -404,7 +402,6 @@ This doesn’t mean that everything I am working on is completely vanilla these 
         <a href="https://jethromay.com/rss.xml" class="text-sm mr-2 ml-2 hover:text-niagara">RSS</a>
     </div>
 </footer>
- 
-        <script src="/assets/build/js/main.js?id=3009a916b07518b22385"></script>
+        <script src="/assets/build/js/main.js?id=9a3976b92064a906dd15"></script>
             </body>
 </html>

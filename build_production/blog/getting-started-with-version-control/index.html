@@ -54,10 +54,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=79210fb56ebe73b7f636">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=9e02cec9748161d0d151">
     </head>
     <body>
-         <header class="bg-madison py-12 px-6" role="banner">
+        <header class="bg-madison py-12 px-6" role="banner">
     <nav class="relative max-w-7xl mx-auto flex items-center justify-between" aria-label="Global">
         <a href="/" class="text-white font-bold text-2xl hover:text-niagara lg:text-3xl" title="Jethro May">
             Jethro May.
@@ -89,7 +89,6 @@
             </ul>
         </nav>
 </header>
- 
         <main role="main">
                 <article id="post" class="max-w-4xl mx-auto px-6 py-12 w-full lg:py-24">
         <header class="mb-6">
@@ -161,7 +160,7 @@
 
 <p>Once installed, open up a terminal window if you don't already have one open and the last step to take is to authenticate with our GitHub account. We do this by typing the following:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">gh</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">auth</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">login</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>gh auth login</div></code></pre>
 
 <p>All interactions with the GitHub CLI start with 'gh' followed by the command. A full list of the currently available commands is available here.</p>
 
@@ -171,13 +170,13 @@
 
 <p>Cloning the GitHub repository is quite simple, we will use the following command in our terminal:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">gh</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">repo</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">clone</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #FFCB6B;">repository</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #FFCB6B;">directory</span><span style="color: #89DDFF;">&gt;</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>gh repo clone &lt;repository&gt; &lt;directory&gt;</div></code></pre>
 
 <p>Replace <repository> with the full URL to your GitHub repository and replace <directory> with the name of the folder you would like to store this code. (Don't include the left/right chevron symbols.)</p>
 
 <p>Alternatively, if you run the command inside a folder that you have already created you can omit the directory and instead use a period. This will clone the repository into your current folder::</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">gh</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">repo</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">clone</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #FFCB6B;">repository</span><span style="color: #89DDFF;">&gt;</span><span style="color: #EEFFFF;"> </span><span style="color: #82AAFF;">.</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>gh repo clone &lt;repository&gt; .</div></code></pre>
 
 <p>We are now ready to start adding and removing files from our repository.</p>
 
@@ -189,19 +188,19 @@
 
 <p>Before pushing new changes, you must ensure that you have all of the repositories files in your local version of the project. Assuming you are using the default GitHub branch name, you will run the following command in your terminal:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">pull</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>git pull</div></code></pre>
 
 <p>or</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">pull</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">origin</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">main</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>git pull origin main</div></code></pre>
 
 <p>Once you have pulled down any changes, you will be ready to add your files to a commit and push them to the repository. We can do this by running the following commands:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">add</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">index.html</span></div><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #FFCB6B;">git</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">commit</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">-m</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">Initial commit</span><span style="color: #89DDFF;">&quot;</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>git add index.html</div><div class='line'>git commit -m &quot;Initial commit&quot;</div></code></pre>
 
 <p>The first command will add the <code>index.html</code> file to your commit, and the second command will commit your file with a message. The '-m' option indicates what your commit message is, followed by the actual message. If you have a lot of changes, you can omit the 'git add' step and run the following command:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">commit</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">-a</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">-m</span><span style="color: #EEFFFF;"> </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">Initial commit</span><span style="color: #89DDFF;">&quot;</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>git commit -a -m &quot;Initial commit&quot;</div></code></pre>
 
 <p>This command will add all of your new changes to the commit.</p>
 
@@ -209,7 +208,7 @@
 
 <p>Once you are happy with your commit and message, run the following command to push code to your GitHub repository:</p>
 
-<pre><code class='language-bash torchlight' style='background-color: #263238; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#37474F; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #EEFFFF;"> </span><span style="color: #C3E88D;">push</span></div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>git push</div></code></pre>
 
 <p>If you have followed each step correctly, you will now be able to see your newly changed files in your GitHub repository. If you have chosen this repository to be publically visible, send the link to your friends and they will now be able to pull down your code from this repository.</p>
 
@@ -235,7 +234,7 @@
             </a>
         </footer>
     </article>
-     <section class="bg-niagara sm:py-12 lg:py-24">
+    <section class="bg-niagara sm:py-12 lg:py-24">
     <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="relative px-6 py-10 overflow-hidden sm:px-12 sm:py-20">
             <div class="relative">
@@ -271,12 +270,11 @@
 
 
 
- 
         </main>
-         <footer class="bg-madison flex flex-col text-center text-white py-6" role="contentinfo">
+        <footer class="bg-madison flex flex-col text-center text-white py-6" role="contentinfo">
     <div class="flex flex-col items-center justify-center">
         <p class="text-sm mb-1">
-            <time>© 2021</time> • Copyright Jethro May. All rights reserved.
+            <time>© 2022</time> • Copyright Jethro May. All rights reserved.
         </p>
     </div>
     <div class="flex items-center justify-center">
@@ -285,7 +283,6 @@
         <a href="https://jethromay.com/rss.xml" class="text-sm mr-2 ml-2 hover:text-niagara">RSS</a>
     </div>
 </footer>
- 
-        <script src="/assets/build/js/main.js?id=3009a916b07518b22385"></script>
+        <script src="/assets/build/js/main.js?id=9a3976b92064a906dd15"></script>
             </body>
 </html>
