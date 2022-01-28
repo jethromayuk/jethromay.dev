@@ -48,11 +48,11 @@ description: A list of hardware, software and services that Jethro May uses
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
-                <a href="https://iterm2.com" class="text-niagara underline" target="_blank">
-                    iTerm 2
+                <a href="https://www.warp.dev/" class="text-niagara underline" target="_blank">
+                    Warp
                 </a>
             </p>
-            <p>Easy to use, fast and it can be customised to fit anyones needs.</p>
+            <p>Easy to use, ridiculously fast and it comes with game changing features.</p>
         </li>
         <li class="space-y-2">
             <p class="font-bold leading-normal">
