@@ -17,7 +17,7 @@
 
 <p>Previously if you wanted to retrieve posts for a specific user you would build out a where clause as follows:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>use App\Models\Post;</div><div class='line'></div><div class='line'>$posts = Post::where(&#039;user_id&#039;, $user-&gt;id)-&gt;get();</div></code></pre>
+<pre><code class='language-php torchlight' style=''><div class='line'>use App\Models\Post;</div><div class='line'></div><div class='line'>$posts = Post::where('user_id', $user-&gt;id)-&gt;get();</div></code></pre>
 
 <p>A newer and cleaner syntax allows you to do the following:</p>
 
@@ -25,7 +25,7 @@
 
 <p>You may also manually specify which relationship to query by providing the name of the relationship as the second argument:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user, &#039;author&#039;)-&gt;get();</div></code></pre>
+<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user, 'author')-&gt;get();</div></code></pre>
 
 <p>I'm always a huge fan of changes like these that improve code readability.</p>
 ]]></content:encoded>
@@ -44,11 +44,11 @@
 
 <p>Simply paste in the following snippet and update the email address to send the email:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw(&#039;Test Mail&#039;, function($msg) {</div><div class='line'>    $msg-&gt;to(&#039;email@example.com&#039;)-&gt;subject(&#039;Test Mail&#039;);</div><div class='line'>});</div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', function($msg) {</div><div class='line'>    $msg-&gt;to('email@example.com')-&gt;subject('Test Mail');</div><div class='line'>});</div></code></pre>
 
 <p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw(&#039;Test Mail&#039;, fn($msg) =&gt; $msg-&gt;to(&#039;email@example.com&#039;)</div><div class='line'>    -&gt;subject(&#039;Test Mail&#039;));</div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', fn($msg) =&gt; $msg-&gt;to('email@example.com')</div><div class='line'>    -&gt;subject('Test Mail'));</div></code></pre>
 
 <p>After running the above snippet you will receive an email if everything has worked correctly:</p>
 

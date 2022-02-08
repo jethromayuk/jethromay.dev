@@ -2,117 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://jethromay.com</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/2</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/migrating-my-website-to-hugo</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/simplifying-belongs-to-relationship-queries</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/2020-in-review</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/getting-started-with-version-control</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/8-html-elements-you-might-not-know-about</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/2020-website-refresh</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/get-down-with-markdown</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/sending-a-test-mail-from-the-command-line</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/uses</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/.gitignore</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/rss.xml</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/markdown</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/life</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/website</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/laravel</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/wordpress</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/git</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/snippet</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/pest</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://jethromay.com/blog/categories/html</loc>
-  <lastmod>2022-01-28T12:51:05+00:00</lastmod>
+  <lastmod>2022-02-08T10:29:12+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
