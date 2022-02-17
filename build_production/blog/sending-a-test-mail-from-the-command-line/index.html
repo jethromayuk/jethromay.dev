@@ -123,11 +123,11 @@
 
 <p>Simply paste in the following snippet and update the email address to send the email:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw(&#039;Test Mail&#039;, function($msg) {</div><div class='line'>    $msg-&gt;to(&#039;email@example.com&#039;)-&gt;subject(&#039;Test Mail&#039;);</div><div class='line'>});</div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', function($msg) {</div><div class='line'>    $msg-&gt;to('email@example.com')-&gt;subject('Test Mail');</div><div class='line'>});</div></code></pre>
 
 <p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw(&#039;Test Mail&#039;, fn($msg) =&gt; $msg-&gt;to(&#039;email@example.com&#039;)</div><div class='line'>    -&gt;subject(&#039;Test Mail&#039;));</div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', fn($msg) =&gt; $msg-&gt;to('email@example.com')</div><div class='line'>    -&gt;subject('Test Mail'));</div></code></pre>
 
 <p>After running the above snippet you will receive an email if everything has worked correctly:</p>
 

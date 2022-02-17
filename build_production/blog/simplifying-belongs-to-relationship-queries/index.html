@@ -94,7 +94,7 @@
         <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">Simplifying &#039;Belongs To&#039; Relationship Queries</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
-                <time>December 1, 2021</time> • 35 sec read •
+                <time>December 1, 2021</time> • 34 sec read •
                 <a href="http://twitter.com/share?text=Simplifying &#039;Belongs To&#039; Relationship Queries via @jethromayuk&amp;url=https://jethromay.devhttps://jethromay.dev/blog/simplifying-belongs-to-relationship-queries" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                     Share
                 </a>
@@ -128,7 +128,7 @@
 
 <p>Previously if you wanted to retrieve posts for a specific user you would build out a where clause as follows:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>use App\Models\Post;</div><div class='line'></div><div class='line'>$posts = Post::where(&#039;user_id&#039;, $user-&gt;id)-&gt;get();</div></code></pre>
+<pre><code class='language-php torchlight' style=''><div class='line'>use App\Models\Post;</div><div class='line'></div><div class='line'>$posts = Post::where('user_id', $user-&gt;id)-&gt;get();</div></code></pre>
 
 <p>A newer and cleaner syntax allows you to do the following:</p>
 
@@ -136,7 +136,7 @@
 
 <p>You may also manually specify which relationship to query by providing the name of the relationship as the second argument:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user, &#039;author&#039;)-&gt;get();</div></code></pre>
+<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user, 'author')-&gt;get();</div></code></pre>
 
 <p>I'm always a huge fan of changes like these that improve code readability.</p>
         </div>
