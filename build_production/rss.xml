@@ -17,15 +17,20 @@
 
 <p>Previously if you wanted to retrieve posts for a specific user you would build out a where clause as follows:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>use App\Models\Post;</div><div class='line'></div><div class='line'>$posts = Post::where('user_id', $user-&gt;id)-&gt;get();</div></code></pre>
+<pre><code class="language-php">use App\Models\Post;
+
+$posts = Post::where('user_id', $user-&gt;id)-&gt;get();
+</code></pre>
 
 <p>A newer and cleaner syntax allows you to do the following:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user)-&gt;get();</div></code></pre>
+<pre><code class="language-php">$posts = Post::whereBelongsTo($user)-&gt;get();
+</code></pre>
 
 <p>You may also manually specify which relationship to query by providing the name of the relationship as the second argument:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user, 'author')-&gt;get();</div></code></pre>
+<pre><code class="language-php">$posts = Post::whereBelongsTo($user, 'author')-&gt;get();
+</code></pre>
 
 <p>I'm always a huge fan of changes like these that improve code readability.</p>
 ]]></content:encoded>
@@ -44,11 +49,16 @@
 
 <p>Simply paste in the following snippet and update the email address to send the email:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', function($msg) {</div><div class='line'>    $msg-&gt;to('email@example.com')-&gt;subject('Test Mail');</div><div class='line'>});</div></code></pre>
+<pre><code class="language-bash">Mail::raw('Test Mail', function($msg) {
+    $msg-&gt;to('email@example.com')-&gt;subject('Test Mail');
+});
+</code></pre>
 
 <p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', fn($msg) =&gt; $msg-&gt;to('email@example.com')</div><div class='line'>    -&gt;subject('Test Mail'));</div></code></pre>
+<pre><code class="language-bash">Mail::raw('Test Mail', fn($msg) =&gt; $msg-&gt;to('email@example.com')
+    -&gt;subject('Test Mail'));
+</code></pre>
 
 <p>After running the above snippet you will receive an email if everything has worked correctly:</p>
 
@@ -232,7 +242,8 @@
 
 <p>Once installed, open up a terminal window if you don't already have one open and the last step to take is to authenticate with our GitHub account. We do this by typing the following:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>gh auth login</div></code></pre>
+<pre><code class="language-bash">gh auth login
+</code></pre>
 
 <p>All interactions with the GitHub CLI start with 'gh' followed by the command. A full list of the currently available commands is available here.</p>
 
@@ -242,13 +253,15 @@
 
 <p>Cloning the GitHub repository is quite simple, we will use the following command in our terminal:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>gh repo clone &lt;repository&gt; &lt;directory&gt;</div></code></pre>
+<pre><code class="language-bash">gh repo clone &lt;repository&gt; &lt;directory&gt;
+</code></pre>
 
 <p>Replace <repository> with the full URL to your GitHub repository and replace <directory> with the name of the folder you would like to store this code. (Don't include the left/right chevron symbols.)</p>
 
 <p>Alternatively, if you run the command inside a folder that you have already created you can omit the directory and instead use a period. This will clone the repository into your current folder::</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>gh repo clone &lt;repository&gt; .</div></code></pre>
+<pre><code class="language-bash">gh repo clone &lt;repository&gt; .
+</code></pre>
 
 <p>We are now ready to start adding and removing files from our repository.</p>
 
@@ -260,19 +273,24 @@
 
 <p>Before pushing new changes, you must ensure that you have all of the repositories files in your local version of the project. Assuming you are using the default GitHub branch name, you will run the following command in your terminal:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>git pull</div></code></pre>
+<pre><code class="language-bash">git pull
+</code></pre>
 
 <p>or</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>git pull origin main</div></code></pre>
+<pre><code class="language-bash">git pull origin main
+</code></pre>
 
 <p>Once you have pulled down any changes, you will be ready to add your files to a commit and push them to the repository. We can do this by running the following commands:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>git add index.html</div><div class='line'>git commit -m &quot;Initial commit&quot;</div></code></pre>
+<pre><code class="language-bash">git add index.html
+git commit -m "Initial commit"
+</code></pre>
 
 <p>The first command will add the <code>index.html</code> file to your commit, and the second command will commit your file with a message. The '-m' option indicates what your commit message is, followed by the actual message. If you have a lot of changes, you can omit the 'git add' step and run the following command:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>git commit -a -m &quot;Initial commit&quot;</div></code></pre>
+<pre><code class="language-bash">git commit -a -m "Initial commit"
+</code></pre>
 
 <p>This command will add all of your new changes to the commit.</p>
 
@@ -280,7 +298,8 @@
 
 <p>Once you are happy with your commit and message, run the following command to push code to your GitHub repository:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>git push</div></code></pre>
+<pre><code class="language-bash">git push
+</code></pre>
 
 <p>If you have followed each step correctly, you will now be able to see your newly changed files in your GitHub repository. If you have chosen this repository to be publically visible, send the link to your friends and they will now be able to pull down your code from this repository.</p>
 
@@ -324,7 +343,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;This document can be styled with &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt;&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;This document can be styled with &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt;&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;abbr&gt;</code> tag has full browser support. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr#Browser_compatibility">here</a>.</p>
 
@@ -337,7 +357,10 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;</div><div class='line'>  &lt;cite&gt;Hey Jude&lt;/cite&gt; by The Beatles was released in 1968.</div><div class='line'>&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;cite&gt;Hey Jude&lt;/cite&gt; by The Beatles was released in 1968.
+&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;cite&gt;</code> tag has full browser support. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite#Browser_compatibility">here</a>.</p>
 
@@ -350,7 +373,10 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;details&gt;</div><div class='line'>  This content is hidden.</div><div class='line'>&lt;/details&gt;</div></code></pre>
+<pre><code class="language-html">&lt;details&gt;
+  This content is hidden.
+&lt;/details&gt;
+</code></pre>
 
 <p>The <code>&lt;details&gt;</code> element is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#Browser_compatibility">here</a>.</p>
 
@@ -363,7 +389,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;Sometimes you need to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;Sometimes you need to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;mark&gt;</code> tag has full browser support. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">here</a>.</p>
 
@@ -376,7 +403,12 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;form oninput=&quot;result.value=parseInt(number.value)+parseInt(range.value)&quot;&gt;</div><div class='line'>  &lt;input type=&quot;range&quot; id=&quot;range&quot; name=&quot;range&quot; value=&quot;50&quot; /&gt; +</div><div class='line'>  &lt;input type=&quot;number&quot; id=&quot;number&quot; name=&quot;number&quot; value=&quot;50&quot; /&gt; =</div><div class='line'>  &lt;output name=&quot;result&quot; for=&quot;number range&quot;&gt;100&lt;/output&gt;</div><div class='line'>&lt;/form&gt;</div></code></pre>
+<pre><code class="language-html">&lt;form oninput="result.value=parseInt(number.value)+parseInt(range.value)"&gt;
+  &lt;input type="range" id="range" name="range" value="50" /&gt; +
+  &lt;input type="number" id="number" name="number" value="50" /&gt; =
+  &lt;output name="result" for="number range"&gt;100&lt;/output&gt;
+&lt;/form&gt;
+</code></pre>
 
 <p>The <code>&lt;output&gt;</code> element is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#Browser_compatibility">here</a>.</p>
 
@@ -389,7 +421,11 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;details&gt;</div><div class='line'>  &lt;summary&gt;Summary Heading&lt;/summary&gt;</div><div class='line'>  This content is hidden.</div><div class='line'>&lt;/details&gt;</div></code></pre>
+<pre><code class="language-html">&lt;details&gt;
+  &lt;summary&gt;Summary Heading&lt;/summary&gt;
+  This content is hidden.
+&lt;/details&gt;
+</code></pre>
 
 <p>The <code>&lt;summary&gt;</code> tag is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary#Browser_compatibility">here</a>.</p>
 
@@ -402,7 +438,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;This post was published on &lt;time datetime=&quot;2020-08-03&quot;&gt;3 August, 2020&lt;/time&gt;.&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;This post was published on &lt;time datetime="2020-08-03"&gt;3 August, 2020&lt;/time&gt;.&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;time&gt;</code> tag is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">here</a>.</p>
 
@@ -415,7 +452,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;This is a very loooooooooo&lt;wbr&gt;oooo&lt;/wbr&gt;oooooooooooong sentence showing us how to use this tag.&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;This is a very loooooooooo&lt;wbr&gt;oooo&lt;/wbr&gt;oooooooooooong sentence showing us how to use this tag.&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;wbr&gt;</code> tag is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr#Browser_compatibility">here</a>.</p>
 
@@ -442,13 +480,22 @@
 
 <p>Headings will be represented by adding a # symbol before the title. The number of # symbols signifies the order of importance, so by adding a single # it will represent a <code>&lt;h1&gt;</code> tag. Adding additional # symbols will decrease the order of importance with the number of symbols indicating the appropriate <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tag.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'># Heading 1 &lt;h1&gt;</div><div class='line'>## Heading 2 &lt;h2&gt;</div><div class='line'>### Heading 3 &lt;h3&gt;</div><div class='line'>#### Heading 4 &lt;h4&gt;</div><div class='line'>##### Heading 5 &lt;h5&gt;</div><div class='line'>###### Heading 6 &lt;h6&gt;</div></code></pre>
+<pre><code class="language-markdown"># Heading 1 &lt;h1&gt;
+## Heading 2 &lt;h2&gt;
+### Heading 3 &lt;h3&gt;
+#### Heading 4 &lt;h4&gt;
+##### Heading 5 &lt;h5&gt;
+###### Heading 6 &lt;h6&gt;
+</code></pre>
 
 <h2>Paragraphs:</h2>
 
 <p>There is no specific syntax used when writing paragraphs in markdown syntax. Paragraphs can be created by adding one or more blank lines:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>I am a paragraph.</div><div class='line'></div><div class='line'>I am another paragraph.</div></code></pre>
+<pre><code class="language-markdown">I am a paragraph.
+
+I am another paragraph.
+</code></pre>
 
 <p>When adding headings and paragraphs, make sure they are all separated by a new line and are not on top of each other.</p>
 
@@ -456,7 +503,10 @@
 
 <p>Line breaks are similar to paragraphs except instead of a single blank line you will add two blank lines to signify a line break.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>I am a paragraph with a line break below me.</div><div class='line'></div><div class='line'>I am a paragraph with a line break above me.</div></code></pre>
+<pre><code class="language-markdown">I am a paragraph with a line break below me.
+
+I am a paragraph with a line break above me.
+</code></pre>
 
 <h2>Bold Text:</h2>
 
@@ -480,47 +530,71 @@
 
 <p>To create ordered lists, simply add items with numbers followed by a period. Each list item will need to be on a new line.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>1. Ordered list item #1</div><div class='line'>2. Ordered list item #2</div><div class='line'>3. Ordered list item #3</div></code></pre>
+<pre><code class="language-markdown">1. Ordered list item #1
+2. Ordered list item #2
+3. Ordered list item #3
+</code></pre>
 
 <p>They do not need to be in numerical order:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>1. Ordered list item #1</div><div class='line'>3. Ordered list item #3</div><div class='line'>2. Ordered list item #2</div></code></pre>
+<pre><code class="language-markdown">1. Ordered list item #1
+3. Ordered list item #3
+2. Ordered list item #2
+</code></pre>
 
 <p>You may also nest lists:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>1. Ordered list item #1</div><div class='line'>2. Ordered list item #2</div><div class='line'>3. Ordered list item #3</div><div class='line'>    1. Ordered nested list item #1</div><div class='line'>    2. Ordered nested list item #2</div></code></pre>
+<pre><code class="language-markdown">1. Ordered list item #1
+2. Ordered list item #2
+3. Ordered list item #3
+    1. Ordered nested list item #1
+    2. Ordered nested list item #2
+</code></pre>
 
 <p>To create an unordered list, simply add either a dash (-), asterisk (*), or plus signs (+) in front of your line items.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>- Unordered list item #1</div><div class='line'>- Unordered list item #2</div><div class='line'>- Unordered list item #3</div></code></pre>
+<pre><code class="language-markdown">- Unordered list item #1
+- Unordered list item #2
+- Unordered list item #3
+</code></pre>
 
 <p>Much like the ordered list, the same principle applies when nesting unordered lists.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>- Unordered list item #1</div><div class='line'>- Unordered list item #2</div><div class='line'>- Unordered list item #3</div><div class='line'>    - Unordered nested list item #1</div><div class='line'>    - Unordered nested list item #2</div><div class='line'>    - Unordered nested list item #3</div></code></pre>
+<pre><code class="language-markdown">- Unordered list item #1
+- Unordered list item #2
+- Unordered list item #3
+    - Unordered nested list item #1
+    - Unordered nested list item #2
+    - Unordered nested list item #3
+</code></pre>
 
 <h2>Links:</h2>
 
 <p>To create a link, enclose the text you wish to link with square brackets followed by the link in parentheses.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>[example.com](https://example.com/)</div></code></pre>
+<pre><code class="language-markdown">[example.com](https://example.com/)
+</code></pre>
 
 <p><a href="https://example.com/">example.com</a></p>
 
 <p>If you would like to add a title to the link, you would add the following:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>[example.com](https://example.com/ &quot;Link title&quot;)</div></code></pre>
+<pre><code class="language-markdown">[example.com](https://example.com/ "Link title")
+</code></pre>
 
 <p><a href="https://example.com/" title="Link title">example.com</a></p>
 
 <p>Links can also be created by adding a chevron on either side of the link:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>&lt;https://example.com&gt;</div></code></pre>
+<pre><code class="language-markdown">&lt;https://example.com&gt;
+</code></pre>
 
 <p><a href="https://example.com">https://example.com</a></p>
 
 <p>Using the above syntax is especially useful for email addresses:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>[Email us!](mailto:email@example.com)</div></code></pre>
+<pre><code class="language-markdown">[Email us!](mailto:email@example.com)
+</code></pre>
 
 <p><a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">Email us!</a></p>
 
@@ -528,13 +602,15 @@
 
 <p>Images have a similar syntax to links, except they have an exclamation mark in front of the square brackets, followed by the alt text inside the square brackets and the path to the image in parentheses.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>![Alt text](/assets/images/image-1.jpg)</div></code></pre>
+<pre><code class="language-markdown">![Alt text](/assets/images/image-1.jpg)
+</code></pre>
 
 <p><img src="/assets/images/image-1.jpg" alt="Alt text" /></p>
 
 <p>Much like links a title can also be added to an image by adding the following:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>![I am the alt text](/assets/images/image-2.jpg &quot;Image title&quot;)</div></code></pre>
+<pre><code class="language-markdown">![I am the alt text](/assets/images/image-2.jpg "Image title")
+</code></pre>
 
 <p><img src="/assets/images/image-2.jpg" alt="I am the alt text" title="Image title" /></p>
 
@@ -542,7 +618,8 @@
 
 <p>A blockquote can be created by adding a right-facing chevron <code>&gt;</code> in front of a paragraph.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>&gt; I am a blockquote</div></code></pre>
+<pre><code class="language-markdown">&gt; I am a blockquote
+</code></pre>
 
 <p>Using this syntax will render the following:</p>
 
@@ -554,17 +631,24 @@
 
 <p>Code blocks can be added to markdown files by enclosing the word, phrase or code with backticks. (``)</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>`A code block using backticks`</div></code></pre>
+<pre><code class="language-markdown">`A code block using backticks`
+</code></pre>
 
 <p>Alternatively you may create code blocks by indenting by at least four spaces or with one tab:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>A code block created using four spaces or one tab.</div></code></pre>
+<pre><code class="language-markdown">A code block created using four spaces or one tab.
+</code></pre>
 
 <h2>Horizontal rules:</h2>
 
 <p>There are a number of ways to add a horizontal rule to a document by either adding three or more asterisks (***), dashes or underscores:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>---</div><div class='line'></div><div class='line'>_________________</div><div class='line'></div><div class='line'>***</div></code></pre>
+<pre><code class="language-markdown">---
+
+_________________
+
+***
+</code></pre>
 
 <p>Any of the above will render:</p>
 
@@ -574,7 +658,8 @@
 
 <p>Some Markdown applications or frameworks allow you to insert HTML tags into the file. This is useful if you would like to use certain HTML tags instead of Markdown syntax. Using this approach it is much easier to change the attributes of an element.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>I am using regular **bold** syntax with an HTML link &lt;a href=&quot;#&quot; class=&quot;text-blue-100&quot;&gt;Link&lt;/a&gt;</div></code></pre>
+<pre><code class="language-markdown">I am using regular **bold** syntax with an HTML link &lt;a href="#" class="text-blue-100"&gt;Link&lt;/a&gt;
+</code></pre>
 
 <h2>Conclusion:</h2>
 
@@ -625,11 +710,13 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>In order to get started with Hugo, the easiest way is by making use of <a href="https://brew.sh/">Homebrew</a>.</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>brew install hugo</div></code></pre>
+<pre><code class="language-bash">brew install hugo
+</code></pre>
 
 <p>Once this is installed you can create a new Hugo project by running the following command:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>hugo new site site_name</div></code></pre>
+<pre><code class="language-bash">hugo new site site_name
+</code></pre>
 
 <p>There are many other helpful commands that can be used in Hugo projects which can be found <a href="https://gohugo.io/commands/">here</a>.</p>
 
@@ -659,7 +746,8 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>To use this template, I can run the following command:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>hugo new posts/new-post.md</div></code></pre>
+<pre><code class="language-bash">hugo new posts/new-post.md
+</code></pre>
 
 <p>This command creates a new post in the content/posts directory with the frontmatter values populated accordingly.</p>
 
@@ -690,17 +778,20 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>Once these params are added you can access them throughout the project by using the following syntax, changing out the last value for the desired key:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ $.Site.Params.title }}</div></code></pre>
+<pre><code>{{ $.Site.Params.title }}
+</code></pre>
 
 <h2>Additional Setup:</h2>
 
 <p>I needed to add a few additional packages to my project, Tailwind, PostCSS and Autoprefixer which are installed by running the following commands chained together:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>npm i tailwindcss &amp;&amp; npm i postcss &amp;&amp; npm i autoprefixer</div></code></pre>
+<pre><code class="language-bash">npm i tailwindcss &amp;&amp; npm i postcss &amp;&amp; npm i autoprefixer
+</code></pre>
 
 <p>I use Tailwind for all of my personal projects, it provides a fantastic base to work with when starting new projects. PostCSS can be used to require a wide variety of additional plugins including the above mentioned Tailwind and Autoprefixer. I initialize Tailwind and create a postcss.config.js file with the following commands:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>npx tailwind init &amp;&amp; touch postcss.config.js</div></code></pre>
+<pre><code class="language-bash">npx tailwind init &amp;&amp; touch postcss.config.js
+</code></pre>
 
 <p>The first command initializes a blank Tailwind configuration file followed by creating the PostCSS configuration file.</p>
 
@@ -723,7 +814,8 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>A block can be defined with the following syntax:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ block &quot;main&quot; . }} {{ end }}</div></code></pre>
+<pre><code>{{ block "main" . }} {{ end }}
+</code></pre>
 
 <p>This creates a block called main, which will house the content of a post or page.</p>
 
@@ -747,37 +839,55 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>To create a page template, a single.html must be created inside the _default directory to display its content, which can include optional markup if needed. My single.html simply makes use of the main block and fills it with the content of my pages. I do not need any custom markup for my pages so the following suits my needs:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>{{ .Content }}</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ define "main" }}
+{{ .Content }}
+{{ end }}
+</code></pre>
 
 <p>In my project I do not use this template for my posts because my requirements for this template are slightly more complex. In order to create a specific layout for my posts, I created a directory within layouts called posts and then added a single.html file. Creating this folder indicates that this layout is purely for the posts content type. The reason I chose to not use the default single.html is because I wanted to be able to update the meta tags, add a canonical link for each post and add some additional markup that is used purely on posts.</p>
 
 <p>Inside my posts template I define meta which will be used for each post, this includes twitter cards, open graph meta tags and a canonical link for my post. This meta is then injected into the head tags of my website.</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;meta&quot; }}</div><div class='line'>{{ end }}</div><div class='line'></div><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ define "meta" }}
+{{ end }}
+
+{{ define "main" }}
+{{ end }}
+</code></pre>
 
 <p>In order to display a list of posts on my posts page I created a list.html template inside the layouts/posts directory. This template needed to have the ability to paginate posts, luckily Hugo already ships with some boilerplate code known as internal templates. Internal templates cover a lot of common use cases such as pagination, google analytics, disqus comments and more.</p>
 
 <p>I included the pagination.html template using the following syntax:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ template &quot;_internal/pagination.html&quot; .  }}</div></code></pre>
+<pre><code>{{ template "_internal/pagination.html" .  }}
+</code></pre>
 
 <p>To make use of this pagination template, I had to create a range loop which will loop through everything which has the content type of posts. I created a variable called $paginator, set which content type I wanted to loop through and set the loop to iterate through my posts:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot; ) }}</div><div class='line'>{{ range $paginator.Pages }}</div><div class='line'>{{ .Title }}</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ $paginator := .Paginate (where .Pages "Type" "posts" ) }}
+{{ range $paginator.Pages }}
+{{ .Title }}
+{{ end }}
+</code></pre>
 
 <p>This will loop through the content inside my posts directory and output the titles of each post which is specified in the frontmatter variables. The default number of paginated posts is 10 per page which can be overridden inside your config.toml file by adding the "paginate" variable followed by your desired value:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>Paginate: 5</div></code></pre>
+<pre><code>Paginate: 5
+</code></pre>
 
 <p>The final layout which I created was a custom 404.html template which follows the same structure as a single.html template. This template will be used when a user attempts to visit a broken link, or a link that does not exist.</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>&lt;h1&gt;Oops!&lt;/h1&gt;</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ define "main" }}
+&lt;h1&gt;Oops!&lt;/h1&gt;
+{{ end }}
+</code></pre>
 
 <h2>Adding Partials:</h2>
 
 <p>A partial is a file that is used to include something on a page, this could be anything from a newsletter signup form or a header/footer component etc. Partials will be used to include components that are reused throughout the site and serves as a handy method to avoid duplicate code. Partials can be created by adding a partials' directory inside the layouts' directory. Once you have created your partial, you can include that file by using the following syntax in the desired location of your project:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ partial &quot;header.html&quot; . }}</div></code></pre>
+<pre><code>{{ partial "header.html" . }}
+</code></pre>
 
 <h2>Adding Page Content:</h2>
 
@@ -785,7 +895,12 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>Hugo allows pages to specify frontmatter variables at the top of each file, which follow the same format as markdown:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>---</div><div class='line'>title: &quot;About&quot;</div><div class='line'>menu: main</div><div class='line'>weight: 1</div><div class='line'>---</div></code></pre>
+<pre><code class="language-markdown">---
+title: "About"
+menu: main
+weight: 1
+---
+</code></pre>
 
 <p>The above syntax indicates that the title of the page is "About", it is visible inside the main menu and specifies a weight of 1.</p>
 

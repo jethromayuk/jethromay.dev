@@ -120,13 +120,22 @@
 
 <p>Headings will be represented by adding a # symbol before the title. The number of # symbols signifies the order of importance, so by adding a single # it will represent a <code>&lt;h1&gt;</code> tag. Adding additional # symbols will decrease the order of importance with the number of symbols indicating the appropriate <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tag.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'># Heading 1 &lt;h1&gt;</div><div class='line'>## Heading 2 &lt;h2&gt;</div><div class='line'>### Heading 3 &lt;h3&gt;</div><div class='line'>#### Heading 4 &lt;h4&gt;</div><div class='line'>##### Heading 5 &lt;h5&gt;</div><div class='line'>###### Heading 6 &lt;h6&gt;</div></code></pre>
+<pre><code class="language-markdown"># Heading 1 &lt;h1&gt;
+## Heading 2 &lt;h2&gt;
+### Heading 3 &lt;h3&gt;
+#### Heading 4 &lt;h4&gt;
+##### Heading 5 &lt;h5&gt;
+###### Heading 6 &lt;h6&gt;
+</code></pre>
 
 <h2>Paragraphs:</h2>
 
 <p>There is no specific syntax used when writing paragraphs in markdown syntax. Paragraphs can be created by adding one or more blank lines:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>I am a paragraph.</div><div class='line'></div><div class='line'>I am another paragraph.</div></code></pre>
+<pre><code class="language-markdown">I am a paragraph.
+
+I am another paragraph.
+</code></pre>
 
 <p>When adding headings and paragraphs, make sure they are all separated by a new line and are not on top of each other.</p>
 
@@ -134,7 +143,10 @@
 
 <p>Line breaks are similar to paragraphs except instead of a single blank line you will add two blank lines to signify a line break.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>I am a paragraph with a line break below me.</div><div class='line'></div><div class='line'>I am a paragraph with a line break above me.</div></code></pre>
+<pre><code class="language-markdown">I am a paragraph with a line break below me.
+
+I am a paragraph with a line break above me.
+</code></pre>
 
 <h2>Bold Text:</h2>
 
@@ -158,47 +170,71 @@
 
 <p>To create ordered lists, simply add items with numbers followed by a period. Each list item will need to be on a new line.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>1. Ordered list item #1</div><div class='line'>2. Ordered list item #2</div><div class='line'>3. Ordered list item #3</div></code></pre>
+<pre><code class="language-markdown">1. Ordered list item #1
+2. Ordered list item #2
+3. Ordered list item #3
+</code></pre>
 
 <p>They do not need to be in numerical order:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>1. Ordered list item #1</div><div class='line'>3. Ordered list item #3</div><div class='line'>2. Ordered list item #2</div></code></pre>
+<pre><code class="language-markdown">1. Ordered list item #1
+3. Ordered list item #3
+2. Ordered list item #2
+</code></pre>
 
 <p>You may also nest lists:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>1. Ordered list item #1</div><div class='line'>2. Ordered list item #2</div><div class='line'>3. Ordered list item #3</div><div class='line'>    1. Ordered nested list item #1</div><div class='line'>    2. Ordered nested list item #2</div></code></pre>
+<pre><code class="language-markdown">1. Ordered list item #1
+2. Ordered list item #2
+3. Ordered list item #3
+    1. Ordered nested list item #1
+    2. Ordered nested list item #2
+</code></pre>
 
 <p>To create an unordered list, simply add either a dash (-), asterisk (*), or plus signs (+) in front of your line items.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>- Unordered list item #1</div><div class='line'>- Unordered list item #2</div><div class='line'>- Unordered list item #3</div></code></pre>
+<pre><code class="language-markdown">- Unordered list item #1
+- Unordered list item #2
+- Unordered list item #3
+</code></pre>
 
 <p>Much like the ordered list, the same principle applies when nesting unordered lists.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>- Unordered list item #1</div><div class='line'>- Unordered list item #2</div><div class='line'>- Unordered list item #3</div><div class='line'>    - Unordered nested list item #1</div><div class='line'>    - Unordered nested list item #2</div><div class='line'>    - Unordered nested list item #3</div></code></pre>
+<pre><code class="language-markdown">- Unordered list item #1
+- Unordered list item #2
+- Unordered list item #3
+    - Unordered nested list item #1
+    - Unordered nested list item #2
+    - Unordered nested list item #3
+</code></pre>
 
 <h2>Links:</h2>
 
 <p>To create a link, enclose the text you wish to link with square brackets followed by the link in parentheses.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>[example.com](https://example.com/)</div></code></pre>
+<pre><code class="language-markdown">[example.com](https://example.com/)
+</code></pre>
 
 <p><a href="https://example.com/">example.com</a></p>
 
 <p>If you would like to add a title to the link, you would add the following:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>[example.com](https://example.com/ &quot;Link title&quot;)</div></code></pre>
+<pre><code class="language-markdown">[example.com](https://example.com/ "Link title")
+</code></pre>
 
 <p><a href="https://example.com/" title="Link title">example.com</a></p>
 
 <p>Links can also be created by adding a chevron on either side of the link:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>&lt;https://example.com&gt;</div></code></pre>
+<pre><code class="language-markdown">&lt;https://example.com&gt;
+</code></pre>
 
 <p><a href="https://example.com">https://example.com</a></p>
 
 <p>Using the above syntax is especially useful for email addresses:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>[Email us!](mailto:email@example.com)</div></code></pre>
+<pre><code class="language-markdown">[Email us!](mailto:email@example.com)
+</code></pre>
 
 <p><a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">Email us!</a></p>
 
@@ -206,13 +242,15 @@
 
 <p>Images have a similar syntax to links, except they have an exclamation mark in front of the square brackets, followed by the alt text inside the square brackets and the path to the image in parentheses.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>![Alt text](/assets/images/image-1.jpg)</div></code></pre>
+<pre><code class="language-markdown">![Alt text](/assets/images/image-1.jpg)
+</code></pre>
 
 <p><img src="/assets/images/image-1.jpg" alt="Alt text" /></p>
 
 <p>Much like links a title can also be added to an image by adding the following:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>![I am the alt text](/assets/images/image-2.jpg &quot;Image title&quot;)</div></code></pre>
+<pre><code class="language-markdown">![I am the alt text](/assets/images/image-2.jpg "Image title")
+</code></pre>
 
 <p><img src="/assets/images/image-2.jpg" alt="I am the alt text" title="Image title" /></p>
 
@@ -220,7 +258,8 @@
 
 <p>A blockquote can be created by adding a right-facing chevron <code>&gt;</code> in front of a paragraph.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>&gt; I am a blockquote</div></code></pre>
+<pre><code class="language-markdown">&gt; I am a blockquote
+</code></pre>
 
 <p>Using this syntax will render the following:</p>
 
@@ -232,17 +271,24 @@
 
 <p>Code blocks can be added to markdown files by enclosing the word, phrase or code with backticks. (``)</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>`A code block using backticks`</div></code></pre>
+<pre><code class="language-markdown">`A code block using backticks`
+</code></pre>
 
 <p>Alternatively you may create code blocks by indenting by at least four spaces or with one tab:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>A code block created using four spaces or one tab.</div></code></pre>
+<pre><code class="language-markdown">A code block created using four spaces or one tab.
+</code></pre>
 
 <h2>Horizontal rules:</h2>
 
 <p>There are a number of ways to add a horizontal rule to a document by either adding three or more asterisks (***), dashes or underscores:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>---</div><div class='line'></div><div class='line'>_________________</div><div class='line'></div><div class='line'>***</div></code></pre>
+<pre><code class="language-markdown">---
+
+_________________
+
+***
+</code></pre>
 
 <p>Any of the above will render:</p>
 
@@ -252,7 +298,8 @@
 
 <p>Some Markdown applications or frameworks allow you to insert HTML tags into the file. This is useful if you would like to use certain HTML tags instead of Markdown syntax. Using this approach it is much easier to change the attributes of an element.</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>I am using regular **bold** syntax with an HTML link &lt;a href=&quot;#&quot; class=&quot;text-blue-100&quot;&gt;Link&lt;/a&gt;</div></code></pre>
+<pre><code class="language-markdown">I am using regular **bold** syntax with an HTML link &lt;a href="#" class="text-blue-100"&gt;Link&lt;/a&gt;
+</code></pre>
 
 <h2>Conclusion:</h2>
 

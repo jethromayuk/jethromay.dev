@@ -94,7 +94,7 @@
         <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">Migrating My Website To Hugo</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
-                <time>June 23, 2020</time> • 16 min read •
+                <time>June 23, 2020</time> • 15 min read •
                 <a href="http://twitter.com/share?text=Migrating My Website To Hugo via @jethromayuk&amp;url=https://jethromay.devhttps://jethromay.dev/blog/migrating-my-website-to-hugo" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                     Share
                 </a>
@@ -146,11 +146,13 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>In order to get started with Hugo, the easiest way is by making use of <a href="https://brew.sh/">Homebrew</a>.</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>brew install hugo</div></code></pre>
+<pre><code class="language-bash">brew install hugo
+</code></pre>
 
 <p>Once this is installed you can create a new Hugo project by running the following command:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>hugo new site site_name</div></code></pre>
+<pre><code class="language-bash">hugo new site site_name
+</code></pre>
 
 <p>There are many other helpful commands that can be used in Hugo projects which can be found <a href="https://gohugo.io/commands/">here</a>.</p>
 
@@ -180,7 +182,8 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>To use this template, I can run the following command:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>hugo new posts/new-post.md</div></code></pre>
+<pre><code class="language-bash">hugo new posts/new-post.md
+</code></pre>
 
 <p>This command creates a new post in the content/posts directory with the frontmatter values populated accordingly.</p>
 
@@ -211,17 +214,20 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>Once these params are added you can access them throughout the project by using the following syntax, changing out the last value for the desired key:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ $.Site.Params.title }}</div></code></pre>
+<pre><code>{{ $.Site.Params.title }}
+</code></pre>
 
 <h2>Additional Setup:</h2>
 
 <p>I needed to add a few additional packages to my project, Tailwind, PostCSS and Autoprefixer which are installed by running the following commands chained together:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>npm i tailwindcss &amp;&amp; npm i postcss &amp;&amp; npm i autoprefixer</div></code></pre>
+<pre><code class="language-bash">npm i tailwindcss &amp;&amp; npm i postcss &amp;&amp; npm i autoprefixer
+</code></pre>
 
 <p>I use Tailwind for all of my personal projects, it provides a fantastic base to work with when starting new projects. PostCSS can be used to require a wide variety of additional plugins including the above mentioned Tailwind and Autoprefixer. I initialize Tailwind and create a postcss.config.js file with the following commands:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>npx tailwind init &amp;&amp; touch postcss.config.js</div></code></pre>
+<pre><code class="language-bash">npx tailwind init &amp;&amp; touch postcss.config.js
+</code></pre>
 
 <p>The first command initializes a blank Tailwind configuration file followed by creating the PostCSS configuration file.</p>
 
@@ -244,7 +250,8 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>A block can be defined with the following syntax:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ block &quot;main&quot; . }} {{ end }}</div></code></pre>
+<pre><code>{{ block "main" . }} {{ end }}
+</code></pre>
 
 <p>This creates a block called main, which will house the content of a post or page.</p>
 
@@ -268,37 +275,55 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>To create a page template, a single.html must be created inside the _default directory to display its content, which can include optional markup if needed. My single.html simply makes use of the main block and fills it with the content of my pages. I do not need any custom markup for my pages so the following suits my needs:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>{{ .Content }}</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ define "main" }}
+{{ .Content }}
+{{ end }}
+</code></pre>
 
 <p>In my project I do not use this template for my posts because my requirements for this template are slightly more complex. In order to create a specific layout for my posts, I created a directory within layouts called posts and then added a single.html file. Creating this folder indicates that this layout is purely for the posts content type. The reason I chose to not use the default single.html is because I wanted to be able to update the meta tags, add a canonical link for each post and add some additional markup that is used purely on posts.</p>
 
 <p>Inside my posts template I define meta which will be used for each post, this includes twitter cards, open graph meta tags and a canonical link for my post. This meta is then injected into the head tags of my website.</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;meta&quot; }}</div><div class='line'>{{ end }}</div><div class='line'></div><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ define "meta" }}
+{{ end }}
+
+{{ define "main" }}
+{{ end }}
+</code></pre>
 
 <p>In order to display a list of posts on my posts page I created a list.html template inside the layouts/posts directory. This template needed to have the ability to paginate posts, luckily Hugo already ships with some boilerplate code known as internal templates. Internal templates cover a lot of common use cases such as pagination, google analytics, disqus comments and more.</p>
 
 <p>I included the pagination.html template using the following syntax:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ template &quot;_internal/pagination.html&quot; .  }}</div></code></pre>
+<pre><code>{{ template "_internal/pagination.html" .  }}
+</code></pre>
 
 <p>To make use of this pagination template, I had to create a range loop which will loop through everything which has the content type of posts. I created a variable called $paginator, set which content type I wanted to loop through and set the loop to iterate through my posts:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot; ) }}</div><div class='line'>{{ range $paginator.Pages }}</div><div class='line'>{{ .Title }}</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ $paginator := .Paginate (where .Pages "Type" "posts" ) }}
+{{ range $paginator.Pages }}
+{{ .Title }}
+{{ end }}
+</code></pre>
 
 <p>This will loop through the content inside my posts directory and output the titles of each post which is specified in the frontmatter variables. The default number of paginated posts is 10 per page which can be overridden inside your config.toml file by adding the "paginate" variable followed by your desired value:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>Paginate: 5</div></code></pre>
+<pre><code>Paginate: 5
+</code></pre>
 
 <p>The final layout which I created was a custom 404.html template which follows the same structure as a single.html template. This template will be used when a user attempts to visit a broken link, or a link that does not exist.</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ define &quot;main&quot; }}</div><div class='line'>&lt;h1&gt;Oops!&lt;/h1&gt;</div><div class='line'>{{ end }}</div></code></pre>
+<pre><code>{{ define "main" }}
+&lt;h1&gt;Oops!&lt;/h1&gt;
+{{ end }}
+</code></pre>
 
 <h2>Adding Partials:</h2>
 
 <p>A partial is a file that is used to include something on a page, this could be anything from a newsletter signup form or a header/footer component etc. Partials will be used to include components that are reused throughout the site and serves as a handy method to avoid duplicate code. Partials can be created by adding a partials' directory inside the layouts' directory. Once you have created your partial, you can include that file by using the following syntax in the desired location of your project:</p>
 
-<pre><code class='torchlight' style=''><div class='line'>{{ partial &quot;header.html&quot; . }}</div></code></pre>
+<pre><code>{{ partial "header.html" . }}
+</code></pre>
 
 <h2>Adding Page Content:</h2>
 
@@ -306,7 +331,12 @@ This doesn’t mean that everything I am working on is completely vanilla these 
 
 <p>Hugo allows pages to specify frontmatter variables at the top of each file, which follow the same format as markdown:</p>
 
-<pre><code class='language-markdown torchlight' style=''><div class='line'>---</div><div class='line'>title: &quot;About&quot;</div><div class='line'>menu: main</div><div class='line'>weight: 1</div><div class='line'>---</div></code></pre>
+<pre><code class="language-markdown">---
+title: "About"
+menu: main
+weight: 1
+---
+</code></pre>
 
 <p>The above syntax indicates that the title of the page is "About", it is visible inside the main menu and specifies a weight of 1.</p>
 

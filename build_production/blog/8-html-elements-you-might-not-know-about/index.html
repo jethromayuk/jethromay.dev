@@ -94,7 +94,7 @@
         <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">8 HTML Elements You Might Not Know About</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
-                <time>August 2, 2020</time> • 4 min read •
+                <time>August 2, 2020</time> • 5 min read •
                 <a href="http://twitter.com/share?text=8 HTML Elements You Might Not Know About via @jethromayuk&amp;url=https://jethromay.devhttps://jethromay.dev/blog/8-html-elements-you-might-not-know-about" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                     Share
                 </a>
@@ -125,7 +125,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;This document can be styled with &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt;&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;This document can be styled with &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt;&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;abbr&gt;</code> tag has full browser support. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr#Browser_compatibility">here</a>.</p>
 
@@ -138,7 +139,10 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;</div><div class='line'>  &lt;cite&gt;Hey Jude&lt;/cite&gt; by The Beatles was released in 1968.</div><div class='line'>&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;cite&gt;Hey Jude&lt;/cite&gt; by The Beatles was released in 1968.
+&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;cite&gt;</code> tag has full browser support. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite#Browser_compatibility">here</a>.</p>
 
@@ -151,7 +155,10 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;details&gt;</div><div class='line'>  This content is hidden.</div><div class='line'>&lt;/details&gt;</div></code></pre>
+<pre><code class="language-html">&lt;details&gt;
+  This content is hidden.
+&lt;/details&gt;
+</code></pre>
 
 <p>The <code>&lt;details&gt;</code> element is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#Browser_compatibility">here</a>.</p>
 
@@ -164,7 +171,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;Sometimes you need to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;Sometimes you need to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;mark&gt;</code> tag has full browser support. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">here</a>.</p>
 
@@ -177,7 +185,12 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;form oninput=&quot;result.value=parseInt(number.value)+parseInt(range.value)&quot;&gt;</div><div class='line'>  &lt;input type=&quot;range&quot; id=&quot;range&quot; name=&quot;range&quot; value=&quot;50&quot; /&gt; +</div><div class='line'>  &lt;input type=&quot;number&quot; id=&quot;number&quot; name=&quot;number&quot; value=&quot;50&quot; /&gt; =</div><div class='line'>  &lt;output name=&quot;result&quot; for=&quot;number range&quot;&gt;100&lt;/output&gt;</div><div class='line'>&lt;/form&gt;</div></code></pre>
+<pre><code class="language-html">&lt;form oninput="result.value=parseInt(number.value)+parseInt(range.value)"&gt;
+  &lt;input type="range" id="range" name="range" value="50" /&gt; +
+  &lt;input type="number" id="number" name="number" value="50" /&gt; =
+  &lt;output name="result" for="number range"&gt;100&lt;/output&gt;
+&lt;/form&gt;
+</code></pre>
 
 <p>The <code>&lt;output&gt;</code> element is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#Browser_compatibility">here</a>.</p>
 
@@ -190,7 +203,11 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;details&gt;</div><div class='line'>  &lt;summary&gt;Summary Heading&lt;/summary&gt;</div><div class='line'>  This content is hidden.</div><div class='line'>&lt;/details&gt;</div></code></pre>
+<pre><code class="language-html">&lt;details&gt;
+  &lt;summary&gt;Summary Heading&lt;/summary&gt;
+  This content is hidden.
+&lt;/details&gt;
+</code></pre>
 
 <p>The <code>&lt;summary&gt;</code> tag is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary#Browser_compatibility">here</a>.</p>
 
@@ -203,7 +220,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;This post was published on &lt;time datetime=&quot;2020-08-03&quot;&gt;3 August, 2020&lt;/time&gt;.&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;This post was published on &lt;time datetime="2020-08-03"&gt;3 August, 2020&lt;/time&gt;.&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;time&gt;</code> tag is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">here</a>.</p>
 
@@ -216,7 +234,8 @@
   (<a href='https://codepen.io/jethro-may'>@jethro-may</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<pre><code class='language-html torchlight' style=''><div class='line'>&lt;p&gt;This is a very loooooooooo&lt;wbr&gt;oooo&lt;/wbr&gt;oooooooooooong sentence showing us how to use this tag.&lt;/p&gt;</div></code></pre>
+<pre><code class="language-html">&lt;p&gt;This is a very loooooooooo&lt;wbr&gt;oooo&lt;/wbr&gt;oooooooooooong sentence showing us how to use this tag.&lt;/p&gt;
+</code></pre>
 
 <p>The <code>&lt;wbr&gt;</code> tag is supported in all browsers apart from Internet Explorer. View a detailed list of which browser versions this tag can be used in, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr#Browser_compatibility">here</a>.</p>
 

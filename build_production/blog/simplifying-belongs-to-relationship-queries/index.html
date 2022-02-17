@@ -128,15 +128,20 @@
 
 <p>Previously if you wanted to retrieve posts for a specific user you would build out a where clause as follows:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>use App\Models\Post;</div><div class='line'></div><div class='line'>$posts = Post::where('user_id', $user-&gt;id)-&gt;get();</div></code></pre>
+<pre><code class="language-php">use App\Models\Post;
+
+$posts = Post::where('user_id', $user-&gt;id)-&gt;get();
+</code></pre>
 
 <p>A newer and cleaner syntax allows you to do the following:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user)-&gt;get();</div></code></pre>
+<pre><code class="language-php">$posts = Post::whereBelongsTo($user)-&gt;get();
+</code></pre>
 
 <p>You may also manually specify which relationship to query by providing the name of the relationship as the second argument:</p>
 
-<pre><code class='language-php torchlight' style=''><div class='line'>$posts = Post::whereBelongsTo($user, 'author')-&gt;get();</div></code></pre>
+<pre><code class="language-php">$posts = Post::whereBelongsTo($user, 'author')-&gt;get();
+</code></pre>
 
 <p>I'm always a huge fan of changes like these that improve code readability.</p>
         </div>
