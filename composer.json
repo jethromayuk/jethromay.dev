@@ -1,12 +1,12 @@
 {
-    "name": "jethromay/jethromay.com",
+    "name": "jethromay/jethromay.dev",
     "description": "Personal website build with Jigsaw static site generator by Tighten",
     "keywords": ["blog", "site"],
     "license": "MIT",
     "authors": [
         {
             "name": "Jethro May",
-            "email": "hello@jethromay.com"
+            "email": "hello@jethromay.dev"
         }
     ],
     "require": {

@@ -10,7 +10,7 @@
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">{{ $page->title }}</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
                 <time>{{ date('F j, Y', $page->date) }}</time> • {{ $page->estimate_reading_time }} •
-                <a href="http://twitter.com/share?text={{ $page->title }} via @jethromayuk&amp;url=https://jethromay.com{{ $page->getUrl() }}" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+                <a href="http://twitter.com/share?text={{ $page->title }} via @jethromayuk&amp;url=https://jethromay.dev{{ $page->getUrl() }}" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                     Share
                 </a>
             </p>
@@ -32,7 +32,7 @@
             @yield('content')
         </div>
         <footer class="mt-6">
-            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text={{ $page->title }} via @jethromayuk&amp;url=https://jethromay.com{{ $page->getUrl() }}" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text={{ $page->title }} via @jethromayuk&amp;url=https://jethromay.dev{{ $page->getUrl() }}" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                 Share on Twitter
             </a>
         </footer>

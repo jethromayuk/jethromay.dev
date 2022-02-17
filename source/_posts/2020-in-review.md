@@ -49,19 +49,19 @@ I didn't write nearly enough articles in 2020 but I achieved this goal and wrote
 
 <ul class="list-decimal list-inside">
     <li class="!pl-0">
-        <a href="https://jethromay.com/blog/2020-website-refresh/" class="hover:underline">2020 Website Refresh</a>
+        <a href="https://jethromay.dev/blog/2020-website-refresh/" class="hover:underline">2020 Website Refresh</a>
     </li>
     <li class="!pl-0">
-        <a href="https://jethromay.com/blog/migrating-my-website-to-hugo/" class="hover:underline">Migrating My Website To Hugo</a>
+        <a href="https://jethromay.dev/blog/migrating-my-website-to-hugo/" class="hover:underline">Migrating My Website To Hugo</a>
     </li>
     <li class="!pl-0">
-        <a href="https://jethromay.com/blog/get-down-with-markdown/" class="hover:underline">Get Down With Markdown</a>
+        <a href="https://jethromay.dev/blog/get-down-with-markdown/" class="hover:underline">Get Down With Markdown</a>
     </li>
     <li class="!pl-0">
-        <a href="https://jethromay.com/blog/8-html-elements-you-might-not-know-about/" class="hover:underline">8 HTML Elements You Might Not Know About</a>
+        <a href="https://jethromay.dev/blog/8-html-elements-you-might-not-know-about/" class="hover:underline">8 HTML Elements You Might Not Know About</a>
     </li>
     <li class="!pl-0">
-        <a href="https://jethromay.com/blog/getting-started-with-version-control/" class="hover:underline">Getting Started With Version Control</a>
+        <a href="https://jethromay.dev/blog/getting-started-with-version-control/" class="hover:underline">Getting Started With Version Control</a>
     </li>
 </ul>
 

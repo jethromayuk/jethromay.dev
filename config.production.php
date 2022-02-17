@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jethromay.com',
+    'baseUrl' => 'https://jethromay.dev',
     'production' => true,
 ];

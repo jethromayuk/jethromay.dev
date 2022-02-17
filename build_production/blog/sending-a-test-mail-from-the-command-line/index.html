@@ -8,12 +8,12 @@
 
         <meta property="og:title" content="Testing Mails Using The Command Line | Jethro May"/>
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://jethromay.com/blog/sending-a-test-mail-from-the-command-line"/>
+        <meta property="og:url" content="https://jethromay.dev/blog/sending-a-test-mail-from-the-command-line"/>
         <meta property="og:description" content="Web developer and content creator." />
 
-        <meta name=twitter:url content="https://jethromay.com/blog/sending-a-test-mail-from-the-command-line">
+        <meta name=twitter:url content="https://jethromay.dev/blog/sending-a-test-mail-from-the-command-line">
         <meta name=twitter:title content="Testing Mails Using The Command Line | Jethro May">
-        <meta name=twitter:image content="https://jethromay.com/assets/images/me.jpg">
+        <meta name=twitter:image content="https://jethromay.dev/assets/images/me.jpg">
         <meta name=twitter:card content="summary_large_image">
         <meta name=twitter:site content="@may_jethro">
 
@@ -21,7 +21,7 @@
 
                 <title>Testing Mails Using The Command Line | Jethro May</title>
         
-        <link rel="home" href="https://jethromay.com">
+        <link rel="home" href="https://jethromay.dev">
         <link rel="icon" href="/favicon.ico">
 
                     <script src="https://cdn.splitbee.io/sb.js" defer></script>
@@ -94,8 +94,8 @@
         <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">Testing Mails Using The Command Line</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
-                <time>August 2, 2021</time> • 35 sec read •
-                <a href="http://twitter.com/share?text=Testing Mails Using The Command Line via @jethromayuk&amp;url=https://jethromay.comhttps://jethromay.com/blog/sending-a-test-mail-from-the-command-line" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+                <time>August 2, 2021</time> • 33 sec read •
+                <a href="http://twitter.com/share?text=Testing Mails Using The Command Line via @jethromayuk&amp;url=https://jethromay.devhttps://jethromay.dev/blog/sending-a-test-mail-from-the-command-line" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                     Share
                 </a>
             </p>
@@ -123,11 +123,11 @@
 
 <p>Simply paste in the following snippet and update the email address to send the email:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', function($msg) {</div><div class='line'>    $msg-&gt;to('email@example.com')-&gt;subject('Test Mail');</div><div class='line'>});</div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw(&#039;Test Mail&#039;, function($msg) {</div><div class='line'>    $msg-&gt;to(&#039;email@example.com&#039;)-&gt;subject(&#039;Test Mail&#039;);</div><div class='line'>});</div></code></pre>
 
 <p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
 
-<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw('Test Mail', fn($msg) =&gt; $msg-&gt;to('email@example.com')</div><div class='line'>    -&gt;subject('Test Mail'));</div></code></pre>
+<pre><code class='language-bash torchlight' style=''><div class='line'>Mail::raw(&#039;Test Mail&#039;, fn($msg) =&gt; $msg-&gt;to(&#039;email@example.com&#039;)</div><div class='line'>    -&gt;subject(&#039;Test Mail&#039;));</div></code></pre>
 
 <p>After running the above snippet you will receive an email if everything has worked correctly:</p>
 
@@ -137,7 +137,7 @@
 </figure>
         </div>
         <footer class="mt-6">
-            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text=Testing Mails Using The Command Line via @jethromayuk&amp;url=https://jethromay.comhttps://jethromay.com/blog/sending-a-test-mail-from-the-command-line" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
+            <a class="text-xl underline text-niagara hover:text-niagara-light" href="http://twitter.com/share?text=Testing Mails Using The Command Line via @jethromayuk&amp;url=https://jethromay.devhttps://jethromay.dev/blog/sending-a-test-mail-from-the-command-line" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                 Share on Twitter
             </a>
         </footer>
@@ -188,7 +188,7 @@
     <div class="flex items-center justify-center">
         <a href="https://twitter.com/jethromayuk" class="text-sm mr-2 ml-2 hover:text-niagara" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a href="https://github.com/jethromayuk" class="text-sm mr-2 ml-2 hover:text-niagara" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://jethromay.com/rss.xml" class="text-sm mr-2 ml-2 hover:text-niagara">RSS</a>
+        <a href="https://jethromay.dev/rss.xml" class="text-sm mr-2 ml-2 hover:text-niagara">RSS</a>
     </div>
 </footer>
         <script src="/assets/build/js/main.js?id=9a3976b92064a906dd15"></script>
