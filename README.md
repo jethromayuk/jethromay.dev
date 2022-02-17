@@ -1,4 +1,4 @@
-# jethromay.com
+# jethromay.dev
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/767fd780-1a8a-4545-ab27-4f611acadd7b/deploy-status)](https://app.netlify.com/sites/naughty-visvesvaraya-5e60f3/deploys)
 
@@ -23,7 +23,7 @@ Feel free to submit a pull request if you notice anything that needs to be addre
 
 ## Author
 
-* [Jethro May](https://jethromay.com)
+* [Jethro May](https://jethromay.dev)
 
 [![Ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K0Z32Y)
 
