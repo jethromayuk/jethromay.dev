@@ -7,7 +7,7 @@ return [
 
     // Your API token from torchlight.dev. You can set it as an ENV variable
     // (shown below), or just hardcode it if your repo is private.  
-    'token' => getenv('TORCHLIGHT_API_TOKEN'),
+    'token' => env('TORCHLIGHT_API_TOKEN'),
 
     // If you want to register the blade directives, set this to true.
     'blade_components' => true,

@@ -94,7 +94,7 @@
         <header class="mb-6">
             <h1 class="font-extrabold leading-tight text-madison text-3xl mb-2 lg:text-5xl">Testing Mails Using The Command Line</h1>
             <p class="text-sm text-gray-600 mb-6 mr-2">
-                <time>August 2, 2021</time> • 38 sec read •
+                <time>August 2, 2021</time> • 34 sec read •
                 <a href="http://twitter.com/share?text=Testing Mails Using The Command Line via @jethromayuk&amp;url=https://jethromay.devhttps://jethromay.dev/blog/sending-a-test-mail-from-the-command-line" onclick="window.open(this.href,'twitter-share','width=550,height=235');return false;">
                     Share
                 </a>
@@ -123,16 +123,11 @@
 
 <p>Simply paste in the following snippet and update the email address to send the email:</p>
 
-<pre><code class="language-bash">Mail::raw('Test Mail', function($msg) {
-    $msg-&gt;to('email@example.com')-&gt;subject('Test Mail');
-});
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">Mail::raw</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #FFCB6B;">, function</span><span style="color: #89DDFF;">(</span><span style="color: #A6ACCD;">$msg</span><span style="color: #89DDFF;">)</span><span style="color: #FFCB6B;"> </span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #FFCB6B;">    </span><span style="color: #A6ACCD;">$msg</span><span style="color: #FFCB6B;">-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #FFCB6B;">to</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">email@example.com</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span><span style="color: #FFCB6B;">-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #FFCB6B;">subject</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #89DDFF;">});</span></div></code></pre>
 
 <p>If you are on PHP 7.4 +, you can simplify the above using short arrow functions:</p>
 
-<pre><code class="language-bash">Mail::raw('Test Mail', fn($msg) =&gt; $msg-&gt;to('email@example.com')
-    -&gt;subject('Test Mail'));
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">Mail::raw</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #FFCB6B;">, fn</span><span style="color: #89DDFF;">(</span><span style="color: #A6ACCD;">$msg</span><span style="color: #89DDFF;">)</span><span style="color: #FFCB6B;"> =</span><span style="color: #89DDFF;">&gt;</span><span style="color: #FFCB6B;"> </span><span style="color: #A6ACCD;">$msg</span><span style="color: #FFCB6B;">-</span><span style="color: #89DDFF;">&gt;</span><span style="color: #FFCB6B;">to</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">email@example.com</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span></div><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #FFCB6B;">    -</span><span style="color: #89DDFF;">&gt;</span><span style="color: #FFCB6B;">subject</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">Test Mail</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">));</span></div></code></pre>
 
 <p>After running the above snippet you will receive an email if everything has worked correctly:</p>
 

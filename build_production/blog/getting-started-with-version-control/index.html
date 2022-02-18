@@ -160,8 +160,7 @@
 
 <p>Once installed, open up a terminal window if you don't already have one open and the last step to take is to authenticate with our GitHub account. We do this by typing the following:</p>
 
-<pre><code class="language-bash">gh auth login
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">gh</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">auth</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">login</span></div></code></pre>
 
 <p>All interactions with the GitHub CLI start with 'gh' followed by the command. A full list of the currently available commands is available here.</p>
 
@@ -171,15 +170,13 @@
 
 <p>Cloning the GitHub repository is quite simple, we will use the following command in our terminal:</p>
 
-<pre><code class="language-bash">gh repo clone &lt;repository&gt; &lt;directory&gt;
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">gh</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">repo</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">clone</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #FFCB6B;">repository</span><span style="color: #89DDFF;">&gt;</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #FFCB6B;">directory</span><span style="color: #89DDFF;">&gt;</span></div></code></pre>
 
 <p>Replace <repository> with the full URL to your GitHub repository and replace <directory> with the name of the folder you would like to store this code. (Don't include the left/right chevron symbols.)</p>
 
 <p>Alternatively, if you run the command inside a folder that you have already created you can omit the directory and instead use a period. This will clone the repository into your current folder::</p>
 
-<pre><code class="language-bash">gh repo clone &lt;repository&gt; .
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">gh</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">repo</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">clone</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&lt;</span><span style="color: #FFCB6B;">repository</span><span style="color: #89DDFF;">&gt;</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">.</span></div></code></pre>
 
 <p>We are now ready to start adding and removing files from our repository.</p>
 
@@ -191,24 +188,19 @@
 
 <p>Before pushing new changes, you must ensure that you have all of the repositories files in your local version of the project. Assuming you are using the default GitHub branch name, you will run the following command in your terminal:</p>
 
-<pre><code class="language-bash">git pull
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">pull</span></div></code></pre>
 
 <p>or</p>
 
-<pre><code class="language-bash">git pull origin main
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">pull</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">origin</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">main</span></div></code></pre>
 
 <p>Once you have pulled down any changes, you will be ready to add your files to a commit and push them to the repository. We can do this by running the following commands:</p>
 
-<pre><code class="language-bash">git add index.html
-git commit -m "Initial commit"
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">add</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">index.html</span></div><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #FFCB6B;">git</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">commit</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">-m</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">Initial commit</span><span style="color: #89DDFF;">&quot;</span></div></code></pre>
 
 <p>The first command will add the <code>index.html</code> file to your commit, and the second command will commit your file with a message. The '-m' option indicates what your commit message is, followed by the actual message. If you have a lot of changes, you can omit the 'git add' step and run the following command:</p>
 
-<pre><code class="language-bash">git commit -a -m "Initial commit"
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">commit</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">-a</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">-m</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&quot;</span><span style="color: #C3E88D;">Initial commit</span><span style="color: #89DDFF;">&quot;</span></div></code></pre>
 
 <p>This command will add all of your new changes to the commit.</p>
 
@@ -216,8 +208,7 @@ git commit -m "Initial commit"
 
 <p>Once you are happy with your commit and message, run the following command to push code to your GitHub repository:</p>
 
-<pre><code class="language-bash">git push
-</code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="bash" class='language-bash torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#a6accd40; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FFCB6B;">git</span><span style="color: #A6ACCD;"> </span><span style="color: #C3E88D;">push</span></div></code></pre>
 
 <p>If you have followed each step correctly, you will now be able to see your newly changed files in your GitHub repository. If you have chosen this repository to be publically visible, send the link to your friends and they will now be able to pull down your code from this repository.</p>
 
