@@ -29,10 +29,9 @@
         <link rel="icon" href="/favicon.ico">
 
         @if ($page->production)
-            <script src="https://cdn.splitbee.io/sb.js" defer></script>
+            <script async src="https://cdn.splitbee.io/sb.js"></script>
+            <meta name="monetization" content="$ilp.uphold.com/kHR3Z9ULUw2p">
         @endif
-
-        <meta name="monetization" content="$ilp.uphold.com/kHR3Z9ULUw2p">
 
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/icons/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/icons/apple-touch-icon-114x114.png" />
